@@ -41,6 +41,19 @@ const GlobalStyles = css`
     line-height: ${rouverpaTheme.lineHeights.body};
   }
 
+  a {
+    color: ${rouverpaTheme.colors.black34};
+    transition: color 0.4s ease;
+    text-decoration: none;
+    &.active {
+      color: ${rouverpaTheme.colors.accentp2};
+    }
+    &:hover {
+      color: ${rouverpaTheme.colors.accent};
+      transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+  }
+
   button {
     border: none;
     margin: 0;
