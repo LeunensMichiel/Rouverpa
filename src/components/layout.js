@@ -13,12 +13,13 @@ const mainCss = css`
       1fr
     );
   flex: 1 1 auto;
-  padding-top: 136px;
+  padding-top: 100px;
 
   @media (max-width: 767px) {
     padding-top: 72px;
   }
 `
+
 const IsIE = () => {
   if (typeof window !== `undefined`) {
     return window.navigator.userAgent.match(/(MSIE|Trident)/)

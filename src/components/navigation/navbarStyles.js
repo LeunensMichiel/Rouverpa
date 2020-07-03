@@ -1,7 +1,8 @@
 import styled from "@emotion/styled"
 
 export const NavWrapper = styled.header`
-  position: ${p => (p.isSticky ? "fixed" : "static")};
+  position: ${p => (p.isSticky ? "fixed" : "absolute")};
+  margin-top: ${p => (p.isSticky ? "0" : "36px")};
   width: 100%;
   height: 100px;
   background-color: ${p => p.theme.colors.white98};
@@ -238,9 +239,15 @@ export const NavUpperBarWrapper = styled.aside`
     }
     &.darker {
       background-color: ${p => p.theme.colors.accentm1};
+      svg {
+        margin-right: 0;
+      }
     }
     &.darkest {
       background-color: ${p => p.theme.colors.accentm2};
+      svg {
+        margin-right: 0;
+      }
     }
   }
 
