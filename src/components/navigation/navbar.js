@@ -1,18 +1,65 @@
-import React from "react"
-import { Fragment } from "react"
+import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
+import _ from "lodash"
 
 import {
   NavWrapper,
   LogoWrapper,
   LinkWrapper,
   NavbarWrapper,
+  NavUpperBarWrapper,
 } from "./navbarStyles"
+
 import Logo from "../logo/logo"
+import Phone from "../../assets/icons/phone.svg"
+import Enveloppe from "../../assets/icons/enveloppe.svg"
+import Instagram from "../../assets/icons/instagram.svg"
+import LinkedIn from "../../assets/icons/linkedIn.svg"
 
 const Navbar = ({ show = false, hamburgerClickHandler }) => {
+  const [isSticky, setSticky] = useState(false)
+
+  const handleScroll = () => {
+    window.scrollY >= 36 ? setSticky(true) : setSticky(false)
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", _.throttle(handleScroll, 100))
+    return () => {
+      window.removeEventListener("scroll", () => handleScroll)
+    }
+  }, [handleScroll])
+
   return (
-    <Fragment>
+    <>
+      <NavUpperBarWrapper>
+        <div className="upperbar__item">
+          <Phone />
+          <span>+32 (0)51 20 15 17</span>
+        </div>
+        <div className="upperbar__item dark">
+          <Enveloppe />
+          <span>rouverpa@telenet.be</span>
+        </div>
+        <a
+          className="upperbar__item darker"
+          aria-label="Instagram Rouverpa"
+          href="https://www.facebook.com/ChiroItterbeek"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Instagram />
+        </a>
+        <a
+          className="upperbar__item darkest"
+          aria-label="LinkedIn Rouverpa"
+          href="https://www.facebook.com/ChiroItterbeek"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <LinkedIn />
+        </a>
+      </NavUpperBarWrapper>
       <NavbarWrapper>
         <LogoWrapper mobile>
           <Link to="/">
@@ -34,7 +81,7 @@ const Navbar = ({ show = false, hamburgerClickHandler }) => {
           </span>
         </button>
       </NavbarWrapper>
-      <NavWrapper show={show}>
+      <NavWrapper isSticky={isSticky} show={show}>
         <LogoWrapper>
           <Link to="/">
             <Logo />
@@ -47,7 +94,7 @@ const Navbar = ({ show = false, hamburgerClickHandler }) => {
           <Link to="/gamma/" partiallyActive={true} activeClassName="active">
             Ons Gamma
           </Link>
-          <Link to="/#overons/" partiallyActive={true} activeClassName="active">
+          <Link to="/#overons" partiallyActive={true} activeClassName="active">
             Over Ons
           </Link>
           <Link
@@ -60,7 +107,7 @@ const Navbar = ({ show = false, hamburgerClickHandler }) => {
           </Link>
         </LinkWrapper>
       </NavWrapper>
-    </Fragment>
+    </>
   )
 }
 

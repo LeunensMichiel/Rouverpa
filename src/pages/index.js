@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 
 const IndexPage = () => (
   <Layout>
-    <span>Rouverpa</span>
+    <h1 style={{ marginTop: "900px" }}>Rouverpa</h1>
   </Layout>
 )
 

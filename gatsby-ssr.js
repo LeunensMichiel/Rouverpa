@@ -8,6 +8,7 @@ const GlobalStyles = css`
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
   }
   html {
     height: 100%;
@@ -46,10 +47,10 @@ const GlobalStyles = css`
     transition: color 0.4s ease;
     text-decoration: none;
     &.active {
-      color: ${rouverpaTheme.colors.accentp2};
+      color: ${rouverpaTheme.colors.gray};
     }
     &:hover {
-      color: ${rouverpaTheme.colors.accent};
+      color: ${rouverpaTheme.colors.accentp2};
       transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
     }
   }

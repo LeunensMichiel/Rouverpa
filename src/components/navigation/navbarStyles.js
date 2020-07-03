@@ -1,7 +1,7 @@
 import styled from "@emotion/styled"
 
 export const NavWrapper = styled.header`
-  position: fixed;
+  position: ${p => (p.isSticky ? "fixed" : "static")};
   width: 100%;
   height: 100px;
   background-color: ${p => p.theme.colors.white98};
@@ -24,8 +24,8 @@ export const NavWrapper = styled.header`
     width: 100%;
     height: auto;
     overflow-y: auto;
-    transform: ${props => (props.show ? "translateX(0)" : "translateX(-100%)")};
-    transition: transform 0.4s cubic-bezier(0.87, 0, 0.13, 1);
+    transform: ${props => (props.show ? "translateX(0)" : "translateX(100%)")};
+    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
   }
 `
 
@@ -36,6 +36,7 @@ export const LogoWrapper = styled.div`
 
   @media ${p => p.theme.mq.mobileM} {
     display: ${p => (p.mobile ? "flex" : "none")};
+    padding-left: ${p => p.theme.space[2]};
   }
 `
 
@@ -55,6 +56,10 @@ export const LinkWrapper = styled.nav`
       border-radius: ${p => p.theme.borderRadius};
       color: ${p => p.theme.colors.white98};
       background-color: ${p => p.theme.colors.accentp2};
+      transition: background 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+      &:hover {
+        background: ${p => p.theme.colors.accentm2};
+      }
     }
   }
   @media ${p => p.theme.mq.mobileM} {
@@ -63,6 +68,7 @@ export const LinkWrapper = styled.nav`
     flex: auto;
     a {
       padding: ${p => p.theme.space[2]} 0;
+      margin: 0;
       font-size: ${p => p.theme.fontSizes[5]} !important;
       &:not(:nth-of-type(4)) {
         margin-bottom: ${p => p.theme.space[2]};
@@ -211,5 +217,42 @@ export const NavbarWrapper = styled.nav`
 
   @media ${p => p.theme.mq.mobileM} {
     display: flex;
+  }
+`
+
+export const NavUpperBarWrapper = styled.aside`
+  width: 100%;
+  height: 36px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: ${p => p.theme.colors.accentp2};
+
+  .upperbar__item {
+    display: flex;
+    align-items: center;
+    background-color: ${p => p.theme.colors.accentp1};
+    padding: 0 ${p => p.theme.space[1]};
+
+    &.dark {
+      background-color: ${p => p.theme.colors.accent};
+    }
+    &.darker {
+      background-color: ${p => p.theme.colors.accentm1};
+    }
+    &.darkest {
+      background-color: ${p => p.theme.colors.accentm2};
+    }
+  }
+
+  svg {
+    height: 16px;
+    width: auto;
+    margin-right: ${p => p.theme.space[0]};
+    fill: ${p => p.theme.colors.white94};
+  }
+
+  span {
+    font-size: ${p => p.theme.fontSizes[0]};
+    color: ${p => p.theme.colors.white94};
   }
 `
