@@ -15,7 +15,7 @@ const rouverpaTheme = {
     black20: "#262525",
   },
   shadows: {
-    button: "0px 4px 4px rgba(0, 0, 0, 0.05)",
+    button: "0px 4px 4px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.05)",
     container:
       "0px 4px 10px rgba(0, 0, 0, 0.1), 0px 2px 25px rgba(0, 0, 0, 0.1)",
   },
