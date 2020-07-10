@@ -9,7 +9,6 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Rouverpa homepagina" />
     <Video />
-    {/* <h1 style={{ marginTop: "900px" }}>Test</h1> */}
   </Layout>
 )
 

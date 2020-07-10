@@ -16,9 +16,9 @@ export const Video = () => {
       <video playsInline autoPlay muted poster={Poster} loop id="bgvid">
         <source src={MP4} type="video/mp4" />
       </video>
-      <div class="scroll-downs">
-        <div class="mouse">
-          <div class="scroller"></div>
+      <div className="scroll-downs">
+        <div className="mouse">
+          <div className="scroller"></div>
         </div>
         <span>Ons Gamma</span>
       </div>

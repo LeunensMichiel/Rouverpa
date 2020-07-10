@@ -1,7 +1,7 @@
 import styled from "@emotion/styled"
 
 export const NavWrapper = styled.header`
-  position: ${p => (p.isSticky ? "fixed" : "absolute")};
+  position: fixed;
   margin-top: ${p => (p.isSticky ? "0" : "36px")};
   width: 100%;
   height: 100px;
@@ -227,6 +227,7 @@ export const NavUpperBarWrapper = styled.aside`
   display: flex;
   justify-content: flex-end;
   background-color: ${p => p.theme.colors.accentp2};
+  position: fixed;
 
   .upperbar__item {
     display: flex;

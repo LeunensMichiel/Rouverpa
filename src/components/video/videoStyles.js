@@ -14,8 +14,7 @@ const Scroll = keyframes`
 export const VideoWrapper = styled.div`
   grid-column: 1 / span 14;
   width: 100%;
-  height: 66%;
-  min-height: 700px;
+  height: 700px;
   position: relative;
   display: flex;
   justify-content: center;
