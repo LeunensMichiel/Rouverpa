@@ -28,7 +28,7 @@ const Navbar = ({ show = false, hamburgerClickHandler }) => {
     return () => {
       window.removeEventListener("scroll", () => handleScroll)
     }
-  }, [handleScroll])
+  }, [isSticky])
 
   return (
     <>
