@@ -1,4 +1,5 @@
 import styled from "@emotion/styled"
+import Wrapper from "../../assets/backgrounds/aboutWrapper.svg"
 
 export const AboutWrapper = styled.section`
   grid-column: 1 / span 14;
@@ -8,13 +9,14 @@ export const AboutWrapper = styled.section`
       1fr
     );
   background-color: ${p => p.theme.colors.white94};
-  padding: ${p => p.theme.space[9]} 0;
 `
 
 export const AboutText = styled.div`
   grid-column: 8 / span 6;
   display: flex;
   flex-direction: column;
+  padding: ${p => p.theme.space[9]} 0;
+
   h1 {
     margin-bottom: ${p => p.theme.space[6]};
   }
@@ -69,4 +71,10 @@ export const ProfileCard = styled.div`
       }
     }
   }
+`
+
+export const Decoration = styled.div`
+  grid-column: 2 / span 6;
+  background: no-repeat center url(${Wrapper});
+  background-size: cover;
 `

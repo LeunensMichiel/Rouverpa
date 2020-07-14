@@ -1,5 +1,5 @@
 import React from "react"
-import { AboutWrapper, AboutText, ProfileCard } from "./aboutStyles"
+import { AboutWrapper, AboutText, ProfileCard, Decoration } from "./aboutStyles"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
@@ -14,7 +14,7 @@ const About = () => {
           }
         }
       }
-      zaakvoerdster: file(relativePath: { eq: "zaakvoerdster.jpg" }) {
+      zaakvoerster: file(relativePath: { eq: "zaakvoerdster.jpg" }) {
         childImageSharp {
           fixed(width: 115, quality: 90) {
             ...GatsbyImageSharpFixed_withWebp
@@ -25,6 +25,7 @@ const About = () => {
   `)
   return (
     <AboutWrapper>
+      <Decoration />
       <AboutText>
         <h1>Een beetje uitleg over ons,</h1>
         <p className="intro">
@@ -58,13 +59,13 @@ const About = () => {
         <ProfileCard>
           <Img
             className="card__profile__picture"
-            fixed={data.zaakvoerdster.childImageSharp.fixed}
-            title="Zaakvoerdster Caroline Desmet"
-            alt="Foto van zaakvoerdster Caroline Desmet"
+            fixed={data.zaakvoerster.childImageSharp.fixed}
+            title="Zaakvoerster Caroline Desmet"
+            alt="Foto van zaakvoerster Caroline Desmet"
           />
           <div className="card__profile__body">
             <h3>Caroline Desmet</h3>
-            <small>Zaakvoerder</small>
+            <small>Zaakvoerster</small>
             <small>Verantwoordelijk voor bedrukte linten en etiketten</small>
           </div>
         </ProfileCard>
