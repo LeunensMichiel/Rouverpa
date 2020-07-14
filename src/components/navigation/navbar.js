@@ -14,7 +14,7 @@ import Logo from "../logo/logo"
 import Phone from "../../assets/icons/phone.svg"
 import Enveloppe from "../../assets/icons/enveloppe.svg"
 import Instagram from "../../assets/icons/instagram.svg"
-import LinkedIn from "../../assets/icons/linkedIn.svg"
+import LinkedIn from "../../assets/icons/linkedin.svg"
 
 const Navbar = ({ show = false, hamburgerClickHandler }) => {
   const [isSticky, setSticky] = useState(false)

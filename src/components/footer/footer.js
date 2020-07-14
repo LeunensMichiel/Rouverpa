@@ -5,7 +5,7 @@ import Logo from "../logo/logo"
 import { FooterWrapper, LeftFooter, RightFooter } from "./footerStyles"
 
 import Instagram from "../../assets/icons/instagram.svg"
-import LinkedIn from "../../assets/icons/linkedIn.svg"
+import LinkedIn from "../../assets/icons/linkedin.svg"
 const Footer = () => {
   return (
     <FooterWrapper>
