@@ -4,7 +4,9 @@ import { css } from "@emotion/core"
 
 import Navbar from "./navigation/navbar"
 import Footer from "./footer/footer"
-
+if (typeof window !== "undefined") {
+  require("smooth-scroll")('a[href*="#"]')
+}
 const mainCss = css`
   width: 100%;
   min-height: 90%;

@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import { GammaIndexWrapper } from "./gammaStyles"
 import cover1 from "../../assets/backgrounds/cover1.png"
@@ -8,7 +9,7 @@ import Button from "../button/button"
 
 const GammaIndex = () => {
   return (
-    <GammaIndexWrapper>
+    <GammaIndexWrapper id="gamma">
       <h1>Wij produceren,</h1>
       <div className="gamma__list">
         <div className="gamma__item">
@@ -27,12 +28,12 @@ const GammaIndex = () => {
       <div className="buttonWrapper">
         <Button text="Bekijk ons volledig assortiment" href="/gamma/" />
       </div>
-      <div className="scroll-downs">
+      <Link to="/#overons" className="scroll-downs">
         <div className="mouse">
           <div className="scroller"></div>
         </div>
         <span>Over Ons</span>
-      </div>
+      </Link>
     </GammaIndexWrapper>
   )
 }

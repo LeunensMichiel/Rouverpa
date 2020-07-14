@@ -24,7 +24,7 @@ const About = () => {
     }
   `)
   return (
-    <AboutWrapper>
+    <AboutWrapper id="overons">
       <Decoration />
       <AboutText>
         <h1>Een beetje uitleg over ons,</h1>

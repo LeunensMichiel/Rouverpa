@@ -1,5 +1,6 @@
 import React from "react"
 import { VideoWrapper } from "./videoStyles"
+import { Link } from "gatsby"
 
 import MP4 from "../../assets/heroVid.mp4"
 import Poster from "../../assets/poster.jpg"
@@ -16,12 +17,12 @@ export const Video = () => {
       <video playsInline autoPlay muted poster={Poster} loop id="bgvid">
         <source src={MP4} type="video/mp4" />
       </video>
-      <div className="scroll-downs">
+      <Link to="/#gamma" className="scroll-downs">
         <div className="mouse">
           <div className="scroller"></div>
         </div>
         <span>Ons Gamma</span>
-      </div>
+      </Link>
       <div className="hero__divider" />
     </VideoWrapper>
   )
