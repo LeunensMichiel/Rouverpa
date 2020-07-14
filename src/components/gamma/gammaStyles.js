@@ -69,10 +69,16 @@ export const GammaIndexWrapper = styled.section`
       background: ${p => p.theme.colors.white94};
       transition: background 0.6s cubic-bezier(0.22, 1, 0.36, 1);
     }
+    &:nth-of-type(1) {
+      img {
+        width: 90%;
+      }
+    }
 
     &:nth-of-type(2) {
       background: ${p => p.theme.colors.accentp2} no-repeat bottom url(${Polar});
       background-size: 100%;
+
       &:hover,
       &:focus {
         background-size: 105%;
