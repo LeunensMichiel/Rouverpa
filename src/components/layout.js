@@ -16,7 +16,7 @@ const mainCss = css`
       1fr
     );
   flex: 1 1 auto;
-  padding-top: 100px;
+  padding-top: 136px;
 
   @media (max-width: 767px) {
     padding-top: 72px;

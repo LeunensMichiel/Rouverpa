@@ -26,8 +26,8 @@ export const FoilWrapper = styled.figure`
   grid-column: 10 / span 5;
   margin-left: auto;
   background: no-repeat url(${Foil});
-  background-position: center;
-  background-size: contain;
-  width: 85%;
+  background-position: 2rem center;
+  background-size: auto;
+  width: 90%;
   max-width: 800px;
 `
