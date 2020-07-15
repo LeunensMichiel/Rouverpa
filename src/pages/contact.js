@@ -5,11 +5,11 @@ import Layout from "../components/layout"
 import Map from "../components/contact/map"
 import Form from "../components/contact/form"
 
-const Contact = () => {
+const Contact = ({ location }) => {
   return (
     <Layout>
       <Info />
-      <Form />
+      <Form location={location} />
       <Map />
     </Layout>
   )

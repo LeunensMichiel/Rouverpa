@@ -1,7 +1,7 @@
 import React from "react"
 import { FormWrapper, StyledInput, RouverpaForm } from "./contactStyles"
 
-const Form = () => {
+const Form = ({ location }) => {
   return (
     <FormWrapper>
       <RouverpaForm
@@ -23,7 +23,14 @@ const Form = () => {
           </label>
           <div className="radio__buttons">
             <div>
-              <input type="radio" id="offerte" name="type" value="offerte" />
+              <input
+                type="radio"
+                id="offerte"
+                name="type"
+                value="offerte"
+                required
+                checked={location && location.search.includes("type=offerte")}
+              />
               <label htmlFor="offerte">Offerte aanvragen</label>
             </div>
             <div>

@@ -152,7 +152,7 @@ export const FormWrapper = styled.section`
 export const RouverpaForm = styled.form`
   display: ${p => (p.hidden ? "none" : "grid")};
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 16px 16px;
+  grid-gap: 2px 16px;
 
   /* @media ${p => p.theme.mq.tablet} {
     margin: ${p => p.theme.space[5]}px 0;
@@ -205,7 +205,9 @@ export const StyledInput = styled.div`
       align-items: center;
       margin-right: ${p => p.theme.space[2]};
     }
-
+    input {
+      height: unset;
+    }
     label {
       margin-bottom: 0;
       margin-left: ${p => p.theme.space[0]};

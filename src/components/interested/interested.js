@@ -14,7 +14,7 @@ const Interested = () => {
         </p>
         <p>- Het Rouverpa team</p>
         <div className="buttons__container">
-          <Button text="Offerte aanvragen" href='/contact?type="offerte"' />
+          <Button text="Offerte aanvragen" href="/contact?type=offerte" />
           <Button text="Contacteer ons" accent href="/contact/" />
         </div>
       </InterestedWrapper>
