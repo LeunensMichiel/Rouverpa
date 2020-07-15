@@ -58,6 +58,9 @@ export const LinkWrapper = styled.nav`
       color: ${p => p.theme.colors.white98};
       background-color: ${p => p.theme.colors.accentp2};
       transition: background 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+      &.active {
+        background: ${p => p.theme.colors.accentm3};
+      }
       &:hover {
         background: ${p => p.theme.colors.accentm2};
       }
