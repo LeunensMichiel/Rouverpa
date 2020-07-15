@@ -14,15 +14,15 @@ const GammaIndex = () => {
       <div className="gamma__list">
         <div className="gamma__item">
           <h3>Etiketten & Drukwerk</h3>
-          <img src={cover1} />
+          <img alt="Foto van etiketten en drukwerk" src={cover1} />
         </div>
         <div className="gamma__item">
           <h3>Folie</h3>
-          <img src={cover2} />
+          <img alt="Foto van folie" src={cover2} />
         </div>
         <div className="gamma__item">
           <h3>Geschenkverpakking</h3>
-          <img src={cover3} />
+          <img alt="Foto van geschenkverpakkingen" src={cover3} />
         </div>
       </div>
       <div className="buttonWrapper">
