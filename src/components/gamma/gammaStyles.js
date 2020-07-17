@@ -147,3 +147,42 @@ export const GammaIndexWrapper = styled.section`
     }
   }
 `
+
+export const CategoryWrapper = styled.section`
+  grid-column: 4 / span 9;
+  display: flex;
+  flex-flow: row wrap;
+
+  .category__card {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: ${p => p.theme.colors.accentm3};
+      width: 100%;
+      height: 30px;
+      z-index: 3;
+      opacity: 0.5;
+    }
+    h3 {
+      position: absolute;
+      bottom: 0;
+      z-index: 4;
+      font-size: ${p => p.theme.fontSizes[2]};
+      color: ${p => p.theme.colors.white94};
+      text-transform: capitalize;
+    }
+    .category__card__image {
+      z-index: 1;
+      height: 100%;
+      width: 100%;
+    }
+  }
+`

@@ -1,10 +1,11 @@
 import React from "react"
 
 import Layout from "../components/layout"
+import Categories from "../components/gamma/categories"
 const Gamma = () => {
   return (
     <Layout>
-      <h1>Gamma</h1>
+      <Categories />
     </Layout>
   )
 }
