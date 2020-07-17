@@ -221,7 +221,6 @@ export const Breadcrumb = styled.nav`
   border-bottom: 1px solid ${p => p.theme.colors.white94};
   a {
     color: ${p => p.theme.colors.gray};
-
     &.crumb__active {
       font-weight: 700;
     }
@@ -239,6 +238,14 @@ export const Breadcrumb = styled.nav`
       background: ${p => p.theme.colors.accentm2};
     }
   }
+  .crumbs__list {
+    display: flex;
+    align-items: center;
+  }
+  svg {
+    height: 14px;
+    margin: 0 ${p => p.theme.space[0]};
+  }
 `
 
 export const SideProductNav = styled.nav`
@@ -255,10 +262,23 @@ export const SideProductNav = styled.nav`
     flex-direction: column;
   }
 
+  .sidenav__sub {
+    display: flex;
+    flex-direction: column;
+    margin-top: ${p => p.theme.space[1]};
+    margin-left: ${p => p.theme.space[2]};
+    font-weight: 400;
+  }
+
   a {
     font-size: ${p => p.theme.fontSizes[1]};
     margin-bottom: ${p => p.theme.space[1]};
     text-transform: capitalize;
     text-decoration: underline;
+
+    &.sidenav__active {
+      color: ${p => p.theme.colors.accentp2};
+      font-weight: 700;
+    }
   }
 `

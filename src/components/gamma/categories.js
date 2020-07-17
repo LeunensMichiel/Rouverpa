@@ -44,10 +44,7 @@ const Categories = () => {
         <h1>Categorieën</h1>
         <div className="sidenav">
           {data.categories.edges.map(item => (
-            <Link
-              to={`/gamma${item.node.fields.slug}`}
-              className="category__card"
-            >
+            <Link to={`/gamma${item.node.fields.slug}`}>
               {item.node.frontmatter.name}
             </Link>
           ))}
