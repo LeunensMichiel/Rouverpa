@@ -1,7 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import { CategoryWrapper } from "./gammaStyles"
+import { CategoryWrapper, Breadcrumb, SideProductNav } from "./gammaStyles"
 
 const Categories = () => {
   const data = useStaticQuery(graphql`
@@ -31,18 +31,44 @@ const Categories = () => {
     }
   `)
   return (
-    <CategoryWrapper>
-      {data.categories.edges.map(item => (
-        <Link to={`/gamma${item.node.fields.slug}`} className="category__card">
-          <h3>{item.node.frontmatter.name}</h3>
-          <Img
-            fluid={item.node.frontmatter.image[0].childImageSharp.fluid}
-            alt={item.node.frontmatter.name}
-            className="category__card__image"
-          />
+    <>
+      <Breadcrumb>
+        <Link to="/gamma/" activeClassName="crumb__active">
+          Ons gamma
         </Link>
-      ))}
-    </CategoryWrapper>
+        <Link to="/contact?type=offerte" className="link__styled">
+          Offerte aanvragen
+        </Link>
+      </Breadcrumb>
+      <SideProductNav>
+        <h1>Categorieën</h1>
+        <div className="sidenav">
+          {data.categories.edges.map(item => (
+            <Link
+              to={`/gamma${item.node.fields.slug}`}
+              className="category__card"
+            >
+              {item.node.frontmatter.name}
+            </Link>
+          ))}
+        </div>
+      </SideProductNav>
+      <CategoryWrapper>
+        {data.categories.edges.map(item => (
+          <Link
+            to={`/gamma${item.node.fields.slug}`}
+            className="category__card"
+          >
+            <h3>{item.node.frontmatter.name}</h3>
+            <Img
+              fluid={item.node.frontmatter.image[0].childImageSharp.fluid}
+              alt={item.node.frontmatter.name}
+              className="category__card__image"
+            />
+          </Link>
+        ))}
+      </CategoryWrapper>
+    </>
   )
 }
 
