@@ -37,13 +37,17 @@ const category = ({ data, pageContext }) => {
             <Link
               to={`/gamma${item.node.fields.slug}`}
               activeClassName="sidenav__active"
+              key={item.node.fields.slug}
             >
               {item.node.frontmatter.name}
               {item.node.frontmatter.name.toLowerCase() ===
                 pageContext.category.toLowerCase() && (
                 <div className="sidenav__sub">
                   {data.products.edges.map(product => (
-                    <Link to={`/gamma${product.node.fields.slug}`}>
+                    <Link
+                      to={`/gamma${product.node.fields.slug}`}
+                      key={product.node.fields.slug}
+                    >
                       {product.node.frontmatter.title}
                     </Link>
                   ))}
@@ -58,6 +62,7 @@ const category = ({ data, pageContext }) => {
           <Link
             to={`/gamma${item.node.fields.slug}`}
             className="category__card"
+            key={item.node.fields.slug}
           >
             <h3>{item.node.frontmatter.title}</h3>
             <Img

@@ -284,3 +284,50 @@ export const SideProductNav = styled.nav`
     }
   }
 `
+
+export const ProductDetailScreen = styled.section`
+  grid-column: 5 / span 9;
+  display: flex;
+  margin-bottom: ${p => p.theme.space[8]};
+
+  .product__image {
+    z-index: 1;
+    height: 250px;
+    width: 250px;
+    flex-shrink: 0;
+    margin-right: ${p => p.theme.space[5]};
+  }
+
+  h3 {
+    font-size: ${p => p.theme.fontSizes[0]};
+    color: ${p => p.theme.colors.gray};
+    margin-bottom: ${p => p.theme.space[1]};
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+
+  h1 {
+    font-size: ${p => p.theme.fontSizes[3]};
+    color: ${p => p.theme.colors.accentm3};
+    margin-bottom: ${p => p.theme.space[2]};
+  }
+
+  p {
+    color: ${p => p.theme.colors.black34};
+    margin-bottom: ${p => p.theme.space[6]};
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    background: ${p => p.theme.colors.white94};
+    padding: ${p => p.theme.space[2]};
+    line-height: ${p => p.theme.lineHeights.body};
+
+    &:nth-of-type(2n) {
+      background: ${p => p.theme.colors.white96};
+    }
+  }
+`

@@ -4,9 +4,9 @@ import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import {
-  CategoryWrapper,
   Breadcrumb,
   SideProductNav,
+  ProductDetailScreen,
 } from "../components/gamma/gammaStyles"
 import Chevron from "../assets/icons/chevron.svg"
 
@@ -14,7 +14,6 @@ const product = ({ data, pageContext }) => {
   const currentCategory = data.categories.edges.filter(
     cat => cat.node.frontmatter.name === data.product.frontmatter.category
   )
-  console.log(currentCategory)
   return (
     <Layout>
       <Breadcrumb>
@@ -47,6 +46,7 @@ const product = ({ data, pageContext }) => {
           {data.categories.edges.map(item => (
             <Link
               to={`/gamma${item.node.fields.slug}`}
+              key={item.node.fields.slug}
               activeClassName="sidenav__active"
             >
               {item.node.frontmatter.name}
@@ -57,6 +57,7 @@ const product = ({ data, pageContext }) => {
                     <Link
                       to={`/gamma${product.node.fields.slug}`}
                       activeClassName="sidenav__active"
+                      key={product.node.fields.slug}
                     >
                       {product.node.frontmatter.title}
                     </Link>
@@ -67,21 +68,24 @@ const product = ({ data, pageContext }) => {
           ))}
         </div>
       </SideProductNav>
-      {/* <CategoryWrapper>
-        {data.products.edges.map(item => (
-          <Link
-            to={`/gamma${item.node.fields.slug}`}
-            className="category__card"
-          >
-            <h3>{item.node.frontmatter.title}</h3>
-            <Img
-              fluid={item.node.frontmatter.image[0].childImageSharp.fluid}
-              alt={item.node.frontmatter.title}
-              className="category__card__image"
-            />
-          </Link>
-        ))}
-      </CategoryWrapper> */}
+      <ProductDetailScreen>
+        <Img
+          fluid={data.product.frontmatter.image[0].childImageSharp.fluid}
+          alt={data.product.frontmatter.title}
+          className="product__image"
+        />
+        <div className="details">
+          <h3>{data.product.frontmatter.category}</h3>
+          <h1>{data.product.frontmatter.title}</h1>
+          <p>{data.product.frontmatter.description}</p>
+          <h3>Details</h3>
+          <ul>
+            {data.product.frontmatter.details.map(detail => (
+              <li key={detail}>{detail}</li>
+            ))}
+          </ul>
+        </div>
+      </ProductDetailScreen>
     </Layout>
   )
 }
@@ -106,8 +110,8 @@ export const singleProduct = graphql`
         title
         image {
           childImageSharp {
-            fixed {
-              src
+            fluid(maxWidth: 250, quality: 76) {
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
