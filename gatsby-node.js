@@ -31,6 +31,20 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           }
         }
       }
+      products: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/producten/" } }
+      ) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            frontmatter {
+              category
+            }
+          }
+        }
+      }
     }
   `)
 
@@ -46,6 +60,17 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       context: {
         category: node.frontmatter.name,
         slug: node.fields.slug,
+      },
+    })
+  })
+
+  result.data.products.edges.forEach(({ node }) => {
+    createPage({
+      path: `/gamma${node.fields.slug}`,
+      component: path.resolve(`./src/templates/product.js`),
+      context: {
+        slug: node.fields.slug,
+        category: node.frontmatter.category,
       },
     })
   })

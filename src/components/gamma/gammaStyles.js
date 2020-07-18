@@ -221,6 +221,7 @@ export const Breadcrumb = styled.nav`
   border-bottom: 1px solid ${p => p.theme.colors.white94};
   a {
     color: ${p => p.theme.colors.gray};
+    text-transform: capitalize;
     &.crumb__active {
       font-weight: 700;
     }
@@ -255,6 +256,7 @@ export const SideProductNav = styled.nav`
     color: ${p => p.theme.colors.accentm3};
     font-size: ${p => p.theme.fontSizes[2]};
     margin-bottom: ${p => p.theme.space[3]};
+    text-transform: capitalize;
   }
 
   .sidenav {

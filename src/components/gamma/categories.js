@@ -41,7 +41,7 @@ const Categories = () => {
         </Link>
       </Breadcrumb>
       <SideProductNav>
-        <h1>Categorieën</h1>
+        <h1>Gamma</h1>
         <div className="sidenav">
           {data.categories.edges.map(item => (
             <Link to={`/gamma${item.node.fields.slug}`}>
