@@ -27,6 +27,7 @@ export const GammaIndexWrapper = styled.section`
 
   .gamma__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
     width: 100%;
@@ -144,6 +145,20 @@ export const GammaIndexWrapper = styled.section`
       font-size: ${p => p.theme.fontSizes[1]};
       color: ${p => p.theme.colors.black34};
       margin-top: ${p => p.theme.space[2]};
+    }
+  }
+
+  @media ${p => p.theme.mq.mobileM} {
+    padding: ${p => p.theme.space[7]} 0;
+
+    .gamma__item {
+      margin-bottom: ${p => p.theme.space[5]};
+    }
+
+    .buttonWrapper {
+      margin-top: ${p => p.theme.space[4]};
+      margin-bottom: ${p => p.theme.space[9]};
+      align-self: center;
     }
   }
 `

@@ -29,7 +29,7 @@ const Form = ({ location }) => {
                 name="type"
                 value="offerte"
                 required
-                checked={location && location.search.includes("type=offerte")}
+                checked={location || location.search.includes("type=offerte")}
               />
               <label htmlFor="offerte">Offerte aanvragen</label>
             </div>

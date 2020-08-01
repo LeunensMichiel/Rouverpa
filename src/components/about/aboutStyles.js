@@ -9,6 +9,8 @@ export const AboutWrapper = styled.section`
       1fr
     );
   background-color: ${p => p.theme.colors.white94};
+  position: relative;
+  overflow: hidden;
 `
 
 export const AboutText = styled.div`
@@ -16,6 +18,7 @@ export const AboutText = styled.div`
   display: flex;
   flex-direction: column;
   padding: ${p => p.theme.space[9]} 0;
+  z-index: 4;
 
   h1 {
     margin-bottom: ${p => p.theme.space[6]};
@@ -34,6 +37,10 @@ export const AboutText = styled.div`
       font-weight: 700;
     }
   }
+  @media ${p => p.theme.mq.mobileM} {
+    grid-column: 2 / span 12;
+    padding: ${p => p.theme.space[8]} 0;
+  }
 `
 
 export const ProfileCard = styled.div`
@@ -44,7 +51,8 @@ export const ProfileCard = styled.div`
   box-shadow: ${p => p.theme.shadows.button};
   border-radius: ${p => p.theme.borderRadius};
   overflow: hidden;
-  width: 380px;
+  width: 100%;
+  max-width: 380px;
   margin-bottom: ${p => (p.margin ? p.theme.space[5] : 0)};
 
   .card__profile__picture {
@@ -71,10 +79,33 @@ export const ProfileCard = styled.div`
       }
     }
   }
+
+  @media ${p => p.theme.mq.mobileM} {
+    .card__profile__body {
+      h3 {
+        font-size: ${p => p.theme.fontSizes[1]};
+      }
+      small {
+        font-size: ${p => p.theme.fontSizes[0]};
+      }
+    }
+  }
 `
 
 export const Decoration = styled.div`
   grid-column: 2 / span 6;
   background: no-repeat center url(${Wrapper});
   background-size: cover;
+
+  @media ${p => p.theme.mq.mobileM} {
+    grid-column: 1 / span 14;
+    position: absolute;
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+    transform: rotate(90deg);
+    opacity: 0.3;
+  }
 `

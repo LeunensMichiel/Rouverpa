@@ -125,4 +125,29 @@ export const VideoWrapper = styled.div`
       margin-top: ${p => p.theme.space[2]};
     }
   }
+
+  @media ${p => p.theme.mq.mobileM} {
+    height: 85vh;
+    max-height: 750px;
+    .hero__text {
+      background-size: 95% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      h1 {
+        font-size: ${p => p.theme.fontSizes[3]};
+        padding: ${p => p.theme.space[4]};
+      }
+      .hero__text__upper {
+        h2 {
+          font-size: 8px;
+          margin-top: -4px;
+        }
+      }
+    }
+    .scroll-downs {
+      span {
+        font-size: ${p => p.theme.fontSizes[0]};
+      }
+    }
+  }
 `

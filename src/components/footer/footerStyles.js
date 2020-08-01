@@ -67,6 +67,11 @@ export const LeftFooter = styled.div`
       font-weight: 700;
     }
   }
+
+  @media ${p => p.theme.mq.mobileM} {
+    grid-column: 2 / span 12;
+    margin-bottom: ${p => p.theme.space[5]};
+  }
 `
 
 export const RightFooter = styled.div`
@@ -102,6 +107,19 @@ export const RightFooter = styled.div`
       color: ${p => p.theme.colors.gray};
       &:hover {
         color: ${p => p.theme.colors.accent};
+      }
+    }
+  }
+
+  @media ${p => p.theme.mq.mobileM} {
+    grid-column: 2 / span 12;
+    flex-direction: column;
+
+    .right__block {
+      margin-bottom: ${p => p.theme.space[2]};
+
+      h6 {
+        margin-bottom: ${p => p.theme.space[1]};
       }
     }
   }

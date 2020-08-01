@@ -20,6 +20,21 @@ export const InterestedWrapper = styled.section`
       margin-right: ${p => p.theme.space[5]};
     }
   }
+
+  @media ${p => p.theme.mq.mobileM} {
+    grid-column: 2 / span 12;
+    padding: ${p => p.theme.space[8]} 0;
+
+    .buttons__container {
+      flex-wrap: wrap;
+      > a {
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: ${p => p.theme.space[5]};
+      }
+    }
+  }
 `
 
 export const FoilWrapper = styled.figure`
@@ -30,4 +45,8 @@ export const FoilWrapper = styled.figure`
   background-size: auto;
   width: 90%;
   max-width: 800px;
+
+  @media ${p => p.theme.mq.mobileM} {
+    display: none;
+  }
 `
