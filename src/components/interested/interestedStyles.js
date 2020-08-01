@@ -20,6 +20,9 @@ export const InterestedWrapper = styled.section`
       margin-right: ${p => p.theme.space[5]};
     }
   }
+  @media ${p => p.theme.mq.tablet} {
+    grid-column: 2 / span 8;
+  }
 
   @media ${p => p.theme.mq.mobileM} {
     grid-column: 2 / span 12;
@@ -46,6 +49,12 @@ export const FoilWrapper = styled.figure`
   width: 90%;
   max-width: 800px;
 
+  @media ${p => p.theme.mq.tablet} {
+    margin-left: unset;
+    width: 100%;
+    background-position: left;
+    background-size: 250%;
+  }
   @media ${p => p.theme.mq.mobileM} {
     display: none;
   }

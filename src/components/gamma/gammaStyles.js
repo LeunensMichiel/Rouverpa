@@ -148,7 +148,7 @@ export const GammaIndexWrapper = styled.section`
     }
   }
 
-  @media ${p => p.theme.mq.mobileM} {
+  @media ${p => p.theme.mq.tablet} {
     padding: ${p => p.theme.space[7]} 0;
 
     .gamma__item {

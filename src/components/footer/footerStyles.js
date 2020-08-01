@@ -9,6 +9,10 @@ export const FooterWrapper = styled.footer`
   width: 100%;
   background-color: ${p => p.theme.colors.white94};
   padding: ${p => p.theme.space[8]} 0;
+
+  @media ${p => p.theme.mq.tablet} {
+    padding: ${p => p.theme.space[7]} 0;
+  }
 `
 
 export const LeftFooter = styled.div`
@@ -68,6 +72,10 @@ export const LeftFooter = styled.div`
     }
   }
 
+  @media ${p => p.theme.mq.tablet} {
+    grid-column: 2 / span 5;
+    margin-bottom: ${p => p.theme.space[5]};
+  }
   @media ${p => p.theme.mq.mobileM} {
     grid-column: 2 / span 12;
     margin-bottom: ${p => p.theme.space[5]};

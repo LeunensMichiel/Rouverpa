@@ -125,6 +125,19 @@ export const VideoWrapper = styled.div`
       margin-top: ${p => p.theme.space[2]};
     }
   }
+  @media ${p => p.theme.mq.tablet} {
+    .hero__text {
+      h1 {
+        font-size: ${p => p.theme.fontSizes[5]};
+      }
+      .hero__text__upper {
+        h2 {
+          font-size: ${p => p.theme.fontSizes[2]};
+          margin-top: -8px;
+        }
+      }
+    }
+  }
 
   @media ${p => p.theme.mq.mobileM} {
     height: 85vh;

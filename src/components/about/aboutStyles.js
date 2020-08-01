@@ -37,9 +37,12 @@ export const AboutText = styled.div`
       font-weight: 700;
     }
   }
+  @media ${p => p.theme.mq.tablet} {
+    padding: ${p => p.theme.space[8]} 0;
+    grid-column: 6 / span 8;
+  }
   @media ${p => p.theme.mq.mobileM} {
     grid-column: 2 / span 12;
-    padding: ${p => p.theme.space[8]} 0;
   }
 `
 
@@ -96,7 +99,18 @@ export const Decoration = styled.div`
   grid-column: 2 / span 6;
   background: no-repeat center url(${Wrapper});
   background-size: cover;
-
+  @media ${p => p.theme.mq.tablet} {
+    position: absolute;
+    grid-column: 1 / span 8;
+    background-size: 120%;
+    left: -25%;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0.5;
+  }
   @media ${p => p.theme.mq.mobileM} {
     grid-column: 1 / span 14;
     position: absolute;
