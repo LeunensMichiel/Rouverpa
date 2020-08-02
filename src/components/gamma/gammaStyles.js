@@ -223,6 +223,19 @@ export const CategoryWrapper = styled.section`
       }
     }
   }
+
+  @media ${p => p.theme.mq.mobileM} {
+    grid-column: 2 / span 12;
+    justify-content: space-between;
+    .category__card {
+      width: 49%;
+      margin: 0;
+      margin-bottom: ${p => p.theme.space[2]};
+      h3 {
+        font-size: ${p => p.theme.fontSizes[0]};
+      }
+    }
+  }
 `
 
 export const Breadcrumb = styled.nav`
@@ -262,6 +275,25 @@ export const Breadcrumb = styled.nav`
     height: 14px;
     margin: 0 ${p => p.theme.space[0]};
   }
+
+  @media ${p => p.theme.mq.mobileM} {
+    flex-wrap: wrap;
+    margin-bottom: ${p => p.theme.space[0]};
+
+    a {
+      font-size: ${p => p.theme.fontSizes[0]};
+      margin: 0;
+    }
+    .link__styled {
+      margin-top: ${p => p.theme.space[2]};
+      width: 100%;
+      text-align: center;
+    }
+    svg {
+      height: 10px;
+      margin: 0 2px;
+    }
+  }
 `
 
 export const SideProductNav = styled.nav`
@@ -297,6 +329,9 @@ export const SideProductNav = styled.nav`
       color: ${p => p.theme.colors.accentp2};
       font-weight: 700;
     }
+  }
+  @media ${p => p.theme.mq.mobileM} {
+    display: none;
   }
 `
 
@@ -343,6 +378,26 @@ export const ProductDetailScreen = styled.section`
 
     &:nth-of-type(2n) {
       background: ${p => p.theme.colors.white96};
+    }
+  }
+
+  @media ${p => p.theme.mq.mobileM} {
+    grid-column: 2 / span 12;
+    flex-direction: column;
+
+    .product__image {
+      margin-right: 0;
+      margin-bottom: ${p => p.theme.space[2]};
+      width: 100%;
+    }
+
+    h1 {
+      font-size: ${p => p.theme.fontSizes[2]};
+    }
+
+    p,
+    li {
+      font-size: ${p => p.theme.fontSizes[1]};
     }
   }
 `

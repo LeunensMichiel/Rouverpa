@@ -18,13 +18,14 @@ export const NavWrapper = styled.header`
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 72px;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     width: 100%;
     height: auto;
     overflow-y: auto;
+    margin-top: 0;
     transform: ${props => (props.show ? "translateX(0)" : "translateX(100%)")};
     transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
   }
@@ -265,5 +266,9 @@ export const NavUpperBarWrapper = styled.aside`
   span {
     font-size: ${p => p.theme.fontSizes[0]};
     color: ${p => p.theme.colors.white94};
+  }
+
+  @media ${p => p.theme.mq.mobileM} {
+    display: none;
   }
 `

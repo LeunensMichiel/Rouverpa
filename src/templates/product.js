@@ -10,7 +10,7 @@ import {
 } from "../components/gamma/gammaStyles"
 import Chevron from "../assets/icons/chevron.svg"
 
-const product = ({ data, pageContext }) => {
+const product = ({ data }) => {
   const currentCategory = data.categories.edges.filter(
     cat => cat.node.frontmatter.name === data.product.frontmatter.category
   )
