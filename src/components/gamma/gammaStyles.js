@@ -153,12 +153,28 @@ export const GammaIndexWrapper = styled.section`
 
     .gamma__item {
       margin-bottom: ${p => p.theme.space[5]};
+      width: 220px;
+      height: 220px;
+      h3 {
+        font-size: ${p => p.theme.fontSizes[2]};
+      }
     }
 
     .buttonWrapper {
       margin-top: ${p => p.theme.space[4]};
       margin-bottom: ${p => p.theme.space[9]};
       align-self: center;
+    }
+  }
+  @media ${p => p.theme.mq.mobileM} {
+    .gamma__item {
+      width: 100%;
+      height: 0;
+      padding-bottom: 77.5%;
+
+      h3 {
+        font-size: ${p => p.theme.fontSizes[3]};
+      }
     }
   }
 `
@@ -224,13 +240,20 @@ export const CategoryWrapper = styled.section`
     }
   }
 
-  @media ${p => p.theme.mq.mobileM} {
-    grid-column: 2 / span 12;
+  @media ${p => p.theme.mq.tablet} {
     justify-content: space-between;
     .category__card {
       width: 49%;
       margin: 0;
       margin-bottom: ${p => p.theme.space[2]};
+      h3 {
+        font-size: ${p => p.theme.fontSizes[1]};
+      }
+    }
+  }
+  @media ${p => p.theme.mq.mobileM} {
+    grid-column: 2 / span 12;
+    .category__card {
       h3 {
         font-size: ${p => p.theme.fontSizes[0]};
       }

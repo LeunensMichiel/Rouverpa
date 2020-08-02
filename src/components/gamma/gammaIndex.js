@@ -12,18 +12,21 @@ const GammaIndex = () => {
     <GammaIndexWrapper id="gamma">
       <h1>Wij produceren,</h1>
       <div className="gamma__list">
-        <div className="gamma__item">
+        <Link
+          className="gamma__item"
+          to="/gamma/categorieen/etiketten_drukwerk/"
+        >
           <h3>Etiketten & Drukwerk</h3>
           <img alt="Foto van etiketten en drukwerk" src={cover1} />
-        </div>
-        <div className="gamma__item">
+        </Link>
+        <Link className="gamma__item" to="/gamma/categorieen/folie/">
           <h3>Folie</h3>
           <img alt="Foto van folie" src={cover2} />
-        </div>
-        <div className="gamma__item">
+        </Link>
+        <Link className="gamma__item" to="/gamma/producten/geschenkpapier/">
           <h3>Geschenkverpakking</h3>
           <img alt="Foto van geschenkverpakkingen" src={cover3} />
-        </div>
+        </Link>
       </div>
       <div className="buttonWrapper">
         <Button text="Bekijk ons volledig assortiment" href="/gamma/" />

@@ -63,6 +63,14 @@ export const InfoWrapper = styled.section`
     border-radius: ${p => p.theme.borderRadius};
     margin-right: ${p => p.theme.space[2]};
   }
+
+  @media ${p => p.theme.mq.tablet} {
+    padding: ${p => p.theme.space[3]};
+  }
+
+  @media ${p => p.theme.mq.mobileM} {
+    grid-column: 2 / span 12;
+  }
 `
 
 export const MapWrapper = styled.aside`
@@ -70,7 +78,9 @@ export const MapWrapper = styled.aside`
   position: relative;
   height: 400px;
   margin-top: ${p => p.theme.space[7]};
-
+  > div {
+    width: 100% !important;
+  }
   div {
     box-shadow: inset 0px -50px 50px rgba(0, 0, 0, 0.06);
   }
@@ -84,19 +94,6 @@ export const MapWrapper = styled.aside`
     border-radius: ${p => p.theme.borderRadius};
     box-shadow: 2px 2px 0 ${p => p.theme.colors.accentm2};
   }
-  /* @media ${p => p.theme.mq.tablet} {
-    grid-column: 2 / span 6;
-    margin-left: unset;
-    border: 1px solid ${p => p.theme.colors.border};
-    border-right: none;
-  }
-  @media ${p => p.theme.mq.mobileM} {
-    grid-column: 2 / span 12;
-    border: none;
-    height: 200px;
-    margin-bottom: ${p => p.theme.space[6]}px;
-    padding: 0 ${p => p.theme.space[2]}px;
-  } */
 `
 
 export const FormWrapper = styled.section`
@@ -133,43 +130,25 @@ export const FormWrapper = styled.section`
       background-color: ${p => p.theme.colors.accentm2};
     }
   }
-  /* @media ${p => p.theme.mq.tablet} {
-    margin-top: ${p => p.theme.space[6]}px;
+  @media ${p => p.theme.mq.tablet} {
+    grid-column: 6 / span 8;
+    margin-left: ${p => p.theme.space[3]};
+    padding: ${p => p.theme.space[3]};
   }
   @media ${p => p.theme.mq.mobileM} {
-    h1 {
-      padding: ${p => p.theme.space[2]}px ${p => p.theme.space[3]}px;
-      font-size: ${p => p.theme.fontSizes[1]}px;
-    }
-    button {
-      grid-row: unset;
-      grid-column: 11 / span 2;
-      margin-bottom: ${p => p.theme.space[0]}px;
-    }
-  } */
+    grid-column: 2 / span 12;
+    margin-left: 0;
+  }
 `
 
 export const RouverpaForm = styled.form`
   display: ${p => (p.hidden ? "none" : "grid")};
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2px 16px;
-
-  /* @media ${p => p.theme.mq.tablet} {
-    margin: ${p => p.theme.space[5]}px 0;
-    grid-column-gap: 16px;
-  }
-
-  @media ${p => p.theme.mq.mobileM} {
-    grid-template-rows: unset;
-    grid-auto-rows: auto;
-    grid-column-gap: 0;
-    margin: ${p => p.theme.space[3]}px 0;
-    padding: 0 ${p => p.theme.space[3]}px;
-  } */
 `
 
 export const StyledInput = styled.div`
-  grid-column:${p => (p.long ? "1 / span 4" : "span 2")};
+  grid-column: ${p => (p.long ? "1 / span 4" : "span 2")};
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -214,24 +193,8 @@ export const StyledInput = styled.div`
       font-weight: 400;
     }
   }
-/* 
-  @media ${p => p.theme.mq.tablet} {
-    grid-column: ${p => (p.textarea ? "7 / span 5" : "2 / span 5")};
-  }
 
   @media ${p => p.theme.mq.mobileM} {
-    grid-column: 1 / span 12;
-    grid-row: unset;
-    label {
-      font-size: ${p => p.theme.fontSizes[1]}px;
-    }
-    input,
-    textarea {
-      font-size: 16px;
-      padding: ${p => p.theme.space[2]}px ${p => p.theme.space[2]}px;
-    }
-    textarea {
-      min-height: 200px;
-    }
-  } */
+    grid-column: span 4;
+  }
 `
