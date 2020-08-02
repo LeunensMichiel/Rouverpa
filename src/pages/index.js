@@ -10,7 +10,10 @@ import Interested from "../components/interested/interested"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Rouverpa homepagina" />
+    <SEO
+      title="Verpakkingen & etiketten"
+      description="Rouverpa is een leverancier dat al meer dan 30 jaar gespecialiseerd is in serviceverpakkingen en etiketten. Hun klanten bevinden zich in de bloemensector, chocoladesector, etc."
+    />
     <Video />
     <GammaIndex />
     <About />

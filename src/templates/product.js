@@ -9,6 +9,7 @@ import {
   ProductDetailScreen,
 } from "../components/gamma/gammaStyles"
 import Chevron from "../assets/icons/chevron.svg"
+import SEO from "../components/seo/seo"
 
 const product = ({ data }) => {
   const currentCategory = data.categories.edges.filter(
@@ -16,6 +17,10 @@ const product = ({ data }) => {
   )
   return (
     <Layout>
+      <SEO
+        title={data.product.frontmatter.title}
+        description={data.product.frontmatter.description}
+      />
       <Breadcrumb>
         <div className="crumbs__list">
           <Link to="/gamma/" activeClassName="crumb__active">

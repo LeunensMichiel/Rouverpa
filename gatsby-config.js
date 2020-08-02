@@ -1,18 +1,20 @@
 module.exports = {
   siteMetadata: {
     title: "Rouverpa",
-    description: `Rouverpa is een bedrijf dat al meer dan 30 jaar gespecialiseerd is in serviceverpakkingen en etiketten. Onze klanten bevinden zich in de bloemensector, chocoladesector, etc.`,
+    description: `Rouverpa is een leverancier dat al meer dan 30 jaar gespecialiseerd is in serviceverpakkingen en etiketten. Onze klanten bevinden zich in de bloemensector, chocoladesector, etc.`,
     author: `@leunesmedia`,
     siteUrl: `https://www.rouverpa.be`,
     keywords: [
       `rouverpa`,
       `verpakkingen`,
-      `sint-anna-pede`,
-      `dilbeek`,
-      `jeugd`,
-      `jeugdbeweging`,
-      `jokonta`,
-      `allegro`,
+      `etiketten`,
+      `serviceverpakking`,
+      `bloemensector`,
+      `chocoladesector`,
+      `linten`,
+      `folie`,
+      `verpakkingspapier`,
+      `leverancier`,
     ],
   },
   plugins: [

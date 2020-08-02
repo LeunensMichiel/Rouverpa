@@ -9,10 +9,18 @@ import {
   SideProductNav,
 } from "../components/gamma/gammaStyles"
 import Chevron from "../assets/icons/chevron.svg"
+import SEO from "../components/seo/seo"
 
 const category = ({ data, pageContext }) => {
   return (
     <Layout>
+      <SEO
+        title={
+          pageContext.category.charAt(0).toUpperCase() +
+          pageContext.category.slice(1)
+        }
+        description={`Het assortiment van ${pageContext.category} van Rouverpa`}
+      />
       <Breadcrumb>
         <div className="crumbs__list">
           <Link to="/gamma/" activeClassName="crumb__active">
