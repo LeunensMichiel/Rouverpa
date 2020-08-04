@@ -74,11 +74,15 @@ const product = ({ data }) => {
         </div>
       </SideProductNav>
       <ProductDetailScreen>
-        <Img
-          fluid={data.product.frontmatter.image[0].childImageSharp.fluid}
-          alt={data.product.frontmatter.title}
-          className="product__image"
-        />
+        <div>
+          {data.product.frontmatter.image.map(img => (
+            <Img
+              fluid={img.childImageSharp.fluid}
+              alt={data.product.frontmatter.title}
+              className="product__image"
+            />
+          ))}
+        </div>
         <div className="details">
           <h3>{data.product.frontmatter.category}</h3>
           <h1>{data.product.frontmatter.title}</h1>
@@ -88,6 +92,18 @@ const product = ({ data }) => {
             {data.product.frontmatter.details.map(detail => (
               <li key={detail}>{detail}</li>
             ))}
+            {data.product.frontmatter.extra && (
+              <li>
+                <a
+                  target="_blank"
+                  href={data.product.frontmatter.extra.publicURL}
+                >
+                  <Img
+                    fixed={data.product.frontmatter.extra.childImageSharp.fixed}
+                  />
+                </a>
+              </li>
+            )}
           </ul>
         </div>
       </ProductDetailScreen>
@@ -107,10 +123,11 @@ export const singleProduct = graphql`
         details
         extra {
           childImageSharp {
-            original {
-              src
+            fixed(width: 150, quality: 50) {
+              ...GatsbyImageSharpFixed_withWebp
             }
           }
+          publicURL
         }
         title
         image {
