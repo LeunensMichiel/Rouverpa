@@ -3,7 +3,6 @@ import { keyframes } from "@emotion/core"
 
 import Pattern from "../../assets/pattern.png"
 import Border from "../../assets/borderHero.svg"
-import Divider from "../../assets/heroDivider.svg"
 
 const Scroll = keyframes`
   0% { opacity: 0; }
@@ -85,12 +84,14 @@ export const VideoWrapper = styled.div`
 
   .hero__divider {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
+    left: 0;
+    right: 0;
     width: 100%;
     height: 64px;
     z-index: 4;
-    background: url(${Divider});
-    background-size: 100% 100%;
+    background-color: ${p => p.theme.colors.white98};
+    clip-path: polygon(0 0, 40% 100%, 60% 100%, 100% 0, 100% 100%, 0 100%);
   }
 
   .scroll-downs {

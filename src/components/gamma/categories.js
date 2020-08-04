@@ -12,6 +12,7 @@ const Categories = () => {
       ) {
         edges {
           node {
+            id
             frontmatter {
               image {
                 childImageSharp {
@@ -44,7 +45,7 @@ const Categories = () => {
         <h1>Gamma</h1>
         <div className="sidenav">
           {data.categories.edges.map(item => (
-            <Link to={`/gamma${item.node.fields.slug}`}>
+            <Link to={`/gamma${item.node.fields.slug}`} key={item.node.id}>
               {item.node.frontmatter.name}
             </Link>
           ))}
@@ -55,6 +56,7 @@ const Categories = () => {
           <Link
             to={`/gamma${item.node.fields.slug}`}
             className="category__card"
+            key={item.node.id}
           >
             <h3>{item.node.frontmatter.name}</h3>
             <Img

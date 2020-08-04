@@ -9,13 +9,14 @@ if (typeof window !== "undefined") {
 }
 const mainCss = css`
   width: 100%;
-  min-height: 90%;
+  /* min-height: 90%; */
   display: grid;
   grid-template-columns: minmax(16px, 1fr) repeat(12, minmax(24px, 95px)) minmax(
       16px,
       1fr
     );
-  flex: 1 1 auto;
+  align-items: start;
+  flex: 0 1;
   padding-top: 136px;
 
   @media (max-width: 767px) {

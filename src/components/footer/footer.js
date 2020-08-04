@@ -49,8 +49,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="copyright">
-          <Link to="/">Algemene voorwaarden</Link>
-          {" | "}© {new Date().getFullYear()} <span>Rouverpa NV</span>
+          © {new Date().getFullYear()} <span>Rouverpa NV</span>
         </div>
       </LeftFooter>
       <RightFooter>

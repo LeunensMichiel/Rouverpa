@@ -9,7 +9,7 @@ export const FooterWrapper = styled.footer`
   width: 100%;
   background-color: ${p => p.theme.colors.white94};
   padding: ${p => p.theme.space[8]} 0;
-
+  margin-top: auto;
   @media ${p => p.theme.mq.tablet} {
     padding: ${p => p.theme.space[7]} 0;
   }
