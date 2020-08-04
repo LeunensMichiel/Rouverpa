@@ -23,19 +23,23 @@ const Form = ({ location }) => {
           </label>
           <div className="radio__buttons">
             <div>
-              <input
-                type="radio"
-                id="offerte"
-                name="type"
-                value="offerte"
-                required
-                defaultChecked={location.search.includes("type=offerte")}
-              />
-              <label htmlFor="offerte">Offerte aanvragen</label>
+              <label htmlFor="offerte">
+                <input
+                  type="radio"
+                  id="offerte"
+                  name="type"
+                  value="offerte"
+                  required
+                  defaultChecked={location.search.includes("type=offerte")}
+                />
+                Offerte aanvragen
+              </label>
             </div>
             <div>
-              <input type="radio" id="vraag" name="type" value="vraag" />
-              <label htmlFor="vraag">Vraag stellen</label>
+              <label htmlFor="vraag">
+                <input type="radio" id="vraag" name="type" value="vraag" />
+                Vraag stellen
+              </label>
             </div>
           </div>
         </StyledInput>

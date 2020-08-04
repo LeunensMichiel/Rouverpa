@@ -186,10 +186,10 @@ export const StyledInput = styled.div`
     }
     input {
       height: unset;
+      margin-right: ${p => p.theme.space[0]};
     }
     label {
       margin-bottom: 0;
-      margin-left: ${p => p.theme.space[0]};
       font-weight: 400;
     }
   }
