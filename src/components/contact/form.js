@@ -23,7 +23,7 @@ const Form = ({ location }) => {
           </label>
           <div className="radio__buttons">
             <div>
-              <label htmlFor="offerte">
+              <label>
                 <input
                   type="radio"
                   id="offerte"
@@ -36,7 +36,7 @@ const Form = ({ location }) => {
               </label>
             </div>
             <div>
-              <label htmlFor="vraag">
+              <label>
                 <input type="radio" id="vraag" name="type" value="vraag" />
                 Vraag stellen
               </label>

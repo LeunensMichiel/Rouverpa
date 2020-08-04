@@ -97,6 +97,7 @@ const product = ({ data }) => {
                 <a
                   target="_blank"
                   href={data.product.frontmatter.extra.publicURL}
+                  rel="noopener noreferrer"
                 >
                   <Img
                     fixed={data.product.frontmatter.extra.childImageSharp.fixed}
