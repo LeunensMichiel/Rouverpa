@@ -15,6 +15,7 @@ import Phone from "../../assets/icons/phone.svg"
 import Enveloppe from "../../assets/icons/enveloppe.svg"
 import Instagram from "../../assets/icons/instagram.svg"
 import LinkedIn from "../../assets/icons/linkedin.svg"
+import Facebook from "../../assets/icons/facebook.svg"
 
 const Navbar = ({ show = false, hamburgerClickHandler }) => {
   const [isSticky, setSticky] = useState(false)
@@ -44,16 +45,25 @@ const Navbar = ({ show = false, hamburgerClickHandler }) => {
         <a
           className="upperbar__item darker"
           aria-label="Instagram Rouverpa"
-          href="https://www.facebook.com/ChiroItterbeek"
+          href="https://www.instagram.com/nvrouverpa/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <Instagram />
         </a>
         <a
+          className="upperbar__item darker"
+          aria-label="Instagram Rouverpa"
+          href="https://www.facebook.com/Rouverpa"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Facebook />
+        </a>
+        <a
           className="upperbar__item darkest"
           aria-label="LinkedIn Rouverpa"
-          href="https://www.facebook.com/ChiroItterbeek"
+          href="https://www.linkedin.com/company/rouverpa/"
           target="_blank"
           rel="noopener noreferrer"
         >

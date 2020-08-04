@@ -28,7 +28,6 @@ export const LeftFooter = styled.div`
 
   .left__socials {
     display: flex;
-    /* flex-direction: column; */
     margin-right: ${p => p.theme.space[2]};
   }
 
@@ -79,6 +78,14 @@ export const LeftFooter = styled.div`
   @media ${p => p.theme.mq.mobileM} {
     grid-column: 2 / span 12;
     margin-bottom: ${p => p.theme.space[5]};
+    .social__icon {
+      padding: ${p => p.theme.space[1]};
+    }
+    svg {
+      height: 18px;
+      width: auto;
+      fill: ${p => p.theme.colors.white94};
+    }
   }
 `
 

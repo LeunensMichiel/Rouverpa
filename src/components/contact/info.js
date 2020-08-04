@@ -7,6 +7,7 @@ import Location from "../../assets/icons/location.svg"
 import Card from "../../assets/icons/details.svg"
 import Instagram from "../../assets/icons/instagram.svg"
 import LinkedIn from "../../assets/icons/linkedin.svg"
+import Facebook from "../../assets/icons/facebook.svg"
 
 const Info = () => {
   return (
@@ -54,15 +55,23 @@ const Info = () => {
         <div className="info__socials">
           <a
             aria-label="Instagram Rouverpa"
-            href="https://www.facebook.com/ChiroItterbeek"
+            href="https://www.instagram.com/nvrouverpa/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Instagram />
           </a>
           <a
+            aria-label="Facebook Rouverpa"
+            href="https://www.facebook.com/Rouverpa"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Facebook />
+          </a>
+          <a
             aria-label="LinkedIn Rouverpa"
-            href="https://www.facebook.com/ChiroItterbeek"
+            href="https://www.linkedin.com/company/rouverpa/"
             target="_blank"
             rel="noopener noreferrer"
           >
