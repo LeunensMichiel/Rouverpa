@@ -6,6 +6,7 @@ import { FooterWrapper, LeftFooter, RightFooter } from "./footerStyles"
 
 import Instagram from "../../assets/icons/instagram.svg"
 import LinkedIn from "../../assets/icons/linkedin.svg"
+import Facebook from "../../assets/icons/facebook.svg"
 const Footer = () => {
   return (
     <FooterWrapper>
@@ -16,7 +17,7 @@ const Footer = () => {
             <a
               className="social__icon"
               aria-label="Instagram Rouverpa"
-              href="https://www.facebook.com/ChiroItterbeek"
+              href="https://www.instagram.com/nvrouverpa/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -24,8 +25,17 @@ const Footer = () => {
             </a>
             <a
               className="social__icon darkest"
+              aria-label="Facebook Rouverpa"
+              href="https://www.facebook.com/Rouverpa"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Facebook />
+            </a>
+            <a
+              className="social__icon darkest"
               aria-label="LinkedIn Rouverpa"
-              href="https://www.facebook.com/ChiroItterbeek"
+              href="https://www.linkedin.com/company/rouverpa/"
               target="_blank"
               rel="noopener noreferrer"
             >

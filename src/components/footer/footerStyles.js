@@ -28,7 +28,7 @@ export const LeftFooter = styled.div`
 
   .left__socials {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     margin-right: ${p => p.theme.space[2]};
   }
 
