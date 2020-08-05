@@ -23,7 +23,10 @@ const GammaIndex = () => {
           <h3>Folie</h3>
           <img alt="Foto van folie" src={cover2} />
         </Link>
-        <Link className="gamma__item" to="/gamma/producten/geschenkpapier/">
+        <Link
+          className="gamma__item"
+          to="/gamma/categorieen/verpakkingspapier/"
+        >
           <h3>Geschenkverpakking</h3>
           <img alt="Foto van geschenkverpakkingen" src={cover3} />
         </Link>
