@@ -27,7 +27,7 @@ const GammaIndex = () => {
           className="gamma__item"
           to="/gamma/categorieen/verpakkingspapier/"
         >
-          <h3>Geschenkverpakking</h3>
+          <h3>Verpakkingspapier</h3>
           <img alt="Foto van geschenkverpakkingen" src={cover3} />
         </Link>
       </div>
