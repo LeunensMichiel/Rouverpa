@@ -26,7 +26,7 @@ const Footer = () => {
             <a
               className="social__icon darkest"
               aria-label="Facebook Rouverpa"
-              href="https://www.facebook.com/Rouverpa"
+              href="https://www.facebook.com/Rouverpa-101216735010244"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -43,13 +43,13 @@ const Footer = () => {
             </a>
           </div>
           <div className="left__btw">
-            Rouverpa NV
+            Rouverpa bv
             <br />
             BTW: 0441.926.159
           </div>
         </div>
         <div className="copyright">
-          © {new Date().getFullYear()} <span>Rouverpa NV</span>
+          © {new Date().getFullYear()} <span>Rouverpa bv</span>
         </div>
       </LeftFooter>
       <RightFooter>

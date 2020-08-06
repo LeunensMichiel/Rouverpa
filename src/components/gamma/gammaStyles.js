@@ -152,11 +152,14 @@ export const GammaIndexWrapper = styled.section`
     padding: ${p => p.theme.space[7]} 0;
 
     .gamma__item {
-      margin-bottom: ${p => p.theme.space[5]};
+      margin-bottom: ${p => p.theme.space[6]};
       width: 220px;
       height: 220px;
       h3 {
         font-size: ${p => p.theme.fontSizes[2]};
+      }
+      &:after {
+        bottom: -16px;
       }
     }
 
@@ -167,6 +170,9 @@ export const GammaIndexWrapper = styled.section`
     }
   }
   @media ${p => p.theme.mq.mobileM} {
+    h1 {
+      margin-bottom: ${p => p.theme.space[7]};
+    }
     .gamma__item {
       width: 100%;
       height: 0;

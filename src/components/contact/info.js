@@ -63,7 +63,7 @@ const Info = () => {
           </a>
           <a
             aria-label="Facebook Rouverpa"
-            href="https://www.facebook.com/Rouverpa"
+            href="https://www.facebook.com/Rouverpa-101216735010244"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -54,7 +54,7 @@ const Navbar = ({ show = false, hamburgerClickHandler }) => {
         <a
           className="upperbar__item darker"
           aria-label="Instagram Rouverpa"
-          href="https://www.facebook.com/Rouverpa"
+          href="https://www.facebook.com/Rouverpa-101216735010244"
           target="_blank"
           rel="noopener noreferrer"
         >

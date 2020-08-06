@@ -47,12 +47,12 @@ const About = () => {
           <Img
             className="card__profile__picture"
             fixed={data.zaakvoerder.childImageSharp.fixed}
-            title="Zaakvoerder Geerd D'Hondt"
-            alt="Foto van zaakvoerder Geerd D'Hondt"
+            title="Bestuurder Geerd D'Hondt"
+            alt="Foto van bestuurder Geerd D'Hondt"
           />
           <div className="card__profile__body">
             <h3>Geerd D'Hondt</h3>
-            <small>Zaakvoerder</small>
+            <small>Bestuurder</small>
             <small>Verantwoordelijk voor verpakkingen</small>
           </div>
         </ProfileCard>
@@ -60,12 +60,12 @@ const About = () => {
           <Img
             className="card__profile__picture"
             fixed={data.zaakvoerster.childImageSharp.fixed}
-            title="Zaakvoerster Caroline Desmet"
-            alt="Foto van zaakvoerster Caroline Desmet"
+            title="Bestuurster Caroline Desmet"
+            alt="Foto van bestuurster Caroline Desmet"
           />
           <div className="card__profile__body">
             <h3>Caroline Desmet</h3>
-            <small>Zaakvoerster</small>
+            <small>Bestuurster</small>
             <small>Verantwoordelijk voor bedrukte linten en etiketten</small>
           </div>
         </ProfileCard>
