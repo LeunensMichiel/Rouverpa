@@ -149,7 +149,7 @@ export const VideoWrapper = styled.div`
       background-repeat: no-repeat;
       h1 {
         font-size: ${p => p.theme.fontSizes[3]};
-        padding: ${p => p.theme.space[4]};
+        padding: ${p => p.theme.space[5]};
       }
       .hero__text__upper {
         h2 {
