@@ -76,6 +76,7 @@ const category = ({ data, pageContext }) => {
             <Img
               fluid={item.node.frontmatter.image[0].childImageSharp.fluid}
               alt={item.node.frontmatter.title}
+              title={item.node.frontmatter.title}
               className="category__card__image"
             />
           </Link>

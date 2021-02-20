@@ -79,6 +79,7 @@ const product = ({ data }) => {
             <Img
               fluid={img.childImageSharp.fluid}
               alt={data.product.frontmatter.title}
+              title={data.product.frontmatter.title}
               className="product__image"
             />
           ))}
