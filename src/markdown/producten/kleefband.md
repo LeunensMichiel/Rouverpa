@@ -8,5 +8,5 @@ details:
     "Formaat: 12 mm x 66 m (Tesa) en 48 mm x 66 m (Vibac)",
     "Bijhorende afroller apart te verkrijgen.",
   ]
-image: ["kleefband.jpg"]
+image: ["Kleefband.png"]
 ---

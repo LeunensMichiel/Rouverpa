@@ -1,4 +1,4 @@
 ---
 name: accessoires
-image: ["accessoires.jpg"]
+image: ["Accessoires.png"]
 ---

@@ -104,7 +104,7 @@ export const itemsForCategory = graphql`
             image {
               childImageSharp {
                 fluid(maxWidth: 250, quality: 76) {
-                  ...GatsbyImageSharpFluid_withWebp
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
                 }
               }
             }

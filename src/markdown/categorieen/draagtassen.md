@@ -1,4 +1,4 @@
 ---
 name: draagtassen
-image: ["draagtassen.jpg"]
+image: ["Draagtassen.png"]
 ---

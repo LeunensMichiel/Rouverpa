@@ -9,5 +9,5 @@ details:
     "Rollengte: 50m",
     "Verkoopeenheid: per rol",
   ]
-image: ["vliesdoek.jpg"]
+image: ["Vliesdoek- en non woven.png"]
 ---

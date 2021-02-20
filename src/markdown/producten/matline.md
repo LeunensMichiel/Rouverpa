@@ -8,6 +8,6 @@ details:
     "Rolbreedte: 10 mm (lengte: 250 m) en 19 mm (lengte: 100 m)",
     "Verkoopeenheid: per 3 rollen",
   ]
-image: ["matline.jpg"]
+image: ["Matline.png"]
 extra: kleurkaart_matline.png
 ---

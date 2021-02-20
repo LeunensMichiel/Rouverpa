@@ -9,5 +9,5 @@ details:
     "Rollengte: 300m",
     "Verkoopeenheid: zowel op rol als vel",
   ]
-image: ["honinggraat.jpg"]
+image: ["Honingraat.png"]
 ---

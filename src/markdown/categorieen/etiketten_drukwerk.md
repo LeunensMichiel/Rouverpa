@@ -1,4 +1,4 @@
 ---
 name: "etiketten & drukwerk"
-image: ["etiketten_drukwerk.jpg"]
+image: ["Etiketten_drukwerk.png"]
 ---

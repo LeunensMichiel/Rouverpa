@@ -6,5 +6,5 @@ details: [
     "De wensetiketten worden standaard geleverd op 30x30mm (500
     stuks/doos).",
   ]
-image: ["naametiketten.jpg"]
+image: ["Naametiketten.png"]
 ---

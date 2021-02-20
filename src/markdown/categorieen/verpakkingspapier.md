@@ -1,4 +1,4 @@
 ---
 name: verpakkingspapier
-image: ["verpakkingen.jpg"]
+image: ["Verpakkingen.png"]
 ---

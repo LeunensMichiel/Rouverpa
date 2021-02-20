@@ -1,4 +1,4 @@
 ---
 name: linten
-image: ["linten.jpg"]
+image: ["Linten.png"]
 ---
