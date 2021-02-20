@@ -8,5 +8,5 @@ details:
     "Formaat: alle breedtes – alles op maat",
     "Verkoopeenheid: zowel op rol als vel",
   ]
-image: ["ppl.jpg"]
+image: ["PPL.png"]
 ---

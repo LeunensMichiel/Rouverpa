@@ -8,6 +8,6 @@ details:
     "Lintbreedte: 10 mm, 15 mm, 25 mm en 40 mm",
     "Lengte: 100 m",
   ]
-image: ["belsatin.jpg"]
+image: ["Bel Satin.png"]
 extra: kleurkaart_satin.png
 ---

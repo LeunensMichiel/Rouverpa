@@ -10,8 +10,8 @@ details:
   ]
 image:
   [
-    "algeneem_papierband.jpg",
-    "algemeen_prijskaart.jpg",
-    "algemeen_firmakaart.jpg",
+    "Algemeen drukwerk (papierbanden).png",
+    "Algemeen drukwerk (Prijskaarten).png",
+    "Algemeen drukwerk (firmakaartjes).png",
   ]
 ---

@@ -8,6 +8,6 @@ details:
     "Lintbreedte: 10 mm, 15 mm, 25 mm en 40 mm",
     "Lengte: 100m",
   ]
-image: ["bedrukte_linten.jpg"]
+image: ["Bedrukte linten.png"]
 extra: kleurkaart_satin.png
 ---

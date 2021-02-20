@@ -8,6 +8,6 @@ details:
     "Lengte: 200 m",
     "Verkoopeenheid: per rol",
   ]
-image: ["dekoraphia.jpg"]
+image: ["Dekoraphia.png"]
 extra: kleurenkaart_dekoraphia.png
 ---

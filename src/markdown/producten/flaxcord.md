@@ -7,6 +7,6 @@ details:
     "Kleur: keuze uit diverse kleuren (zie kleurenkaart)",
     "Lintdikte: 4 mm (op voorraad)",
   ]
-image: ["flaxcord.jpg"]
+image: ["Flaxcord.png"]
 extra: kleurenkaart_flaxcord.png
 ---

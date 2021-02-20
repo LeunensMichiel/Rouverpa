@@ -79,6 +79,7 @@ const product = ({ data }) => {
             <Img
               fluid={img.childImageSharp.fluid}
               alt={data.product.frontmatter.title}
+              title={data.product.frontmatter.title}
               className="product__image"
             />
           ))}
@@ -125,7 +126,7 @@ export const singleProduct = graphql`
         extra {
           childImageSharp {
             fixed(width: 150, quality: 50) {
-              ...GatsbyImageSharpFixed_withWebp
+              ...GatsbyImageSharpFixed_withWebp_noBase64
             }
           }
           publicURL
@@ -134,7 +135,7 @@ export const singleProduct = graphql`
         image {
           childImageSharp {
             fluid(maxWidth: 250, quality: 76) {
-              ...GatsbyImageSharpFluid_withWebp
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }

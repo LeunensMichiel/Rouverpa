@@ -9,5 +9,5 @@ details:
     "Rollengte: 300 m",
     "Verkoopeenheid: zowel op rol als vel",
   ]
-image: ["ppl_ingekleurd.jpg"]
+image: ["Volvlak ingekleurd PPL.png"]
 ---

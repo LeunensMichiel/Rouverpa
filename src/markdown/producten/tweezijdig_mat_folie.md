@@ -8,5 +8,5 @@ details:
     "Formaat: alles op maat",
     "Verkoopeenheid: zowel op rol als vel",
   ]
-image: ["tweezijdig_mat_folie.jpg"]
+image: ["Tweezijdig mat folie.png"]
 ---

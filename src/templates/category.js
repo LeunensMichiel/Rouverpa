@@ -76,6 +76,7 @@ const category = ({ data, pageContext }) => {
             <Img
               fluid={item.node.frontmatter.image[0].childImageSharp.fluid}
               alt={item.node.frontmatter.title}
+              title={item.node.frontmatter.title}
               className="category__card__image"
             />
           </Link>
@@ -104,7 +105,7 @@ export const itemsForCategory = graphql`
             image {
               childImageSharp {
                 fluid(maxWidth: 250, quality: 76) {
-                  ...GatsbyImageSharpFluid_withWebp
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
                 }
               }
             }

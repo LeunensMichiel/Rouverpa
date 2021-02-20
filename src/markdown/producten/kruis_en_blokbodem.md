@@ -8,5 +8,5 @@ details:
     "Formaat: alle standaardmaten op voorraad",
     "Verkoopeenheid: 1000 stuks per doos",
   ]
-image: ["kruisblokbodem.jpg"]
+image: ["Kruis- en blokbodem.png"]
 ---

@@ -8,6 +8,6 @@ details:
     "Lintbreedte: 5 mm (lengte: 500 m), 10 mm (lengte: 250 m) en 19 mm (lengte: 100 m)",
     "Verkoopeenheid: per 4 rollen",
   ]
-image: ["krullint.jpg"]
+image: ["Krullint.png"]
 extra: kleurenkaart_lint.png
 ---

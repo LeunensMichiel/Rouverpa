@@ -9,5 +9,5 @@ details:
     "Gewicht: 6kg / rol",
     "Verkoopeenheid: zowel op rol als vel",
   ]
-image: ["pergamentine.jpg"]
+image: ["Pergamentine.png"]
 ---

@@ -1,4 +1,4 @@
 ---
 name: folie
-image: ["folie.jpg"]
+image: ["Folie.png"]
 ---

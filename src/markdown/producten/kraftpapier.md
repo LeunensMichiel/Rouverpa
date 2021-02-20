@@ -9,5 +9,5 @@ details:
     "Rollengte: 350m",
     "Verkoopeenheid: zowel op rol als vel",
   ]
-image: ["kraftpapier.jpg"]
+image: ["Kraftpapier.png"]
 ---
