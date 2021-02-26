@@ -1,6 +1,6 @@
 ---
-title: Lus draagtassen
-description: Ons assortiment van papieren draagtassen.
+title: Lusdraagtassen
+description: Ons assortiment van lusdraagtassen.
 category: draagtassen
 details:
   [

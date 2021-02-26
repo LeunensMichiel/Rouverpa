@@ -55,7 +55,7 @@ const Info = () => {
         <div className="info__socials">
           <a
             aria-label="Instagram Rouverpa"
-            href="https://www.instagram.com/nvrouverpa/"
+            href="https://www.instagram.com/rouverpa/"
             target="_blank"
             rel="noopener noreferrer"
           >

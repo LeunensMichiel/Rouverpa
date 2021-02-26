@@ -1,6 +1,6 @@
 ---
-title: Honinggraat
-description: Ons assortiment van honinggraat.
+title: Honingraat
+description: Ons assortiment van honingraat.
 category: folie
 details:
   [
