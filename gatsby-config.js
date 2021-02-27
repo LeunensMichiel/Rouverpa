@@ -83,28 +83,6 @@ module.exports = {
         usePreconnect: false,
       },
     },
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        trackingIds: ["G-8TEXLE0H0Y"],
-        gtagConfig: {
-          anonymize_ip: true,
-          cookie_expires: 0,
-        },
-        pluginConfig: {
-          head: false,
-          respectDNT: true,
-        },
-      },
-    },
-    {
-      resolve: `gatsby-plugin-hotjar`,
-      options: {
-        includeInDevelopment: false,
-        id: 2261101,
-        sv: 6,
-      },
-    },
     `gatsby-plugin-sitemap`,
     "gatsby-plugin-optimize-svgs",
     `gatsby-plugin-netlify`,
