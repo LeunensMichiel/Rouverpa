@@ -28,7 +28,7 @@ const Button = ({ text, external = false, accent = false, href }) => {
     return <a>{text}</a>
   } else {
     return (
-      <StyledButton accent={accent} to={href}>
+      <StyledButton accent={accent ? "true" : undefined} to={href}>
         {text}
       </StyledButton>
     )

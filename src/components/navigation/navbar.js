@@ -34,18 +34,18 @@ const Navbar = ({ show = false, hamburgerClickHandler }) => {
   return (
     <>
       <NavUpperBarWrapper>
-        <div className="upperbar__item">
+        <a href="+32051201517" className="upperbar__item">
           <Phone />
           <span>+32 (0)51 20 15 17</span>
-        </div>
-        <div className="upperbar__item dark">
+        </a>
+        <Link to="/contact" className="upperbar__item dark">
           <Enveloppe />
           <span>rouverpa@telenet.be</span>
-        </div>
+        </Link>
         <a
           className="upperbar__item darker"
           aria-label="Instagram Rouverpa"
-          href="https://www.instagram.com/nvrouverpa/"
+          href="https://www.instagram.com/rouverpa/"
           target="_blank"
           rel="noopener noreferrer"
         >

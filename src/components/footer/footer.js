@@ -17,7 +17,7 @@ const Footer = () => {
             <a
               className="social__icon"
               aria-label="Instagram Rouverpa"
-              href="https://www.instagram.com/nvrouverpa/"
+              href="https://www.instagram.com/rouverpa/"
               target="_blank"
               rel="noopener noreferrer"
             >

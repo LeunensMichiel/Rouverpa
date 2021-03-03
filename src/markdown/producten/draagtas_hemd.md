@@ -1,6 +1,6 @@
 ---
-title: Hemd draagtassen
-description: Ons assortiment van hemd draagtassen.
+title: Hemddraagtassen
+description: Ons assortiment van hemddraagtassen.
 category: draagtassen
 details:
   [
