@@ -32,6 +32,13 @@ module.exports = {
         path: `${__dirname}/src/markdown`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/locales`,
+        name: `locale`,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     "gatsby-transformer-remark",
     `gatsby-transformer-sharp`,
@@ -48,6 +55,23 @@ module.exports = {
         theme_color: `#FF243A`,
         display: `browser`,
         icon: `src/assets/favicon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-react-i18next`,
+      options: {
+        localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
+        languages: [`en`, `fr`, `nl`],
+        defaultLanguage: `nl`,
+        // if you are using Helmet, you must include siteUrl, and make sure you add http:https
+        siteUrl: `https://rouverpa.be/`,
+        i18nextOptions: {
+          interpolation: {
+            escapeValue: false,
+          },
+          keySeparator: false,
+          nsSeparator: false,
+        },
       },
     },
     {

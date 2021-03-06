@@ -16,6 +16,7 @@ import Enveloppe from "../../assets/icons/enveloppe.svg"
 import Instagram from "../../assets/icons/instagram.svg"
 import LinkedIn from "../../assets/icons/linkedin.svg"
 import Facebook from "../../assets/icons/facebook.svg"
+import LanguageDropdown from "../language"
 
 const Navbar = ({ show = false, hamburgerClickHandler }) => {
   const [isSticky, setSticky] = useState(false)
@@ -115,6 +116,8 @@ const Navbar = ({ show = false, hamburgerClickHandler }) => {
           >
             Contact
           </Link>
+          <div className="seperator" />
+          <LanguageDropdown />
         </LinkWrapper>
       </NavWrapper>
     </>

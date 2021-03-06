@@ -6,6 +6,7 @@ import { Video } from "../components/video/video"
 import GammaIndex from "../components/gamma/gammaIndex"
 import About from "../components/about/about"
 import Interested from "../components/interested/interested"
+import { graphql } from "gatsby"
 
 const IndexPage = () => (
   <Layout>
@@ -21,3 +22,17 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+export const query = graphql`
+  query($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`

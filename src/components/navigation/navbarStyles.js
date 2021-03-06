@@ -2,7 +2,7 @@ import styled from "@emotion/styled"
 
 export const NavWrapper = styled.header`
   position: fixed;
-  margin-top: ${p => (p.isSticky ? "0" : "36px")};
+  /* margin-top: ${p => (p.isSticky ? "0" : "36px")}; */
   width: 100%;
   height: 100px;
   background-color: ${p => p.theme.colors.white98};
@@ -13,6 +13,9 @@ export const NavWrapper = styled.header`
     );
   box-shadow: ${p => p.theme.shadows.container};
   z-index: 100;
+  transform: ${props =>
+    props.isSticky ? "translateY(0)" : "translateY(36px)"};
+    transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
 
   @media ${p => p.theme.mq.mobileM} {
     display: flex;
@@ -54,7 +57,6 @@ export const LinkWrapper = styled.nav`
     font-weight: 700;
     &.link__cta {
       padding: ${p => p.theme.space[1]} ${p => p.theme.space[4]};
-      margin-right: 0;
       border-radius: ${p => p.theme.borderRadius};
       color: ${p => p.theme.colors.white98};
       background-color: ${p => p.theme.colors.accentp2};
@@ -67,6 +69,19 @@ export const LinkWrapper = styled.nav`
       }
     }
   }
+  .seperator {
+    content: "";
+    display: block;
+    height: 40%;
+    width: 4px;
+    background: ${p => p.theme.colors.white94};
+    border-radius: ${p => p.theme.borderRadius};
+  }
+  @media ${p => p.theme.mq.tablet} {
+    a {
+      margin: 0 ${p => p.theme.space[2]};
+    }
+  }
   @media ${p => p.theme.mq.mobileM} {
     flex-direction: column;
     justify-content: center;
@@ -75,9 +90,13 @@ export const LinkWrapper = styled.nav`
       padding: ${p => p.theme.space[2]} 0;
       margin: 0;
       font-size: ${p => p.theme.fontSizes[5]} !important;
-      &:not(:nth-of-type(4)) {
-        margin-bottom: ${p => p.theme.space[2]};
-      }
+      margin-bottom: ${p => p.theme.space[2]};
+    }
+    .seperator {
+      background: ${p => p.theme.colors.accentp2};
+      height: 4px;
+      width: 40px;
+      margin-top: ${p => p.theme.space[5]};
     }
   }
 `
