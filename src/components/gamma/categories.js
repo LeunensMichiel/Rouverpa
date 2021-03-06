@@ -1,7 +1,8 @@
 import React from "react"
 import Img from "gatsby-image"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import { CategoryWrapper, Breadcrumb, SideProductNav } from "./gammaStyles"
+import { Link } from "gatsby-plugin-react-i18next"
 
 const Categories = () => {
   const data = useStaticQuery(graphql`

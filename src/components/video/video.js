@@ -1,10 +1,9 @@
 import React from "react"
 import { VideoWrapper } from "./videoStyles"
-import { Link } from "gatsby"
 
 import MP4 from "../../assets/heroVid.mp4"
 import Poster from "../../assets/poster.jpg"
-import { useTranslation } from "gatsby-plugin-react-i18next"
+import { useTranslation, Link } from "gatsby-plugin-react-i18next"
 
 export const Video = () => {
   const { i18n } = useTranslation()

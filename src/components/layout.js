@@ -132,7 +132,7 @@ const Layout = ({ children }) => {
     alert(
       "Internet Explorer is oud en wordt niet meer ondersteund. De site zal hier niet goed op draaien. Gelieve een moderne browser te downloaden zoals Google Chrome of Firefox"
     )
-    window.open("https://www.google.com/intl/nl/chrome/")
+    window.open("https://www.google.com/chrome/")
   }
   return (
     <>

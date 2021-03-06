@@ -119,6 +119,7 @@ export const NavbarWrapper = styled.nav`
     transition-property: opacity, filter;
     transition-duration: 0.15s;
     transition-timing-function: linear;
+    outline: none;
 
     &:hover {
       opacity: 0.5;
@@ -255,24 +256,7 @@ export const NavUpperBarWrapper = styled.aside`
   .upperbar__item {
     display: flex;
     align-items: center;
-    background-color: ${p => p.theme.colors.accentp1};
     padding: 0 ${p => p.theme.space[1]};
-
-    &.dark {
-      background-color: ${p => p.theme.colors.accent};
-    }
-    &.darker {
-      background-color: ${p => p.theme.colors.accentm1};
-      svg {
-        margin-right: 0;
-      }
-    }
-    &.darkest {
-      background-color: ${p => p.theme.colors.accentm2};
-      svg {
-        margin-right: 0;
-      }
-    }
   }
 
   svg {

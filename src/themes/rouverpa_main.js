@@ -8,7 +8,7 @@ const rouverpaTheme = {
     accent: "#ED152B",
     accentm1: "#CF081D",
     accentm2: "#C1071B",
-    accentm3: "#B20617",
+    accentm3: "#B91E2E",
     gray: "#8C8789",
     black34: "#3B393A",
     black26: "#2B2A2B",

@@ -1,7 +1,7 @@
 import React from "react"
 import { AboutWrapper, AboutText, ProfileCard, Decoration } from "./aboutStyles"
 import Img from "gatsby-image"
-import { Link } from "gatsby"
+import { Link } from "gatsby-plugin-react-i18next"
 import { useStaticQuery, graphql } from "gatsby"
 
 const About = () => {

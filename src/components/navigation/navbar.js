@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { Link } from "gatsby"
+import { Link } from "gatsby-plugin-react-i18next"
 import _ from "lodash"
 
 import {
@@ -35,7 +35,7 @@ const Navbar = ({ show = false, hamburgerClickHandler }) => {
   return (
     <>
       <NavUpperBarWrapper>
-        <a href="+32051201517" className="upperbar__item">
+        <a href="tel:+32051201517" className="upperbar__item">
           <Phone />
           <span>+32 (0)51 20 15 17</span>
         </a>
@@ -44,7 +44,7 @@ const Navbar = ({ show = false, hamburgerClickHandler }) => {
           <span>rouverpa@telenet.be</span>
         </Link>
         <a
-          className="upperbar__item darker"
+          className="upperbar__item"
           aria-label="Instagram Rouverpa"
           href="https://www.instagram.com/rouverpa/"
           target="_blank"
@@ -53,8 +53,8 @@ const Navbar = ({ show = false, hamburgerClickHandler }) => {
           <Instagram />
         </a>
         <a
-          className="upperbar__item darker"
-          aria-label="Instagram Rouverpa"
+          className="upperbar__item"
+          aria-label="Facebook Rouverpa"
           href="https://www.facebook.com/Rouverpa-101216735010244"
           target="_blank"
           rel="noopener noreferrer"
@@ -62,7 +62,7 @@ const Navbar = ({ show = false, hamburgerClickHandler }) => {
           <Facebook />
         </a>
         <a
-          className="upperbar__item darkest"
+          className="upperbar__item"
           aria-label="LinkedIn Rouverpa"
           href="https://www.linkedin.com/company/rouverpa/"
           target="_blank"
