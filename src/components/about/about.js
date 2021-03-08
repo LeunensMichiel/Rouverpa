@@ -47,11 +47,11 @@ const About = () => {
           <Img
             className="card__profile__picture"
             fixed={data.zaakvoerder.childImageSharp.fixed}
-            title="Bestuurder Geerd D'Hondt"
-            alt="Foto van bestuurder Geerd D'Hondt"
+            title="Bestuurder Geert D'Hondt"
+            alt="Foto van bestuurder Geert D'Hondt"
           />
           <div className="card__profile__body">
-            <h3>Geerd D'Hondt</h3>
+            <h3>Geert D'Hondt</h3>
             <small>Bestuurder</small>
             <small>Verantwoordelijk voor verpakkingen</small>
           </div>
