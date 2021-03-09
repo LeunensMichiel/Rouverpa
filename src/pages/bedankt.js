@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { Link } from "gatsby-plugin-react-i18next"
-
+import { Link, useTranslation } from "gatsby-plugin-react-i18next"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 
 const NotFoundWrapper = styled.div`
@@ -18,16 +18,31 @@ const NotFoundWrapper = styled.div`
     font-weight: 700;
   }
 `
-const ThanksPage = () => (
-  <Layout>
-    <NotFoundWrapper>
-      <h1>Bedankt om ons te contacteren!</h1>
-      <p>
-        We beantwoorden uw vraag/offerte zo snel mogelijk. Ga terug naar de{" "}
-        <Link to="/">homepagina</Link>.
-      </p>
-    </NotFoundWrapper>
-  </Layout>
-)
+const ThanksPage = () => {
+  const { t } = useTranslation()
+  return (
+    <Layout>
+      <NotFoundWrapper>
+        <h1>{t("thanks.title")}</h1>
+        <p>
+          {t("thanks.message")} <Link to="/">{t("thanks.home")}</Link>.
+        </p>
+      </NotFoundWrapper>
+    </Layout>
+  )
+}
 
 export default ThanksPage
+export const query = graphql`
+  query($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`

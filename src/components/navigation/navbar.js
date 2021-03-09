@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { Link } from "gatsby-plugin-react-i18next"
 import _ from "lodash"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 import {
   NavWrapper,
@@ -20,6 +21,7 @@ import LanguageDropdown from "../language"
 
 const Navbar = ({ show = false, hamburgerClickHandler }) => {
   const [isSticky, setSticky] = useState(false)
+  const { t } = useTranslation()
 
   const handleScroll = () => {
     window.scrollY >= 36 ? setSticky(true) : setSticky(false)
@@ -100,13 +102,13 @@ const Navbar = ({ show = false, hamburgerClickHandler }) => {
         </LogoWrapper>
         <LinkWrapper>
           <Link to="/" activeClassName="active">
-            Home
+            {t("navigation.home")}
           </Link>
           <Link to="/gamma/" partiallyActive={true} activeClassName="active">
-            Ons Gamma
+            {t("navigation.gamma")}
           </Link>
           <Link to="/#overons" partiallyActive={true} activeClassName="active">
-            Over Ons
+            {t("navigation.about")}
           </Link>
           <Link
             to="/contact/"
@@ -114,7 +116,7 @@ const Navbar = ({ show = false, hamburgerClickHandler }) => {
             activeClassName="active"
             className="link__cta"
           >
-            Contact
+            {t("navigation.contact")}
           </Link>
           <div className="seperator" />
           <LanguageDropdown />

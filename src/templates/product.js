@@ -1,7 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
-import { Link } from "gatsby-plugin-react-i18next"
+import { Link, Trans } from "gatsby-plugin-react-i18next"
 
 import Layout from "../components/layout"
 import {
@@ -25,7 +25,7 @@ const product = ({ data }) => {
       <Breadcrumb>
         <div className="crumbs__list">
           <Link to="/gamma/" activeClassName="crumb__active">
-            Ons gamma
+            <Trans>gamma.breadcrumb.gamma</Trans>
           </Link>
           <Chevron />
           <Link
@@ -43,7 +43,7 @@ const product = ({ data }) => {
           </Link>
         </div>
         <Link to="/contact?type=offerte" className="link__styled">
-          Offerte aanvragen
+          <Trans>gamma.breadcrumb.quotation</Trans>
         </Link>
       </Breadcrumb>
       <SideProductNav>
@@ -122,8 +122,8 @@ export const singleProduct = graphql`
       id
       frontmatter {
         category
-        description
-        details
+        descriptionNL
+        detailsNL
         extra {
           childImageSharp {
             fixed(width: 150, quality: 50) {
@@ -147,12 +147,12 @@ export const singleProduct = graphql`
     }
     categories: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/categorieen/" } }
-      sort: { fields: frontmatter___name }
+      sort: { fields: frontmatter___nameNL }
     ) {
       edges {
         node {
           frontmatter {
-            name
+            nameNL
           }
           fields {
             slug
@@ -173,7 +173,7 @@ export const singleProduct = graphql`
           }
           frontmatter {
             category
-            title
+            titleNL
           }
         }
       }

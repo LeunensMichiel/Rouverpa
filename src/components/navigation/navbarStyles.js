@@ -58,7 +58,7 @@ export const LinkWrapper = styled.nav`
     &.link__cta {
       padding: ${p => p.theme.space[1]} ${p => p.theme.space[4]};
       border-radius: ${p => p.theme.borderRadius};
-      color: ${p => p.theme.colors.white98};
+      color: #fff;
       background-color: ${p => p.theme.colors.accentp2};
       transition: background 0.6s cubic-bezier(0.22, 1, 0.36, 1);
       &.active {

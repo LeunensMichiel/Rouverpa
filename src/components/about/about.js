@@ -1,10 +1,11 @@
 import React from "react"
 import { AboutWrapper, AboutText, ProfileCard, Decoration } from "./aboutStyles"
 import Img from "gatsby-image"
-import { Link } from "gatsby-plugin-react-i18next"
+import { Link, useTranslation } from "gatsby-plugin-react-i18next"
 import { useStaticQuery, graphql } from "gatsby"
 
 const About = () => {
+  const { t } = useTranslation()
   const data = useStaticQuery(graphql`
     query {
       zaakvoerder: file(relativePath: { eq: "zaakvoerder.jpg" }) {
@@ -27,46 +28,36 @@ const About = () => {
     <AboutWrapper id="overons">
       <Decoration />
       <AboutText>
-        <h1>Een beetje uitleg over ons,</h1>
-        <p className="intro">
-          Rouverpa is een bedrijf dat al meer dan 30 jaar gespecialiseerd is in
-          serviceverpakkingen en etiketten. Onze klanten bevinden zich in de
-          bloemensector, chocoladesector, etc.
-        </p>
+        <h1>{t("home.about.title")}</h1>
+        <p className="intro">{t("home.about.intro")}</p>
         <p>
-          Geert D’hondt & Caroline Desmet gebruiken hun passie en ervaring om
-          kwalitatieve producten te produceren. Bij Rouverpa staat de klant
-          centraal en kan het mede dankzij zijn eigen productielijn producten op
-          maat van de klant maken. Daarnaast zorgt het uitgebreid product
-          assortiment ervoor dat de wensen van de klant worden vervuld. Door de
-          interne leveringsdienst zijn stipte leveringen gewaarborgd. Voor
-          verdere vragen kunt u ons steeds{" "}
-          <Link to="/contact/">mailen of bellen</Link>.
+          {t("home.about.story")}{" "}
+          <Link to="/contact/">{t("home.about.storyLink")}</Link>
         </p>
         <ProfileCard margin>
           <Img
             className="card__profile__picture"
             fixed={data.zaakvoerder.childImageSharp.fixed}
-            title="Bestuurder Geerd D'Hondt"
-            alt="Foto van bestuurder Geerd D'Hondt"
+            title={t("home.about.owners.geert.imgTitle")}
+            alt={t("home.about.owners.geert.imgAlt")}
           />
           <div className="card__profile__body">
-            <h3>Geerd D'Hondt</h3>
-            <small>Bestuurder</small>
-            <small>Verantwoordelijk voor verpakkingen</small>
+            <h3>{t("home.about.owners.geert.name")}</h3>
+            <small>{t("home.about.owners.geert.title")}</small>
+            <small>{t("home.about.owners.geert.function")}</small>
           </div>
         </ProfileCard>
         <ProfileCard>
           <Img
             className="card__profile__picture"
             fixed={data.zaakvoerster.childImageSharp.fixed}
-            title="Bestuurster Caroline Desmet"
-            alt="Foto van bestuurster Caroline Desmet"
+            title={t("home.about.owners.caroline.imgTitle")}
+            alt={t("home.about.owners.caroline.imgAlt")}
           />
           <div className="card__profile__body">
-            <h3>Caroline Desmet</h3>
-            <small>Bestuurster</small>
-            <small>Verantwoordelijk voor bedrukte linten en etiketten</small>
+            <h3>{t("home.about.owners.caroline.name")}</h3>
+            <small>{t("home.about.owners.caroline.title")}</small>
+            <small>{t("home.about.owners.caroline.function")}</small>
           </div>
         </ProfileCard>
       </AboutText>

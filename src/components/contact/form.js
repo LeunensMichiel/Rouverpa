@@ -1,7 +1,10 @@
 import React from "react"
+import { useTranslation } from "gatsby-plugin-react-i18next"
+
 import { FormWrapper, StyledInput, RouverpaForm } from "./contactStyles"
 
 const Form = ({ location }) => {
+  const { t } = useTranslation()
   return (
     <FormWrapper>
       <RouverpaForm
@@ -19,7 +22,8 @@ const Form = ({ location }) => {
         <input type="hidden" name="bot-field" />
         <StyledInput long>
           <label>
-            Ik wil een<sup>*</sup>
+            {t("contact.form.type.label")}
+            <sup>*</sup>
           </label>
           <div className="radio__buttons">
             <div>
@@ -32,20 +36,21 @@ const Form = ({ location }) => {
                   required
                   defaultChecked={location.search.includes("type=offerte")}
                 />
-                Offerte aanvragen
+                {t("contact.form.type.value1")}
               </label>
             </div>
             <div>
               <label>
                 <input type="radio" id="vraag" name="type" value="vraag" />
-                Vraag stellen
+                {t("contact.form.type.value2")}
               </label>
             </div>
           </div>
         </StyledInput>
         <StyledInput long>
           <label htmlFor="company">
-            Bedrijfsnaam<sup>*</sup>
+            {t("contact.form.company")}
+            <sup>*</sup>
           </label>
           <input
             type="text"
@@ -57,7 +62,8 @@ const Form = ({ location }) => {
         </StyledInput>
         <StyledInput>
           <label htmlFor="firstname">
-            Voornaam<sup>*</sup>
+            {t("contact.form.firstname")}
+            <sup>*</sup>
           </label>
           <input
             type="text"
@@ -69,7 +75,8 @@ const Form = ({ location }) => {
         </StyledInput>
         <StyledInput>
           <label htmlFor="lastname">
-            Achternaam<sup>*</sup>
+            {t("contact.form.lastname")}
+            <sup>*</sup>
           </label>
           <input
             type="text"
@@ -81,7 +88,8 @@ const Form = ({ location }) => {
         </StyledInput>
         <StyledInput>
           <label htmlFor="email">
-            E-mailadres<sup>*</sup>
+            {t("contact.form.email")}
+            <sup>*</sup>
           </label>
           <input
             type="email"
@@ -92,23 +100,25 @@ const Form = ({ location }) => {
           />
         </StyledInput>
         <StyledInput>
-          <label htmlFor="phone">Telefoon / GSM</label>
+          <label htmlFor="phone">{t("contact.form.phone")}</label>
           <input type="tel" id="phone" name="telefoon" />
         </StyledInput>
         <StyledInput long>
           <label htmlFor="subject">
-            Onderwerp<sup>*</sup>
+            {t("contact.form.subject")}
+            <sup>*</sup>
           </label>
           <input type="text" id="subject" name="onderwerp" required />
         </StyledInput>
         <StyledInput long>
           <label htmlFor="message">
-            Stel hier uw vraag<sup>*</sup>
+            {t("contact.form.message")}
+            <sup>*</sup>
           </label>
           <textarea id="message" name="bericht" required />
         </StyledInput>
         <button type="submit" value="Submit">
-          Verstuur
+          {t("contact.form.send")}
         </button>
       </RouverpaForm>
     </FormWrapper>

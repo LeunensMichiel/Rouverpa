@@ -69,7 +69,7 @@ module.exports = {
           interpolation: {
             escapeValue: false,
           },
-          keySeparator: false,
+          keySeparator: ".",
           nsSeparator: false,
         },
       },

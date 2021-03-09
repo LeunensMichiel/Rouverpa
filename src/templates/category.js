@@ -1,7 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
-import { Link } from "gatsby-plugin-react-i18next"
+import { Link, Trans } from "gatsby-plugin-react-i18next"
 
 import Layout from "../components/layout"
 import {
@@ -25,7 +25,7 @@ const category = ({ data, pageContext }) => {
       <Breadcrumb>
         <div className="crumbs__list">
           <Link to="/gamma/" activeClassName="crumb__active">
-            Ons gamma
+            <Trans>gamma.breadcrumb.gamma</Trans>
           </Link>
           <Chevron />
           <Link
@@ -36,11 +36,13 @@ const category = ({ data, pageContext }) => {
           </Link>
         </div>
         <Link to="/contact?type=offerte" className="link__styled">
-          Offerte aanvragen
+          <Trans>gamma.breadcrumb.quotation</Trans>
         </Link>
       </Breadcrumb>
       <SideProductNav>
-        <h1>Categorieën</h1>
+        <h1>
+          <Trans>gamma.sideNav.categories</Trans>
+        </h1>
         <div className="sidenav">
           {data.categories.edges.map(item => (
             <Link
@@ -48,8 +50,8 @@ const category = ({ data, pageContext }) => {
               activeClassName="sidenav__active"
               key={item.node.fields.slug}
             >
-              {item.node.frontmatter.name}
-              {item.node.frontmatter.name.toLowerCase() ===
+              {item.node.frontmatter.nameNL}
+              {item.node.frontmatter.key.toLowerCase() ===
                 pageContext.category.toLowerCase() && (
                 <div className="sidenav__sub">
                   {data.products.edges.map(product => (
@@ -111,19 +113,19 @@ export const itemsForCategory = graphql`
               }
             }
             category
-            title
+            titleNL
           }
         }
       }
     }
     categories: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/categorieen/" } }
-      sort: { fields: frontmatter___name }
+      sort: { fields: frontmatter___nameNL }
     ) {
       edges {
         node {
           frontmatter {
-            name
+            nameNL
           }
           fields {
             slug

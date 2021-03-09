@@ -23,7 +23,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         edges {
           node {
             frontmatter {
-              name
+              key
             }
             fields {
               slug
@@ -58,7 +58,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       path: `/gamma${node.fields.slug}`,
       component: path.resolve(`./src/templates/category.js`),
       context: {
-        category: node.frontmatter.name,
+        category: node.frontmatter.key,
         slug: node.fields.slug,
       },
     })

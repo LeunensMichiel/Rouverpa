@@ -1,1 +1,136 @@
-{}
+{
+  "skeleton": {
+    "internetExplorer": "Rouverpa ne prend pas en charge Internet Explorer. Veuillez télécharger un navigateur moderne tel que Google Chrome ou Firefox.",
+    "logo": "Emballage cadeau & étiquettes imprimées"
+  },
+  "cookies": {
+    "title": "L'équipe Rouverpa est prête pour vous.",
+    "message": "Pour améliorer Rouverpa, nous utilisons des cookies analytiques pour conserver des statistiques. Ne vous inquiétez pas, nous ne collectons pas de données personnelles et les données collectées sont anonymisées. Par exemple, nous regardons quelles pages sont les plus visitées.",
+    "accept": "Aucun problème!",
+    "decline": "Préfère ne pas"
+  },
+  "navigation": {
+    "home": "Home",
+    "gamma": "Produits",
+    "about": "À propos de nous",
+    "contact": "Contact"
+  },
+  "footer": {
+    "rouverpa": "Rouverpa bv",
+    "btw": "BTW: 0441.926.159",
+    "features": {
+      "title": "Atouts",
+      "1": "Produit adapté au client",
+      "2": "Livraison ponctuelle",
+      "3": "Vaste gamme de produits",
+      "4": "Plus de 30 ans d'expérience"
+    },
+    "contact": "Contact",
+    "navigation": "Navigation"
+  },
+  "home": {
+    "SEO": {
+      "title": "Emballage cadeau & étiquettes imprimées",
+      "description": "Rouverpa est une entreprise spécialisée depuis plus de 30 ans dans la production de services d'emballaga cadeau et d'étiquettes imprimées. Nos clients sont situés dans le secteur des fleurs, du chocolat, etc."
+    },
+    "video": {
+      "title": "Emballage cadeau & étiquettes imprimées",
+      "subTitle": "Votre spécialiste depuis 30 ans",
+      "cta": "Nos produits"
+    },
+    "gamma": {
+      "title": "Nous produisons,",
+      "1": "Étiquettes et imprimés",
+      "2": "Film de polypropylène",
+      "3": "Emballages cadeaux",
+      "goToShop": "Voir notre gamme complète",
+      "cta": "À propos de nous"
+    },
+    "about": {
+      "title": "Plus sur nous,",
+      "intro": "Rouverpa est une entreprise spécialisée depuis plus de 30 ans dans la production de services d'emballaga cadeau et d'étiquettes imprimées. Nos clients sont situés dans le secteur des fleurs, du chocolat, etc.",
+      "story": "Geert D’hondt et Caroline Desmet travaille avec passion et ils ont beaucoup d’expérience pour produire des produits de haute qualité. Chez Rouverpa, le client est central et grâce à sa propre ligne de production, il peut fabriquer des produits adaptés au client. En outre, la vaste gamme de produits garantit que les souhaits du client sont satisfaits. Le service de livraison interne garantit des livraisons ponctuelles à tout moment. Pour d’autre questions",
+      "storyLink": "appelez-nous ou envoyez-nous un e-mail",
+      "owners": {
+        "geert": {
+          "name": "Geert D'Hondt",
+          "title": "Manager",
+          "function": "Responsable de l'emballage de service",
+          "imgTitle": "Manager Geert D'Hondt",
+          "imgAlt": "Photo du manager Geert D'Hondt"
+        },
+        "caroline": {
+          "name": "Caroline Desmet",
+          "title": "Manager",
+          "function": "Manager responsable d'étiquettes et rubans imprimés",
+          "imgTitle": "Manager Caroline Desmet",
+          "imgAlt": "Photo du manager Caroline Desmet"
+        }
+      }
+    },
+    "interested": {
+      "title": "Intéressé?",
+      "message": "Vous pouvez toujours nous contacter. Nous sommes prêts à aider les gens à tout moment. Allez sur notre page contact pour demander un devis sans engagement, ou poser une autre question.",
+      "signed": "L'équipe Rouverpa",
+      "buttonQuote": "Demander une offre",
+      "buttonContact": "Contactez nous"
+    }
+  },
+  "contact": {
+    "SEO": {
+      "title": "Contact",
+      "description": "Coordonnées et formulaire de devis et demandes de renseignements pour Rouverpa."
+    },
+    "info": {
+      "title": "Contact",
+      "btw": "BTW: 0441.926.159",
+      "hours": {
+        "title": "Heures d'ouverture",
+        "week": "Lundi-Vendredi:",
+        "saturday": "Samedi:",
+        "sunday": "Dimanche:",
+        "closed": "Fermé"
+      },
+      "socials": "Médias sociaux"
+    },
+    "form": {
+      "type": {
+        "label": "Je veux",
+        "value1": "Demander un devis",
+        "value2": "Poser une question"
+      },
+      "company": "Nom de la compagnie",
+      "firstname": "Prénom",
+      "lastname": "Nom de la famille",
+      "email": "E-mail",
+      "phone": "Téléphone / mobile",
+      "subject": "Sujet",
+      "message": "Poser votre question ici",
+      "send": "Verstuur"
+    }
+  },
+  "thanks": {
+    "title": "Merci de nous contacter",
+    "message": "Nous répondrons à votre question / devis dans les plus brefs délais. Revenir à la",
+    "home": "page d'accueil"
+  },
+  "404": {
+    "title": "Cette page n'existe pas.",
+    "message": "Revenir à la",
+    "home": "page d'accueil"
+  },
+  "gamma": {
+    "SEO": {
+      "title": "Produits",
+      "description": "Voir la gamme complète de Rouverpa, fournisseur de sacs de transport, d'étiquettes, d'impression, de film, de rubans, de papier d'emballage et plus encore."
+    },
+    "breadcrumb": {
+      "gamma": "Nos produits",
+      "quotation": "Citation requise"
+    },
+    "sideNav": {
+      "gamma": "Nos produits",
+      "categories": "Catégories"
+    }
+  }
+}

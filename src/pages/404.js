@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { Link } from "gatsby"
+import { graphql } from "gatsby"
+import { useTranslation, Link } from "gatsby-plugin-react-i18next"
 
 import Layout from "../components/layout"
 
@@ -18,15 +19,31 @@ const NotFoundWrapper = styled.div`
     font-weight: 700;
   }
 `
-const NotFoundPage = () => (
-  <Layout>
-    <NotFoundWrapper>
-      <h1>Deze pagina bestaat niet.</h1>
-      <p>
-        Ga terug naar de <Link to="/">homepagina</Link>.
-      </p>
-    </NotFoundWrapper>
-  </Layout>
-)
+const NotFoundPage = () => {
+  const { t } = useTranslation()
+  return (
+    <Layout>
+      <NotFoundWrapper>
+        <h1>{t("404.title")}</h1>
+        <p>
+          {t("404.message")} <Link to="/">{t("404.home")}</Link>.
+        </p>
+      </NotFoundWrapper>
+    </Layout>
+  )
+}
 
 export default NotFoundPage
+export const query = graphql`
+  query($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`

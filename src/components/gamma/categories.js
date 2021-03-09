@@ -2,14 +2,15 @@ import React from "react"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 import { CategoryWrapper, Breadcrumb, SideProductNav } from "./gammaStyles"
-import { Link } from "gatsby-plugin-react-i18next"
+import { Link, useTranslation } from "gatsby-plugin-react-i18next"
 
 const Categories = () => {
+  const { t } = useTranslation()
   const data = useStaticQuery(graphql`
     query MyQuery {
       categories: allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/categorieen/" } }
-        sort: { fields: frontmatter___name }
+        sort: { fields: frontmatter___nameNL }
       ) {
         edges {
           node {
@@ -22,7 +23,7 @@ const Categories = () => {
                   }
                 }
               }
-              name
+              nameNL
             }
             fields {
               slug
@@ -36,18 +37,18 @@ const Categories = () => {
     <>
       <Breadcrumb>
         <Link to="/gamma/" activeClassName="crumb__active">
-          Ons gamma
+          {t("gamma.breadcrumb.gamma")}
         </Link>
         <Link to="/contact?type=offerte" className="link__styled">
-          Offerte aanvragen
+          {t("gamma.breadcrumb.quotation")}
         </Link>
       </Breadcrumb>
       <SideProductNav>
-        <h1>Gamma</h1>
+        <h1> {t("gamma.sideNav.gamma")}</h1>
         <div className="sidenav">
           {data.categories.edges.map(item => (
             <Link to={`/gamma${item.node.fields.slug}`} key={item.node.id}>
-              {item.node.frontmatter.name}
+              {item.node.frontmatter.nameNL}
             </Link>
           ))}
         </div>
@@ -59,10 +60,10 @@ const Categories = () => {
             className="category__card"
             key={item.node.id}
           >
-            <h3>{item.node.frontmatter.name}</h3>
+            <h3>{item.node.frontmatter.nameNL}</h3>
             <Img
               fluid={item.node.frontmatter.image[0].childImageSharp.fluid}
-              alt={item.node.frontmatter.name}
+              alt={item.node.frontmatter.nameNL}
               className="category__card__image"
             />
           </Link>

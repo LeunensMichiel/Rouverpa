@@ -2,7 +2,7 @@ import styled from "@emotion/styled"
 import { keyframes } from "@emotion/core"
 
 import Pattern from "../../assets/pattern.png"
-import Border from "../../assets/borderHero.svg"
+// import Border from "../../assets/borderHero.svg"
 
 const Scroll = keyframes`
   0% { opacity: 0; }
@@ -45,12 +45,13 @@ export const VideoWrapper = styled.div`
     z-index: 4;
     text-transform: uppercase;
     text-align: center;
-    background-image: url(${Border});
     background-size: 100% 100%;
 
     h1 {
       font-size: ${p => p.theme.fontSizes[6]};
       padding: ${p => p.theme.space[7]};
+      border: 4px solid ${p => p.theme.colors.white98};
+      border-radius: 4px;
     }
 
     .hero__text__upper {
@@ -76,8 +77,10 @@ export const VideoWrapper = styled.div`
 
       h2 {
         font-size: ${p => p.theme.fontSizes[3]};
-        margin-top: -12px;
+        margin-top: -14px;
         display: block;
+        padding: ${p => p.theme.space[0]};
+        background-color: ${p => p.theme.colors.accentp2};
       }
     }
   }
@@ -144,16 +147,15 @@ export const VideoWrapper = styled.div`
     height: 85vh;
     max-height: 750px;
     .hero__text {
-      background-size: 95% 100%;
-      background-position: center;
-      background-repeat: no-repeat;
       h1 {
         font-size: ${p => p.theme.fontSizes[3]};
         padding: ${p => p.theme.space[5]};
+        width: 90%;
+        margin: 0 auto;
       }
       .hero__text__upper {
         h2 {
-          font-size: 8px;
+          font-size: ${p => p.theme.fontSizes[0]};
           margin-top: -4px;
         }
       }

@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { useTranslation, Link } from "gatsby-plugin-react-i18next"
 
 import { GammaIndexWrapper } from "./gammaStyles"
 import cover1 from "../../assets/backgrounds/cover1.png"
@@ -8,37 +8,38 @@ import cover3 from "../../assets/backgrounds/cover3.png"
 import Button from "../button/button"
 
 const GammaIndex = () => {
+  const { t } = useTranslation()
   return (
     <GammaIndexWrapper id="gamma">
-      <h1>Wij produceren,</h1>
+      <h1>{t("home.gamma.title")}</h1>
       <div className="gamma__list">
         <Link
           className="gamma__item"
           to="/gamma/categorieen/etiketten_drukwerk/"
         >
-          <h3>Etiketten & Drukwerk</h3>
+          <h3>{t("home.gamma.1")}</h3>
           <img alt="Foto van etiketten en drukwerk" src={cover1} />
         </Link>
         <Link className="gamma__item" to="/gamma/categorieen/folie/">
-          <h3>Folie</h3>
+          <h3>{t("home.gamma.2")}</h3>
           <img alt="Foto van folie" src={cover2} />
         </Link>
         <Link
           className="gamma__item"
           to="/gamma/categorieen/verpakkingspapier/"
         >
-          <h3>Verpakkingspapier</h3>
+          <h3>{t("home.gamma.3")}</h3>
           <img alt="Foto van geschenkverpakkingen" src={cover3} />
         </Link>
       </div>
       <div className="buttonWrapper">
-        <Button text="Bekijk ons volledig assortiment" href="/gamma/" />
+        <Button text={t("home.gamma.goToShop")} href="/gamma/" />
       </div>
       <Link to="/#overons" className="scroll-downs">
         <div className="mouse">
           <div className="scroller"></div>
         </div>
-        <span>Over Ons</span>
+        <span>{t("home.gamma.cta")}</span>
       </Link>
     </GammaIndexWrapper>
   )

@@ -1,5 +1,6 @@
 import React from "react"
-
+import { graphql } from "gatsby"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 import Info from "../components/contact/info"
 import Layout from "../components/layout"
 import Map from "../components/contact/map"
@@ -7,11 +8,12 @@ import Form from "../components/contact/form"
 import SEO from "../components/seo/seo"
 
 const Contact = ({ location }) => {
+  const { t } = useTranslation()
   return (
     <Layout>
       <SEO
-        title="Contact"
-        description="Contactgegevens en formulier voor offertes en vragen voor Rouverpa."
+        title={t("contact.SEO.title")}
+        description={t("contact.SEO.description")}
       />
       <Info />
       <Form location={location} />
@@ -21,3 +23,16 @@ const Contact = ({ location }) => {
 }
 
 export default Contact
+export const query = graphql`
+  query($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`
