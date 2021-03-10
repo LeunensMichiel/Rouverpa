@@ -1,0 +1,136 @@
+{
+  "skeleton": {
+    "internetExplorer": "Rouverpa does not support Internet Explorer. Please download a modern browser such as Google Chrome or Firefox.",
+    "logo": "Gift wrapping & printed labels"
+  },
+  "cookies": {
+    "title": "The Rouverpa team is ready for you.",
+    "message": "To improve Rouverpa, we use analytical cookies to keep statistics. Don't worry, we don't collect personal data, and the data that is collected is anonymized. For example, we look at which pages are visited the most.",
+    "accept": "No problem!",
+    "decline": "Rather not"
+  },
+  "navigation": {
+    "home": "Home",
+    "gamma": "Products",
+    "about": "About us",
+    "contact": "Contact"
+  },
+  "footer": {
+    "rouverpa": "Rouverpa bv",
+    "btw": "BTW: 0441.926.159",
+    "features": {
+      "title": "Added value",
+      "1": "Tailormade products",
+      "2": "Punctual delivery",
+      "3": "Extensive product range",
+      "4": "More than 30 years of experience"
+    },
+    "contact": "Contact",
+    "navigation": "Navigation"
+  },
+  "home": {
+    "SEO": {
+      "title": "Gift wrapping & printed labels",
+      "description": "Rouverpa is already more than 30 years specialized in producing gift wrapping service and printed labels. Our customers are located in the flower sector, chocolate sector, etc."
+    },
+    "video": {
+      "title": "Gift wrapping & printed labels",
+      "subTitle": "Already more than 30 years your specialist in",
+      "cta": "Our products"
+    },
+    "gamma": {
+      "title": "We produce,",
+      "1": "Printed labels and press-work",
+      "2": "Packaging foil",
+      "3": "Gift wrapping paper",
+      "goToShop": "Check out all our products",
+      "cta": "About us"
+    },
+    "about": {
+      "title": "More about us,",
+      "intro": "Rouverpa is already more than 30 years specialized in producing gift wrapping service and printed labels. Our customers are located in the flower sector, chocolate sector, etc.",
+      "story": "Geert D’hondt & Caroline Desmet use their passion and experience to produce high-quality products. At Rouverpa, the customer stands central and thanks to its own production line, it can make products tailored to the customer. In addition, the extensive product range ensures that the wishes of the customer are fulfilled. The internal delivery service guarantees punctual deliveries at any time. For further questions",
+      "storyLink": "call us or send us an email.",
+      "owners": {
+        "geert": {
+          "name": "Geert D'Hondt",
+          "title": "Manager",
+          "function": "Manager responsible for wrapping paper",
+          "imgTitle": "Manager Geert D'Hondt",
+          "imgAlt": "Picture of manager Geert D'Hondt"
+        },
+        "caroline": {
+          "name": "Caroline Desmet",
+          "title": "Manager",
+          "function": "Manager responsible for printed labels and ribbons",
+          "imgTitle": "Manager Caroline Desmet",
+          "imgAlt": "Picture of manager Caroline Desmet"
+        }
+      }
+    },
+    "interested": {
+      "title": "Interested?",
+      "message": "You can always reach out to us. We are willing to help people at any time. Go to our contact page to request a quotation without obligation, or to ask another question.",
+      "signed": "The Rouverpa team",
+      "buttonQuote": "Request quotation",
+      "buttonContact": "Contact us"
+    }
+  },
+  "contact": {
+    "SEO": {
+      "title": "Contact",
+      "description": "Contact details and form for quotations and questions for Rouverpa."
+    },
+    "info": {
+      "title": "Contact",
+      "btw": "BTW: 0441.926.159",
+      "hours": {
+        "title": "Openening hours",
+        "week": "Monday-Friday:",
+        "saturday": "Saturday:",
+        "sunday": "Sunday:",
+        "closed": "Closed"
+      },
+      "socials": "Social Media"
+    },
+    "form": {
+      "type": {
+        "label": "I would like to",
+        "value1": "Request quotation",
+        "value2": "Ask question"
+      },
+      "company": "Company name",
+      "firstname": "First name",
+      "lastname": "Second name",
+      "email": "E-mail",
+      "phone": "Smartphone",
+      "subject": "Subject",
+      "message": "Ask your question here",
+      "send": "Send"
+    }
+  },
+  "thanks": {
+    "title": "Thank you for contacting us!",
+    "message": "We will answer your question / quotation as soon as possible. Go back to the",
+    "home": "homepage"
+  },
+  "404": {
+    "title": "This page does not exist.",
+    "message": "Go back to the",
+    "home": "homepage"
+  },
+  "gamma": {
+    "SEO": {
+      "title": "Products",
+      "description": "View the full range of Rouverpa, supplier of carrier bags, labels, printing, foil, ribbons, packaging paper and more."
+    },
+    "breadcrumb": {
+      "gamma": "Our products",
+      "quotation": "Request quotation"
+    },
+    "sideNav": {
+      "gamma": "Gamma",
+      "categories": "Category"
+    }
+  }
+}

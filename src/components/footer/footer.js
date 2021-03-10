@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, useTranslation } from "gatsby-plugin-react-i18next"
 
 import Logo from "../logo/logo"
 import { FooterWrapper, LeftFooter, RightFooter } from "./footerStyles"
@@ -8,6 +8,7 @@ import Instagram from "../../assets/icons/instagram.svg"
 import LinkedIn from "../../assets/icons/linkedin.svg"
 import Facebook from "../../assets/icons/facebook.svg"
 const Footer = () => {
+  const { t } = useTranslation()
   return (
     <FooterWrapper>
       <LeftFooter>
@@ -43,27 +44,27 @@ const Footer = () => {
             </a>
           </div>
           <div className="left__btw">
-            Rouverpa bv
+            {t("footer.rouverpa")}
             <br />
-            BTW: 0441.926.159
+            {t("footer.btw")}
           </div>
         </div>
         <div className="copyright">
-          © {new Date().getFullYear()} <span>Rouverpa bv</span>
+          © {new Date().getFullYear()} <span>{t("footer.rouverpa")}</span>
         </div>
       </LeftFooter>
       <RightFooter>
         <div className="right__block">
-          <h6>Troeven</h6>
+          <h6>{t("footer.features.title")}</h6>
           <ul>
-            <li>Product op maat van de klant</li>
-            <li>Stipte levering</li>
-            <li>Uitgebreid productassortiment</li>
-            <li>30 jaar ervaring en knowhow</li>
+            <li>{t("footer.features.1")}</li>
+            <li>{t("footer.features.2")}</li>
+            <li>{t("footer.features.3")}</li>
+            <li>{t("footer.features.4")}</li>
           </ul>
         </div>
         <div className="right__block">
-          <h6>Contact</h6>
+          <h6>{t("footer.contact")}</h6>
           <ul>
             <li>
               Steenovenstraat 14
@@ -75,16 +76,16 @@ const Footer = () => {
           </ul>
         </div>
         <div className="right__block">
-          <h6>Navigatie</h6>
+          <h6>{t("footer.navigation")}</h6>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">{t("navigation.home")}</Link>
             </li>
             <li>
-              <Link to="/gamma/">Ons Gamma</Link>
+              <Link to="/gamma/">{t("navigation.gamma")}</Link>
             </li>
             <li>
-              <Link to="/contact/">Contact</Link>
+              <Link to="/contact/">{t("navigation.contact")}</Link>
             </li>
           </ul>
         </div>

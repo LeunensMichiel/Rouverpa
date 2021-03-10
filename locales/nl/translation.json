@@ -1,0 +1,136 @@
+{
+  "skeleton": {
+    "internetExplorer": "Rouverpa ondersteunt geen Internet Explorer. Gelieve een moderne browser te downloaden zoals Google Chrome of Firefox.",
+    "logo": "Verpakkingen & Etiketten"
+  },
+  "cookies": {
+    "title": "Het Rouverpa-team staat voor je klaar.",
+    "message": "Om Rouverpa te verbeteren, maken we gebruik van analytische cookies om statistieken bij te houden. Geen zorgen, wij verzamelen geen persoonlijke data, en de data die verzameld wordt is geanonimiseerd. We kijken bijvoorbeeld welke pagina's het meest bezocht worden.",
+    "accept": "Geen probleem!",
+    "decline": "Liever niet"
+  },
+  "navigation": {
+    "home": "Home",
+    "gamma": "Ons Gamma",
+    "about": "Over Ons",
+    "contact": "Contact"
+  },
+  "footer": {
+    "rouverpa": "Rouverpa bv",
+    "btw": "BTW: 0441.926.159",
+    "features": {
+      "title": "Troeven",
+      "1": "Product op maat van de klant",
+      "2": "Stipte levering",
+      "3": "Uitgebreid productassortiment",
+      "4": "30 jaar ervaring en knowhow"
+    },
+    "contact": "Contact",
+    "navigation": "Navigatie"
+  },
+  "home": {
+    "SEO": {
+      "title": "Verpakkingen & etiketten",
+      "description": "Rouverpa is een leverancier dat al meer dan 30 jaar gespecialiseerd is in serviceverpakkingen en etiketten. Hun klanten bevinden zich in de bloemensector, chocoladesector, etc."
+    },
+    "video": {
+      "title": "Serviceverpakkingen & Etiketten",
+      "subTitle": "Al 30 jaar uw specialist in",
+      "cta": "Ons Gamma"
+    },
+    "gamma": {
+      "title": "Wij produceren,",
+      "1": "Etiketten & Drukwerk",
+      "2": "Folie",
+      "3": "Verpakkingspapier",
+      "goToShop": "Bekijk ons volledig assortiment",
+      "cta": "Over Ons"
+    },
+    "about": {
+      "title": "Een beetje uitleg over ons,",
+      "intro": "Rouverpa is een bedrijf dat al meer dan 30 jaar gespecialiseerd is in serviceverpakkingen en etiketten. Onze klanten bevinden zich in de bloemensector, chocoladesector, etc.",
+      "story": "Geert D’hondt & Caroline Desmet gebruiken hun passie en ervaring om kwalitatieve producten te produceren. Bij Rouverpa staat de klant centraal en kan het mede dankzij zijn eigen productielijn producten op maat van de klant maken. Daarnaast zorgt het uitgebreid product assortiment ervoor dat de wensen van de klant worden vervuld. Door de interne leveringsdienst zijn stipte leveringen gewaarborgd. Voor verdere vragen kunt u ons steeds",
+      "storyLink": "mailen of bellen",
+      "owners": {
+        "geert": {
+          "name": "Geert D'Hondt",
+          "title": "Bestuurder",
+          "function": "Verantwoordelijk voor verpakkingen",
+          "imgTitle": "Bestuurder Geert D'Hondt",
+          "imgAlt": "Foto van bestuurder Geert D'Hondt"
+        },
+        "caroline": {
+          "name": "Caroline Desmet",
+          "title": "Bestuurster",
+          "function": "Verantwoordelijk voor bedrukte linten en etiketten",
+          "imgTitle": "Bestuurster Caroline Desmet",
+          "imgAlt": "Foto van bestuurster Caroline Desmet"
+        }
+      }
+    },
+    "interested": {
+      "title": "Geïnteresseerd?",
+      "message": "Wij staan alvast klaar om u te helpen. Surf naar onze contactpagina om steeds vrijblijvende offertes aan te vragen, of om andere vragen te stellen.",
+      "signed": "Het Rouverpa team",
+      "buttonQuote": "Offerte aanvragen",
+      "buttonContact": "Contacteer ons"
+    }
+  },
+  "contact": {
+    "SEO": {
+      "title": "Contact",
+      "description": "Contactgegevens en formulier voor offertes en vragen voor Rouverpa."
+    },
+    "info": {
+      "title": "Contact",
+      "btw": "BTW: 0441.926.159",
+      "hours": {
+        "title": "Openingsuren",
+        "week": "Maandag-Vrijdag:",
+        "saturday": "Zaterdag:",
+        "sunday": "Zondag:",
+        "closed": "Gesloten"
+      },
+      "socials": "Sociale Media"
+    },
+    "form": {
+      "type": {
+        "label": "Ik wil een",
+        "value1": "Offerte aanvragen",
+        "value2": "Vraag stellen"
+      },
+      "company": "Bedrijfsnaam",
+      "firstname": "Voornaam",
+      "lastname": "Achternaam",
+      "email": "E-mailadres",
+      "phone": "Telefoon / GSM",
+      "subject": "Onderwerp",
+      "message": "Stel hier uw vraag",
+      "send": "Verstuur"
+    }
+  },
+  "thanks": {
+    "title": "Bedankt om ons te contacteren!",
+    "message": "We beantwoorden uw vraag/offerte zo snel mogelijk. Ga terug naar de",
+    "home": "homepagina"
+  },
+  "404": {
+    "title": "Deze pagina bestaat niet.",
+    "message": "Ga terug naar de",
+    "home": "homepagina"
+  },
+  "gamma": {
+    "SEO": {
+      "title": "Gamma",
+      "description": "Bekijk hier het volledige assortiment van Rouverpa, leverancier van o.a. draagtassen, etiketten, drukwerk, folie, linten, verpakkingspapier en meer."
+    },
+    "breadcrumb": {
+      "gamma": "Ons Gamma",
+      "quotation": "Offerte aanvragen"
+    },
+    "sideNav": {
+      "gamma": "Gamma",
+      "categories": "Categorieën"
+    }
+  }
+}

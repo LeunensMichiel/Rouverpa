@@ -1,4 +1,6 @@
 import React from "react"
+import { useTranslation } from "gatsby-plugin-react-i18next"
+
 import { InfoWrapper } from "./contactStyles"
 
 import Phone from "../../assets/icons/phone.svg"
@@ -10,10 +12,11 @@ import LinkedIn from "../../assets/icons/linkedin.svg"
 import Facebook from "../../assets/icons/facebook.svg"
 
 const Info = () => {
+  const { t } = useTranslation()
   return (
     <InfoWrapper>
       <div className="info__section">
-        <h3>Contact</h3>
+        <h3>{t("contact.info.title")}</h3>
         <div className="info__list__item">
           <Location />
           <span>
@@ -32,26 +35,26 @@ const Info = () => {
         </div>
         <div className="info__list__item">
           <Card />
-          <span>BTW 0441.926.159</span>
+          <span>{t("contact.info.btw")}</span>
         </div>
       </div>
       <div className="info__section">
-        <h3>Openingsuren</h3>
+        <h3>{t("contact.info.hours.title")}</h3>
         <div className="info__opening__hours">
           <div className="opening__hours__days">
-            <span>Maandag-Vrijdag:</span>
-            <span>Zaterdag:</span>
-            <span>Zondag:</span>
+            <span>{t("contact.info.hours.week")}</span>
+            <span>{t("contact.info.hours.saturday")}</span>
+            <span>{t("contact.info.hours.sunday")}</span>
           </div>
           <div>
             <span>08:00 – 18:00</span>
             <span>08:00 – 16:00</span>
-            <span>Gesloten</span>
+            <span>{t("contact.info.hours.closed")}</span>
           </div>
         </div>
       </div>
       <div className="info__section">
-        <h3>Sociale Media</h3>
+        <h3>{t("contact.info.socials")}</h3>
         <div className="info__socials">
           <a
             aria-label="Instagram Rouverpa"

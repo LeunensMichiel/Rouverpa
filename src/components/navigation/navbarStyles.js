@@ -2,7 +2,7 @@ import styled from "@emotion/styled"
 
 export const NavWrapper = styled.header`
   position: fixed;
-  margin-top: ${p => (p.isSticky ? "0" : "36px")};
+  /* margin-top: ${p => (p.isSticky ? "0" : "36px")}; */
   width: 100%;
   height: 100px;
   background-color: ${p => p.theme.colors.white98};
@@ -13,6 +13,9 @@ export const NavWrapper = styled.header`
     );
   box-shadow: ${p => p.theme.shadows.container};
   z-index: 100;
+  transform: ${props =>
+    props.isSticky ? "translateY(0)" : "translateY(36px)"};
+    transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
 
   @media ${p => p.theme.mq.mobileM} {
     display: flex;
@@ -54,9 +57,8 @@ export const LinkWrapper = styled.nav`
     font-weight: 700;
     &.link__cta {
       padding: ${p => p.theme.space[1]} ${p => p.theme.space[4]};
-      margin-right: 0;
       border-radius: ${p => p.theme.borderRadius};
-      color: ${p => p.theme.colors.white98};
+      color: #fff;
       background-color: ${p => p.theme.colors.accentp2};
       transition: background 0.6s cubic-bezier(0.22, 1, 0.36, 1);
       &.active {
@@ -67,6 +69,19 @@ export const LinkWrapper = styled.nav`
       }
     }
   }
+  .seperator {
+    content: "";
+    display: block;
+    height: 40%;
+    width: 4px;
+    background: ${p => p.theme.colors.white94};
+    border-radius: ${p => p.theme.borderRadius};
+  }
+  @media ${p => p.theme.mq.tablet} {
+    a {
+      margin: 0 ${p => p.theme.space[2]};
+    }
+  }
   @media ${p => p.theme.mq.mobileM} {
     flex-direction: column;
     justify-content: center;
@@ -75,9 +90,13 @@ export const LinkWrapper = styled.nav`
       padding: ${p => p.theme.space[2]} 0;
       margin: 0;
       font-size: ${p => p.theme.fontSizes[5]} !important;
-      &:not(:nth-of-type(4)) {
-        margin-bottom: ${p => p.theme.space[2]};
-      }
+      margin-bottom: ${p => p.theme.space[2]};
+    }
+    .seperator {
+      background: ${p => p.theme.colors.accentp2};
+      height: 4px;
+      width: 40px;
+      margin-top: ${p => p.theme.space[5]};
     }
   }
 `
@@ -100,6 +119,7 @@ export const NavbarWrapper = styled.nav`
     transition-property: opacity, filter;
     transition-duration: 0.15s;
     transition-timing-function: linear;
+    outline: none;
 
     &:hover {
       opacity: 0.5;
@@ -236,24 +256,7 @@ export const NavUpperBarWrapper = styled.aside`
   .upperbar__item {
     display: flex;
     align-items: center;
-    background-color: ${p => p.theme.colors.accentp1};
     padding: 0 ${p => p.theme.space[1]};
-
-    &.dark {
-      background-color: ${p => p.theme.colors.accent};
-    }
-    &.darker {
-      background-color: ${p => p.theme.colors.accentm1};
-      svg {
-        margin-right: 0;
-      }
-    }
-    &.darkest {
-      background-color: ${p => p.theme.colors.accentm2};
-      svg {
-        margin-right: 0;
-      }
-    }
   }
 
   svg {

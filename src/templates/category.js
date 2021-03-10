@@ -1,6 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
+import { Link, useTranslation } from "gatsby-plugin-react-i18next"
 
 import Layout from "../components/layout"
 import {
@@ -11,7 +12,8 @@ import {
 import Chevron from "../assets/icons/chevron.svg"
 import SEO from "../components/seo/seo"
 
-const category = ({ data, pageContext }) => {
+const Category = ({ data, pageContext }) => {
+  const { t, i18n } = useTranslation()
   return (
     <Layout>
       <SEO
@@ -24,7 +26,7 @@ const category = ({ data, pageContext }) => {
       <Breadcrumb>
         <div className="crumbs__list">
           <Link to="/gamma/" activeClassName="crumb__active">
-            Ons gamma
+            {t("gamma.breadcrumb.gamma")}
           </Link>
           <Chevron />
           <Link
@@ -35,11 +37,11 @@ const category = ({ data, pageContext }) => {
           </Link>
         </div>
         <Link to="/contact?type=offerte" className="link__styled">
-          Offerte aanvragen
+          {t("gamma.breadcrumb.quotation")}
         </Link>
       </Breadcrumb>
       <SideProductNav>
-        <h1>Categorieën</h1>
+        <h1>{t("gamma.sideNav.categories")}</h1>
         <div className="sidenav">
           {data.categories.edges.map(item => (
             <Link
@@ -47,16 +49,20 @@ const category = ({ data, pageContext }) => {
               activeClassName="sidenav__active"
               key={item.node.fields.slug}
             >
-              {item.node.frontmatter.name}
-              {item.node.frontmatter.name.toLowerCase() ===
-                pageContext.category.toLowerCase() && (
+              {item.node.frontmatter[`name${i18n.language.toUpperCase()}`]}
+              {item.node.frontmatter.key.toLowerCase() ===
+                pageContext.categoryKey.toLowerCase() && (
                 <div className="sidenav__sub">
                   {data.products.edges.map(product => (
                     <Link
                       to={`/gamma${product.node.fields.slug}`}
                       key={product.node.fields.slug}
                     >
-                      {product.node.frontmatter.title}
+                      {
+                        product.node.frontmatter[
+                          `title${i18n.language.toUpperCase()}`
+                        ]
+                      }
                     </Link>
                   ))}
                 </div>
@@ -72,11 +78,15 @@ const category = ({ data, pageContext }) => {
             className="category__card"
             key={item.node.fields.slug}
           >
-            <h3>{item.node.frontmatter.title}</h3>
+            <h3>
+              {item.node.frontmatter[`title${i18n.language.toUpperCase()}`]}
+            </h3>
             <Img
               fluid={item.node.frontmatter.image[0].childImageSharp.fluid}
-              alt={item.node.frontmatter.title}
-              title={item.node.frontmatter.title}
+              alt={item.node.frontmatter[`title${i18n.language.toUpperCase()}`]}
+              title={
+                item.node.frontmatter[`title${i18n.language.toUpperCase()}`]
+              }
               className="category__card__image"
             />
           </Link>
@@ -86,14 +96,14 @@ const category = ({ data, pageContext }) => {
   )
 }
 
-export default category
+export default Category
 
 export const itemsForCategory = graphql`
-  query categoryQuery($category: String!) {
+  query categoryQuery($categoryKey: String!, $language: String!) {
     products: allMarkdownRemark(
       filter: {
         fileAbsolutePath: { regex: "/producten/" }
-        frontmatter: { category: { eq: $category } }
+        frontmatter: { category: { eq: $categoryKey } }
       }
     ) {
       edges {
@@ -110,23 +120,37 @@ export const itemsForCategory = graphql`
               }
             }
             category
-            title
+            titleNL
+            titleFR
+            titleEN
           }
         }
       }
     }
     categories: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/categorieen/" } }
-      sort: { fields: frontmatter___name }
+      sort: { fields: frontmatter___nameNL }
     ) {
       edges {
         node {
           frontmatter {
-            name
+            nameNL
+            nameEN
+            nameFR
+            key
           }
           fields {
             slug
           }
+        }
+      }
+    }
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
         }
       }
     }

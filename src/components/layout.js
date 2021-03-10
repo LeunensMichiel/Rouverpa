@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import PropTypes from "prop-types"
 import { css } from "@emotion/core"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 import Navbar from "./navigation/navbar"
 import Footer from "./footer/footer"
@@ -97,6 +98,7 @@ const IsIE = () => {
 const Layout = ({ children }) => {
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false)
   const [analyticsEnabled, setAnalyticsEnabled] = useState(false)
+  const { t } = useTranslation()
 
   const handleAnalytics = shouldSetAnalytics => {
     if (typeof window !== `undefined`) {
@@ -129,11 +131,10 @@ const Layout = ({ children }) => {
   }, [])
 
   if (IsIE()) {
-    alert(
-      "Internet Explorer is oud en wordt niet meer ondersteund. De site zal hier niet goed op draaien. Gelieve een moderne browser te downloaden zoals Google Chrome of Firefox"
-    )
-    window.open("https://www.google.com/intl/nl/chrome/")
+    alert(t("skeleton.internetExplorer"))
+    window.open("https://www.google.com/chrome/")
   }
+
   return (
     <>
       {analyticsEnabled && <Scripts />}

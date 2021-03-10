@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { Link } from "gatsby"
+import { Link } from "gatsby-plugin-react-i18next"
 
 const StyledButton = styled(Link)`
   display: block;

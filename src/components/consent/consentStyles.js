@@ -43,4 +43,10 @@ export const ConsentContainer = styled.div`
       background-color: ${p => p.theme.colors.accentm2};
     }
   }
+
+  @media ${p => p.theme.mq.mobileM} {
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 `

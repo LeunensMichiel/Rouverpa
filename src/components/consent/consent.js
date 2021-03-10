@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react"
-import { ConsentContainer } from "./consentStyles"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 import { CSSTransition } from "react-transition-group"
+
+import { ConsentContainer } from "./consentStyles"
 import "./animation.css"
 
 const Consent = ({ handleAnalytics }) => {
   const [visible, setVisible] = useState(false)
+  const { t } = useTranslation()
 
   useEffect(() => {
     setVisible(!localStorage.getItem("analyticsEnabled"))
@@ -22,13 +25,8 @@ const Consent = ({ handleAnalytics }) => {
       unmountOnExit
     >
       <ConsentContainer>
-        <h1>Het Rouverpa-team staat voor je klaar.</h1>
-        <p>
-          Om Rouverpa te verbeteren, maken we gebruik van analytische cookies om
-          statistieken bij te houden. Geen zorgen, wij verzamelen geen
-          persoonlijke data, en de data die verzameld wordt is geanonimiseerd.
-          We kijken bijvoorbeeld welke pagina's het meest bezocht worden.
-        </p>
+        <h1>{t("cookies.title")}</h1>
+        <p>{t("cookies.message")}</p>
         <div className="buttons">
           <button
             onClick={() => {
@@ -36,7 +34,7 @@ const Consent = ({ handleAnalytics }) => {
               setVisible(false)
             }}
           >
-            Liever niet
+            {t("cookies.decline")}
           </button>
           <button
             onClick={() => {
@@ -44,7 +42,7 @@ const Consent = ({ handleAnalytics }) => {
               setVisible(false)
             }}
           >
-            Geen probleem!
+            {t("cookies.accept")}
           </button>
         </div>
       </ConsentContainer>

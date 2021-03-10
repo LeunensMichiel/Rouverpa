@@ -1,14 +1,16 @@
 import React from "react"
 import Img from "gatsby-image"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import { CategoryWrapper, Breadcrumb, SideProductNav } from "./gammaStyles"
+import { Link, useTranslation } from "gatsby-plugin-react-i18next"
 
 const Categories = () => {
+  const { t, i18n } = useTranslation()
   const data = useStaticQuery(graphql`
     query MyQuery {
       categories: allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/categorieen/" } }
-        sort: { fields: frontmatter___name }
+        sort: { fields: frontmatter___nameNL }
       ) {
         edges {
           node {
@@ -21,7 +23,9 @@ const Categories = () => {
                   }
                 }
               }
-              name
+              nameNL
+              nameEN
+              nameFR
             }
             fields {
               slug
@@ -31,22 +35,23 @@ const Categories = () => {
       }
     }
   `)
+
   return (
     <>
       <Breadcrumb>
         <Link to="/gamma/" activeClassName="crumb__active">
-          Ons gamma
+          {t("gamma.breadcrumb.gamma")}
         </Link>
         <Link to="/contact?type=offerte" className="link__styled">
-          Offerte aanvragen
+          {t("gamma.breadcrumb.quotation")}
         </Link>
       </Breadcrumb>
       <SideProductNav>
-        <h1>Gamma</h1>
+        <h1> {t("gamma.sideNav.gamma")}</h1>
         <div className="sidenav">
           {data.categories.edges.map(item => (
             <Link to={`/gamma${item.node.fields.slug}`} key={item.node.id}>
-              {item.node.frontmatter.name}
+              {item.node.frontmatter[`name${i18n.language.toUpperCase()}`]}
             </Link>
           ))}
         </div>
@@ -58,10 +63,12 @@ const Categories = () => {
             className="category__card"
             key={item.node.id}
           >
-            <h3>{item.node.frontmatter.name}</h3>
+            <h3>
+              {item.node.frontmatter[`name${i18n.language.toUpperCase()}`]}
+            </h3>
             <Img
               fluid={item.node.frontmatter.image[0].childImageSharp.fluid}
-              alt={item.node.frontmatter.name}
+              alt={item.node.frontmatter[`name${i18n.language.toUpperCase()}`]}
               className="category__card__image"
             />
           </Link>

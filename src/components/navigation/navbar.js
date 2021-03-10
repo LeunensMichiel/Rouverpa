@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
-import { Link } from "gatsby"
+import { Link } from "gatsby-plugin-react-i18next"
 import _ from "lodash"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 import {
   NavWrapper,
@@ -16,9 +17,11 @@ import Enveloppe from "../../assets/icons/enveloppe.svg"
 import Instagram from "../../assets/icons/instagram.svg"
 import LinkedIn from "../../assets/icons/linkedin.svg"
 import Facebook from "../../assets/icons/facebook.svg"
+import LanguageDropdown from "../language"
 
 const Navbar = ({ show = false, hamburgerClickHandler }) => {
   const [isSticky, setSticky] = useState(false)
+  const { t } = useTranslation()
 
   const handleScroll = () => {
     window.scrollY >= 36 ? setSticky(true) : setSticky(false)
@@ -34,7 +37,7 @@ const Navbar = ({ show = false, hamburgerClickHandler }) => {
   return (
     <>
       <NavUpperBarWrapper>
-        <a href="+32051201517" className="upperbar__item">
+        <a href="tel:+32051201517" className="upperbar__item">
           <Phone />
           <span>+32 (0)51 20 15 17</span>
         </a>
@@ -43,7 +46,7 @@ const Navbar = ({ show = false, hamburgerClickHandler }) => {
           <span>rouverpa@telenet.be</span>
         </Link>
         <a
-          className="upperbar__item darker"
+          className="upperbar__item"
           aria-label="Instagram Rouverpa"
           href="https://www.instagram.com/rouverpa/"
           target="_blank"
@@ -52,8 +55,8 @@ const Navbar = ({ show = false, hamburgerClickHandler }) => {
           <Instagram />
         </a>
         <a
-          className="upperbar__item darker"
-          aria-label="Instagram Rouverpa"
+          className="upperbar__item"
+          aria-label="Facebook Rouverpa"
           href="https://www.facebook.com/Rouverpa-101216735010244"
           target="_blank"
           rel="noopener noreferrer"
@@ -61,7 +64,7 @@ const Navbar = ({ show = false, hamburgerClickHandler }) => {
           <Facebook />
         </a>
         <a
-          className="upperbar__item darkest"
+          className="upperbar__item"
           aria-label="LinkedIn Rouverpa"
           href="https://www.linkedin.com/company/rouverpa/"
           target="_blank"
@@ -99,13 +102,13 @@ const Navbar = ({ show = false, hamburgerClickHandler }) => {
         </LogoWrapper>
         <LinkWrapper>
           <Link to="/" activeClassName="active">
-            Home
+            {t("navigation.home")}
           </Link>
           <Link to="/gamma/" partiallyActive={true} activeClassName="active">
-            Ons Gamma
+            {t("navigation.gamma")}
           </Link>
           <Link to="/#overons" partiallyActive={true} activeClassName="active">
-            Over Ons
+            {t("navigation.about")}
           </Link>
           <Link
             to="/contact/"
@@ -113,8 +116,10 @@ const Navbar = ({ show = false, hamburgerClickHandler }) => {
             activeClassName="active"
             className="link__cta"
           >
-            Contact
+            {t("navigation.contact")}
           </Link>
+          <div className="seperator" />
+          <LanguageDropdown />
         </LinkWrapper>
       </NavWrapper>
     </>
