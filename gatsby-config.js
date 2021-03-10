@@ -72,6 +72,16 @@ module.exports = {
           keySeparator: ".",
           nsSeparator: false,
         },
+        pages: [
+          {
+            matchPath: "/:lang?/gamma/categorieen/:slug",
+            getLanguageFromPath: true,
+          },
+          {
+            matchPath: "/:lang?/gamma/producten/:slug",
+            getLanguageFromPath: true,
+          },
+        ],
       },
     },
     {

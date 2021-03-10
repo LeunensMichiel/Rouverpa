@@ -1,10 +1,10 @@
 ---
 titleNL: Nietjesmachines
-titleFR: Nietjesmachines
-titleEN: Nietjesmachines
+titleFR: Agrafeuse
+titleEN: Stapler
 descriptionNL: Ons assortiment van nietjesmachines.
-descriptionFR: Ons assortiment van nietjesmachines.
-descriptionEN: Ons assortiment van nietjesmachines.
+descriptionFR: Notre gamme de agrafeuse.
+descriptionEN: Our stapler products.
 category: accessoires
 detailsNL:
   [
@@ -13,13 +13,13 @@ detailsNL:
   ]
 detailsFR:
   [
-    "Type: nietjestang P3B en B8HDP Bostitch",
-    "Bijhorende nietjes apart te verkrijgen.",
+    "Modèle: agrafeuse P3B et B8HDP Bostitch",
+    "Agrafes associées disponible séparément.",
   ]
 detailsEN:
   [
-    "Type: nietjestang P3B en B8HDP Bostitch",
-    "Bijhorende nietjes apart te verkrijgen.",
+    "Model: stapler P3B and B8HDP Bostitch",
+    "Matching stapler available separately.",
   ]
 image: ["Nietjesmachine.png"]
 ---

@@ -1,7 +1,7 @@
 ---
 key: verpakkingspapier
 nameNL: verpakkingspapier
-nameFR: verpakkingspapier
-nameEN: verpakkingspapier
+nameFR: emballages cadeaux
+nameEN: wrapping paper
 image: ["Verpakkingen.png"]
 ---

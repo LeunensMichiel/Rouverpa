@@ -1,10 +1,10 @@
 ---
 titleNL: Bedrukte linten
-titleFR: Bedrukte linten
-titleEN: Bedrukte linten
+titleFR: Rubans imprimés
+titleEN: Printed ribbons
 descriptionNL: Ons assortiment van bedrukte linten, beschikbaar in verschillende kleuren.
-descriptionEN: Ons assortiment van bedrukte linten, beschikbaar in verschillende kleuren.
-descriptionFR: Ons assortiment van bedrukte linten, beschikbaar in verschillende kleuren.
+descriptionEN: Our printed ribbon products, available in different colors.
+descriptionFR: Notre gamme de ruban imprimés, disponible en différentes couleurs.
 category: "etiketten & drukwerk"
 detailsNL:
   [
@@ -14,15 +14,15 @@ detailsNL:
   ]
 detailsFR:
   [
-    "Kleur: keuze uit diverse kleuren (zie kleurenkaart)",
-    "Lintbreedte: 10 mm, 15 mm, 25 mm en 40 mm",
-    "Lengte: 100m",
+    "Couleur: choix de différentes couleurs (voir nuancier)",
+    "Largeur du ribban: 10 mm, 15 mm, 25 mm et 40 mm",
+    "Longueur: 100m",
   ]
 detailsEN:
   [
-    "Kleur: keuze uit diverse kleuren (zie kleurenkaart)",
-    "Lintbreedte: 10 mm, 15 mm, 25 mm en 40 mm",
-    "Lengte: 100m",
+    "Couleur: choice of various colors (see colorpanel)",
+    "Ribbon width: 10 mm, 15 mm, 25 mm and 40 mm",
+    "Length: 100m",
   ]
 image: ["Bedrukte linten.png"]
 extra: kleurkaart_satin.png

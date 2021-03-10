@@ -23,6 +23,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         edges {
           node {
             frontmatter {
+              nameNL
+              nameEN
+              nameFR
               key
             }
             fields {
@@ -45,6 +48,15 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           }
         }
       }
+      locales: allLocale {
+        edges {
+          node {
+            ns
+            data
+            language
+          }
+        }
+      }
     }
   `)
 
@@ -54,24 +66,37 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 
   result.data.categories.edges.forEach(({ node }) => {
-    createPage({
-      path: `/gamma${node.fields.slug}`,
-      component: path.resolve(`./src/templates/category.js`),
-      context: {
-        category: node.frontmatter.key,
-        slug: node.fields.slug,
-      },
+    result.data.locales.edges.forEach(({ node: langNode }) => {
+      const customPath = ["en", "fr"].includes(langNode.language)
+        ? `${langNode.language}/gamma${node.fields.slug}`
+        : `gamma${node.fields.slug}`
+      createPage({
+        path: customPath,
+        component: path.resolve(`./src/templates/category.js`),
+        context: {
+          category: node.frontmatter[`name${langNode.language.toUpperCase()}`],
+          categoryKey: node.frontmatter.key,
+          slug: node.fields.slug,
+          language: langNode.language,
+        },
+      })
     })
   })
 
   result.data.products.edges.forEach(({ node }) => {
-    createPage({
-      path: `/gamma${node.fields.slug}`,
-      component: path.resolve(`./src/templates/product.js`),
-      context: {
-        slug: node.fields.slug,
-        category: node.frontmatter.category,
-      },
+    result.data.locales.edges.forEach(({ node: langNode }) => {
+      const customPath = ["en", "fr"].includes(langNode.language)
+        ? `${langNode.language}/gamma${node.fields.slug}`
+        : `gamma${node.fields.slug}`
+      createPage({
+        path: customPath,
+        component: path.resolve(`./src/templates/product.js`),
+        context: {
+          slug: node.fields.slug,
+          category: node.frontmatter.category,
+          language: langNode.language,
+        },
+      })
     })
   })
 }

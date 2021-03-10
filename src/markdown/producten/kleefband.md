@@ -1,10 +1,10 @@
 ---
 titleNL: Kleefband
-titleFR: Kleefband
-titleEN: Kleefband
+titleFR: Ruban adhésif
+titleEN: Adhesive tape
 descriptionNL: Ons assortiment van kleefband.
-descriptionFR: Ons assortiment van kleefband.
-descriptionEN: Ons assortiment van kleefband.
+descriptionFR: Notre gamme de ruban adhésif.
+descriptionEN: Our adhesive tape products.
 category: accessoires
 detailsNL:
   [
@@ -14,15 +14,15 @@ detailsNL:
   ]
 detailsFR:
   [
-    "Type: Tesa en Vibac",
-    "Formaat: 12 mm x 66 m (Tesa) en 48 mm x 66 m (Vibac)",
-    "Bijhorende afroller apart te verkrijgen.",
+    "Modèle: Tesa en Vibac",
+    "Format: 12 mm x 66 m (Tesa) et 48 mm x 66 m (Vibac)",
+    "Dérouleur d'accompagnement disponible séparément.",
   ]
 detailsEN:
   [
-    "Type: Tesa en Vibac",
-    "Formaat: 12 mm x 66 m (Tesa) en 48 mm x 66 m (Vibac)",
-    "Bijhorende afroller apart te verkrijgen.",
+    "Model: Tesa en Vibac",
+    "Format: 12 mm x 66 m (Tesa) and 48 mm x 66 m (Vibac)",
+    "Matching roll dispenser available separately.",
   ]
 image: ["Kleefband.png"]
 ---

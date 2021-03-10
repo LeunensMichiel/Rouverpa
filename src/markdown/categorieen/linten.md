@@ -1,7 +1,7 @@
 ---
 key: linten
 nameNL: linten
-nameFR: linten
-nameEN: linten
+nameFR: rubans
+nameEN: ribbons
 image: ["Linten.png"]
 ---

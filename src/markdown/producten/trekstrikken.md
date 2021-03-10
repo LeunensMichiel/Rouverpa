@@ -1,10 +1,10 @@
 ---
 titleNL: Trekstrikken
-titleFR: Trekstrikken
-titleEN: Trekstrikken
+titleFR: Noeuds rapide
+titleEN: Pull bow
 descriptionNL: Ons assortiment van trekstrikken.
-descriptionFR: Ons assortiment van trekstrikken.
-descriptionEN: Ons assortiment van trekstrikken.
+descriptionFR: Notre gamme de noeuds rapide.
+descriptionEN: Our range of pull bows.
 category: linten
 detailsNL:
   [
@@ -13,13 +13,13 @@ detailsNL:
   ]
 detailsFR:
   [
-    "Kleur: zwart, wit, bordeaux, rood, vanille, zilver, lichtgroen, donkergroen, beige en lichtblauw",
-    "Verkoopeenheid: 25 of 50 stuks per zak",
+    "Couleur: noir, blanc, bordeaux, red, vanille, argent, vert clair, vert foncé, beige en bleu clair",
+    "Unité de vente: 25 ou 50 pièces par sac",
   ]
 detailsEN:
   [
-    "Kleur: zwart, wit, bordeaux, rood, vanille, zilver, lichtgroen, donkergroen, beige en lichtblauw",
-    "Verkoopeenheid: 25 of 50 stuks per zak",
+    "Color: black, white, bordeaux, red, vanilla, silver, light green, dark green, beige en light blue",
+    "Sales unit: 25 or 50 pieces per bag",
   ]
 image: ["Trekstrik.png"]
 ---

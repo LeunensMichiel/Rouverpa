@@ -1,10 +1,10 @@
 ---
 titleNL: Algemeen drukwerk
-titleFR: Algemeen drukwerk
-titleEN: Algemeen drukwerk
+titleFR: Impression générale
+titleEN: General press-work
 descriptionNL: "Het volgende is bij ons te verkrijgen:"
-descriptionFR: "Het volgende is bij ons te verkrijgen:"
-descriptionEN: "Het volgende is bij ons te verkrijgen:"
+descriptionFR: "Ce qui suit est disponible chez nous:"
+descriptionEN: "The following is available from us:"
 category: "etiketten & drukwerk"
 detailsNL:
   [
@@ -14,15 +14,15 @@ detailsNL:
   ]
 detailsFR:
   [
-    "Firmakaartjes",
-    "Prijskaartjes met afscheurstrook",
-    "Papierbanden (70 cm x 5 cm)",
+    "Cartes de visite",
+    "Étiquettes de prix avec bande détachable",
+    "Bandes de papier (70 cm x 5 cm)",
   ]
 detailsEN:
   [
-    "Firmakaartjes",
-    "Prijskaartjes met afscheurstrook",
-    "Papierbanden (70 cm x 5 cm)",
+    "Business cards",
+    "Price tags with tear-off strip",
+    "Paper banner (70 cm x 5 cm)",
   ]
 image:
   [

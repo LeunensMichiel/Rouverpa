@@ -5,7 +5,7 @@ import { CategoryWrapper, Breadcrumb, SideProductNav } from "./gammaStyles"
 import { Link, useTranslation } from "gatsby-plugin-react-i18next"
 
 const Categories = () => {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const data = useStaticQuery(graphql`
     query MyQuery {
       categories: allMarkdownRemark(
@@ -24,6 +24,8 @@ const Categories = () => {
                 }
               }
               nameNL
+              nameEN
+              nameFR
             }
             fields {
               slug
@@ -33,6 +35,7 @@ const Categories = () => {
       }
     }
   `)
+
   return (
     <>
       <Breadcrumb>
@@ -48,7 +51,7 @@ const Categories = () => {
         <div className="sidenav">
           {data.categories.edges.map(item => (
             <Link to={`/gamma${item.node.fields.slug}`} key={item.node.id}>
-              {item.node.frontmatter.nameNL}
+              {item.node.frontmatter[`name${i18n.language.toUpperCase()}`]}
             </Link>
           ))}
         </div>
@@ -60,10 +63,12 @@ const Categories = () => {
             className="category__card"
             key={item.node.id}
           >
-            <h3>{item.node.frontmatter.nameNL}</h3>
+            <h3>
+              {item.node.frontmatter[`name${i18n.language.toUpperCase()}`]}
+            </h3>
             <Img
               fluid={item.node.frontmatter.image[0].childImageSharp.fluid}
-              alt={item.node.frontmatter.nameNL}
+              alt={item.node.frontmatter[`name${i18n.language.toUpperCase()}`]}
               className="category__card__image"
             />
           </Link>

@@ -1,7 +1,7 @@
 ---
 key: folie
 nameNL: folie
-nameFR: folie
-nameEN: folie
+nameFR: film de polypropylène
+nameEN: wrapping foil
 image: ["Folie.png"]
 ---

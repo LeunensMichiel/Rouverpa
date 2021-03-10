@@ -1,10 +1,10 @@
 ---
 titleNL: Volvlak ingekleurd PPL
-titleFR: Volvlak ingekleurd PPL
-titleEN: Volvlak ingekleurd PPL
+titleFR: Polypropylène coloré
+titleEN: Full colored PPL
 descriptionNL: Ons assortiment van volvlak ingekleurd PPL.
-descriptionFR: Ons assortiment van volvlak ingekleurd PPL.
-descriptionEN: Ons assortiment van volvlak ingekleurd PPL.
+descriptionFR: Our gamme de polypropylène coloré.
+descriptionEN: Our range of full colored PPL.
 category: folie
 detailsNL:
   [
@@ -15,17 +15,17 @@ detailsNL:
   ]
 detailsFR:
   [
-    "Kleur: alle hoofdkleuren",
-    "Rolbreedte: 60 cm",
-    "Rollengte: 300 m",
-    "Verkoopeenheid: zowel op rol als vel",
+    "Couleur: toutes les couleurs principals",
+    "Largeur du rouleau: 60 cm",
+    "Longueur du rouleau: 300 m",
+    "Unité de vente: à la fois sur rouleaux et feuilles",
   ]
 detailsEN:
   [
-    "Kleur: alle hoofdkleuren",
-    "Rolbreedte: 60 cm",
-    "Rollengte: 300 m",
-    "Verkoopeenheid: zowel op rol als vel",
+    "Color: all main colors",
+    "Roll width: 60 cm",
+    "Roll legnth: 300 m",
+    "Sales unit: both on roll and sheet",
   ]
 image: ["Volvlak ingekleurd PPL.png"]
 ---
