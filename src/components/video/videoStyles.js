@@ -54,6 +54,14 @@ export const VideoWrapper = styled.div`
       border-radius: 4px;
     }
 
+    a {
+      color: ${p => p.theme.colors.white98};
+      padding: ${p => p.theme.space[1]};
+      margin-top: ${p => p.theme.space[5]};
+      display: block;
+      text-decoration: underline;
+      font-weight: 700;
+    }
     .hero__text__upper {
       display: flex;
       flex-direction: row;

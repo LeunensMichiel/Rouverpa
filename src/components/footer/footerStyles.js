@@ -29,6 +29,12 @@ export const LeftFooter = styled.div`
   .left__socials {
     display: flex;
     margin-right: ${p => p.theme.space[2]};
+
+    svg {
+      height: 14px;
+      width: auto;
+      fill: ${p => p.theme.colors.white94};
+    }
   }
 
   .social__icon {
@@ -44,11 +50,6 @@ export const LeftFooter = styled.div`
     &:hover {
       background-color: ${p => p.theme.colors.accentp2};
     }
-  }
-  svg {
-    height: 14px;
-    width: auto;
-    fill: ${p => p.theme.colors.white94};
   }
 
   .left__btw {
@@ -81,10 +82,12 @@ export const LeftFooter = styled.div`
     .social__icon {
       padding: ${p => p.theme.space[1]};
     }
-    svg {
-      height: 18px;
-      width: auto;
-      fill: ${p => p.theme.colors.white94};
+    .left__socials {
+      svg {
+        height: 18px;
+        width: auto;
+        fill: ${p => p.theme.colors.white94};
+      }
     }
   }
 `

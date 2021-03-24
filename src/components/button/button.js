@@ -25,7 +25,11 @@ const StyledButton = styled(Link)`
 
 const Button = ({ text, external = false, accent = false, href }) => {
   if (external) {
-    return <a>{text}</a>
+    return (
+      <a href={href} target="_blank" rel="noreferrer">
+        {text}
+      </a>
+    )
   } else {
     return (
       <StyledButton accent={accent ? "true" : undefined} to={href}>

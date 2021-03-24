@@ -4,7 +4,7 @@ export const NavWrapper = styled.header`
   position: fixed;
   /* margin-top: ${p => (p.isSticky ? "0" : "36px")}; */
   width: 100%;
-  height: 100px;
+  height: 120px;
   background-color: ${p => p.theme.colors.white98};
   display: grid;
   grid-template-columns: minmax(16px, 1fr) repeat(12, minmax(24px, 95px)) minmax(
@@ -38,6 +38,12 @@ export const LogoWrapper = styled.div`
   grid-column: 2 / span 3;
   display: flex;
   align-items: center;
+  height: 100%;
+  overflow: hidden;
+
+  a {
+    height: 100%;
+  }
 
   @media ${p => p.theme.mq.mobileM} {
     display: ${p => (p.mobile ? "flex" : "none")};
@@ -55,6 +61,7 @@ export const LinkWrapper = styled.nav`
     margin: 0 ${p => p.theme.space[4]};
     font-size: ${p => p.theme.fontSizes[2]};
     font-weight: 700;
+    text-align: center;
     &.link__cta {
       padding: ${p => p.theme.space[1]} ${p => p.theme.space[4]};
       border-radius: ${p => p.theme.borderRadius};
@@ -79,7 +86,7 @@ export const LinkWrapper = styled.nav`
   }
   @media ${p => p.theme.mq.tablet} {
     a {
-      margin: 0 ${p => p.theme.space[2]};
+      margin: 0 ${p => p.theme.space[1]};
     }
   }
   @media ${p => p.theme.mq.mobileM} {
