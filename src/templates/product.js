@@ -25,6 +25,7 @@ const Product = ({ data }) => {
         description={
           data.product.frontmatter[`description${i18n.language.toUpperCase()}`]
         }
+        lang={i18n.language}
       />
       <Breadcrumb>
         <div className="crumbs__list">

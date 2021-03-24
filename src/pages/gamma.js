@@ -5,12 +5,13 @@ import Layout from "../components/layout"
 import Categories from "../components/gamma/categories"
 import SEO from "../components/seo/seo"
 const Gamma = () => {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   return (
     <Layout>
       <SEO
         title={t("gamma.SEO.title")}
         description={t("gamma.SEO.description")}
+        lang={i18n.language}
       />
       <Categories />
     </Layout>

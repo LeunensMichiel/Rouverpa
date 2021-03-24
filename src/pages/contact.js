@@ -8,12 +8,13 @@ import Form from "../components/contact/form"
 import SEO from "../components/seo/seo"
 
 const Contact = ({ location }) => {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   return (
     <Layout>
       <SEO
         title={t("contact.SEO.title")}
         description={t("contact.SEO.description")}
+        lang={i18n.language}
       />
       <Info />
       <Form location={location} />

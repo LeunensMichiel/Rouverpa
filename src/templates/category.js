@@ -22,6 +22,7 @@ const Category = ({ data, pageContext }) => {
           pageContext.category.slice(1)
         }
         description={`Het assortiment van ${pageContext.category} van Rouverpa`}
+        lang={i18n.language}
       />
       <Breadcrumb>
         <div className="crumbs__list">

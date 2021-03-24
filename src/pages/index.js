@@ -10,12 +10,13 @@ import About from "../components/about/about"
 import Interested from "../components/interested/interested"
 
 const IndexPage = () => {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   return (
     <Layout>
       <SEO
         title={t("home.SEO.title")}
         description={t("home.SEO.description")}
+        lang={i18n.language}
       />
       <Video />
       <GammaIndex />
