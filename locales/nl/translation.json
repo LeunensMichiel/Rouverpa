@@ -133,5 +133,11 @@
       "gamma": "Gamma",
       "categories": "Categorieën"
     }
+  },
+  "environment": {
+    "SEO": {
+      "title": "Duurzaam ondernemen",
+      "description": "Doordat de vraag naar milieuvriendelijke producten en verpakkingen toeneemt, willen wij het onderwerp in de bloemenwereld bespreekbaar maken en proberen zoveel mogelijk mensen mee te nemen in het duurzaam verhaal."
+    }
   }
 }

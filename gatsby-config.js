@@ -40,9 +40,22 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    "gatsby-transformer-remark",
-    `gatsby-transformer-sharp`,
+    "gatsby-transformer-sharp",
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+              quality: 80,
+            },
+          },
+        ],
+      },
+    },
     `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-manifest`,

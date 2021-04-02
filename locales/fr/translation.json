@@ -133,5 +133,11 @@
       "gamma": "Nos produits",
       "categories": "Catégories"
     }
+  },
+  "environment": {
+    "SEO": {
+      "title": "Entrepreneuriat durable",
+      "description": "La demande de produits et d'emballages respectueux de l'environnement étant en augmentation, nous souhaitons rendre le sujet plus discutable dans le monde des fleurs et tenter d'impliquer le plus grand nombre de personnes possible dans cette histoire durable."
+    }
   }
 }

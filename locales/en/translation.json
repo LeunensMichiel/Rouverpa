@@ -133,5 +133,11 @@
       "gamma": "Gamma",
       "categories": "Category"
     }
+  },
+  "environment": {
+    "SEO": {
+      "title": "Sustainable business",
+      "description": "Because the demand for environmentally friendly products and packaging is increasing, we want to make the subject in the world of flowers more debatable and try to include as many people as possible in the sustainability story."
+    }
   }
 }

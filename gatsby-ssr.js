@@ -36,7 +36,8 @@ const GlobalStyles = css`
     font-size: ${rouverpaTheme.fontSizes[5]};
   }
 
-  p {
+  p,
+  li {
     font-size: ${rouverpaTheme.fontSizes[2]};
     font-family: ${rouverpaTheme.fonts.body};
     line-height: ${rouverpaTheme.lineHeights.body};
