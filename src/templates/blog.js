@@ -6,9 +6,8 @@ import styled from "@emotion/styled"
 import { graphql } from "gatsby"
 
 const Article = styled.article`
-  margin-top: 100px;
-  margin-bottom: 3rem;
   grid-column: 4 / span 8;
+  padding: ${p => p.theme.space[8]} 0;
 
   h1,
   h2 {
@@ -53,10 +52,18 @@ const Article = styled.article`
     font-weight: 700;
     text-decoration: underline;
   }
+
+  @media ${p => p.theme.mq.mobileM} {
+    grid-column: 2 / span 12;
+
+    h1 {
+      font-size: ${p => p.theme.fontSizes[3]};
+    }
+  }
 `
 
 const Blog = ({ data }) => {
-  const { t, i18n } = useTranslation()
+  const { i18n } = useTranslation()
   const {
     html,
     frontmatter: { seoDescription, seoTitle },

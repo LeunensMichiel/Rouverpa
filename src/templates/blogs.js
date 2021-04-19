@@ -29,6 +29,9 @@ const BlogsContainer = styled.section`
 
   @media ${p => p.theme.mq.mobileM} {
     grid-column: 2 / span 12;
+    h1 {
+      font-size: ${p => p.theme.fontSizes[3]};
+    }
   }
 `
 
