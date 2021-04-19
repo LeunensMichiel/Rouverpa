@@ -107,8 +107,8 @@ const Navbar = ({ show = false, hamburgerClickHandler }) => {
           <Link to="/gamma/" partiallyActive={true} activeClassName="active">
             {t("navigation.gamma")}
           </Link>
-          <Link to="/#overons" partiallyActive={true} activeClassName="active">
-            {t("navigation.about")}
+          <Link to="/blogs" partiallyActive={true} activeClassName="active">
+            {t("navigation.blog")}
           </Link>
           <Link
             to="/contact/"

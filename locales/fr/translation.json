@@ -12,7 +12,7 @@
   "navigation": {
     "home": "Home",
     "gamma": "Produits",
-    "about": "À propos de nous",
+    "blog": "Blog",
     "contact": "Contact"
   },
   "footer": {
@@ -77,6 +77,12 @@
       "buttonContact": "Contactez nous"
     }
   },
+  "blog": {
+    "SEO": {
+      "title": "Nouvelles récentes de Rouverpa",
+      "description": "Pour en savoir plus sur les récents projets de Rouverpa, lisez ici."
+    }
+  },
   "contact": {
     "SEO": {
       "title": "Contact",
@@ -132,12 +138,6 @@
     "sideNav": {
       "gamma": "Nos produits",
       "categories": "Catégories"
-    }
-  },
-  "environment": {
-    "SEO": {
-      "title": "Entrepreneuriat durable",
-      "description": "La demande de produits et d'emballages respectueux de l'environnement étant en augmentation, nous souhaitons rendre le sujet plus discutable dans le monde des fleurs et tenter d'impliquer le plus grand nombre de personnes possible dans cette histoire durable."
     }
   }
 }

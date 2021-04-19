@@ -117,6 +117,16 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     })
   })
 
+  result.data.locales.edges.forEach(({ node: langNode }) => {
+    createPage({
+      path: "blogs",
+      component: path.resolve(`./src/templates/blogs.js`),
+      context: {
+        language: langNode.language,
+      },
+    })
+  })
+
   result.data.posts.edges.forEach(({ node }) => {
     result.data.locales.edges.forEach(({ node: langNode }) => {
       if (langNode.language === node.frontmatter.lang) {

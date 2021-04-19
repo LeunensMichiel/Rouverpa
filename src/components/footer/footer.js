@@ -85,6 +85,9 @@ const Footer = () => {
               <Link to="/gamma/">{t("navigation.gamma")}</Link>
             </li>
             <li>
+              <Link to="/blogs/">{t("navigation.blog")}</Link>
+            </li>
+            <li>
               <Link to="/contact/">{t("navigation.contact")}</Link>
             </li>
           </ul>

@@ -2,6 +2,7 @@
 lang: "fr"
 seoTitle: "Entrepreneuriat durable dans le secteur de l'emballage."
 seoDescription: "Ce blog décrit comment Rouverpa fait des efforts pour l'environnement. Il décrit ce qu'est un emballage respectueux de l'environnement, les défis auxquels nous sommes confrontés et ce que fait Rouverpa. Une économie circulaire dans le secteur de l'emballage sera l'avenir, réutiliser de plus en plus."
+date: "2021-04-19"
 ---
 
 # Entrepreneuriat durable

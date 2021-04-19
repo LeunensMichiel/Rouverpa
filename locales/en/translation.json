@@ -12,7 +12,7 @@
   "navigation": {
     "home": "Home",
     "gamma": "Products",
-    "about": "About us",
+    "blog": "Blog",
     "contact": "Contact"
   },
   "footer": {
@@ -77,6 +77,12 @@
       "buttonContact": "Contact us"
     }
   },
+  "blog": {
+    "SEO": {
+      "title": "Recent news from Rouverpa",
+      "description": "Read more about Rouverpa's recent developments here."
+    }
+  },
   "contact": {
     "SEO": {
       "title": "Contact",
@@ -132,12 +138,6 @@
     "sideNav": {
       "gamma": "Gamma",
       "categories": "Category"
-    }
-  },
-  "environment": {
-    "SEO": {
-      "title": "Sustainable business",
-      "description": "Because the demand for environmentally friendly products and packaging is increasing, we want to make the subject in the world of flowers more debatable and try to include as many people as possible in the sustainability story."
     }
   }
 }

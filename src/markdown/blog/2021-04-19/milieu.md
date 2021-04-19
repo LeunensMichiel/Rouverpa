@@ -2,6 +2,7 @@
 lang: "nl"
 seoTitle: "Duurzaam ondernemen binnen de verpakkingssector"
 seoDescription: "Deze blog beschrijft hoe Rouverpa inspanningen levert voor het milieu. Het beschrijft wat een milieubewuste verpakking is, voor welke uitdagingen we staan en wat Rouverpa uitvoert. Een circulaire economie in de verpakkingssector zal de toekomst zijn, meer en meer herbruiken."
+date: "2021-04-19"
 ---
 
 # Duurzaam ondernemen

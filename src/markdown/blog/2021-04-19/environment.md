@@ -2,6 +2,7 @@
 lang: "en"
 seoTitle: "Sustainable entrepreneurship within the packaging sector"
 seoDescription: "This blog describes how Rouverpa makes efforts for the environment. It describes what environmentally conscious packaging is, what challenges we face and what Rouverpa does. A circular economy in the packaging sector will be the future, reuse more and more."
+date: "2021-04-19"
 ---
 
 # Sustainable entrepreneurship

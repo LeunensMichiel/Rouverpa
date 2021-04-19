@@ -55,21 +55,15 @@ const Article = styled.article`
   }
 `
 
-const Blog = ({ data, pageContext }) => {
+const Blog = ({ data }) => {
   const { t, i18n } = useTranslation()
   const {
     html,
-    id,
-    fields: { slug },
-    frontmatter: { lang, seoDescription, seoTitle },
+    frontmatter: { seoDescription, seoTitle },
   } = data.md
   return (
     <Layout>
-      <SEO
-        title={t("environment.SEO.title")}
-        description={t("environment.SEO.description")}
-        lang={i18n.language}
-      />
+      <SEO title={seoTitle} description={seoDescription} lang={i18n.language} />
       <Article dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
   )
