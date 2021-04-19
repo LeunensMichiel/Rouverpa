@@ -94,6 +94,10 @@ module.exports = {
             matchPath: "/:lang?/gamma/producten/:slug",
             getLanguageFromPath: true,
           },
+          {
+            matchPath: "/:lang?/blog/:slug",
+            getLanguageFromPath: true,
+          },
         ],
       },
     },

@@ -1,6 +1,8 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
+const NON_DEFAULT_LANGUAGES = ["fr", "en"]
+
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
@@ -48,6 +50,21 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           }
         }
       }
+      posts: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/markdown/blog/" } }
+      ) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            id
+            frontmatter {
+              lang
+            }
+          }
+        }
+      }
       locales: allLocale {
         edges {
           node {
@@ -67,7 +84,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   result.data.categories.edges.forEach(({ node }) => {
     result.data.locales.edges.forEach(({ node: langNode }) => {
-      const customPath = ["en", "fr"].includes(langNode.language)
+      const customPath = NON_DEFAULT_LANGUAGES.includes(langNode.language)
         ? `${langNode.language}/gamma${node.fields.slug}`
         : `gamma${node.fields.slug}`
       createPage({
@@ -85,7 +102,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   result.data.products.edges.forEach(({ node }) => {
     result.data.locales.edges.forEach(({ node: langNode }) => {
-      const customPath = ["en", "fr"].includes(langNode.language)
+      const customPath = NON_DEFAULT_LANGUAGES.includes(langNode.language)
         ? `${langNode.language}/gamma${node.fields.slug}`
         : `gamma${node.fields.slug}`
       createPage({
@@ -97,6 +114,21 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           language: langNode.language,
         },
       })
+    })
+  })
+
+  result.data.posts.edges.forEach(({ node }) => {
+    result.data.locales.edges.forEach(({ node: langNode }) => {
+      if (langNode.language === node.frontmatter.lang) {
+        createPage({
+          path: node.fields.slug,
+          component: path.resolve(`./src/templates/blog.js`),
+          context: {
+            post: node.id,
+            language: langNode.language,
+          },
+        })
+      }
     })
   })
 }

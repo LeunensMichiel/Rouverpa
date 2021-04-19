@@ -1,7 +1,7 @@
 ---
 lang: "nl"
-seoTitle: "Titel"
-seoDescription: "desc"
+seoTitle: "Duurzaam ondernemen binnen de verpakkingssector"
+seoDescription: "Deze blog beschrijft hoe Rouverpa inspanningen levert voor het milieu. Het beschrijft wat een milieubewuste verpakking is, voor welke uitdagingen we staan en wat Rouverpa uitvoert. Een circulaire economie in de verpakkingssector zal de toekomst zijn, meer en meer herbruiken."
 ---
 
 # Duurzaam ondernemen
@@ -26,16 +26,16 @@ Om goed te scoren op de ladder van Lansink streeft Rouverpa naar transparantie, 
 > Verplicht 25% toe te voegen aan productie en minimaal 75% van het plastic moet gerecycleerd worden in 2025.
 
 - In 2025 zijn alle producenten van folie verplicht om 25% gerecycleerde materialen toe te voegen aan hun productie.
-- In 2025 moet minimaal 75% van het plastic worden gerecycleerd.
+- In 2025 moet minimaal 75% van het plastic worden gerecycled.
 
 ## Wij handhaven
 
-- Milieuvriendelijke recycleerbare BI-Oriented polypropyleen.
+- Milieuvriendelijke recycleerbare BI-Oriented polypropylene.
 - Unieke productcode op moederrol.
 - Beschikken over volgende twee machines:
   - _Een machine om ons plastic te persen in balen waarna het in een gespecialiseerd bedrijf wordt verwerkt tot korrels om nadien in andere producten te worden verwerken._
   - _Een machine om de massa aan afval PP-omsnoeringsbanden (bevinden zich rondom moederrol om bescherming van de folie te vrijwaren) te versnipperen en opnieuw te transporteren naar een gespecialiseerd bedrijf ter verwerking._
-- Samenwerking met producenten die FCS-gecertificeerd zijn.
+- Samenwerking met producenten die FSC-gecertificeerd zijn.
 
 <img align="left" src="image2.jpg" />
 
@@ -48,7 +48,7 @@ Voor onze folie verwijzen we naar de volgende SPI resin identificatie code. Zoâ€
 Onze folie valt onder recyclingcode PP 05 (U+2677). Het product is gemaakt van polypropyleen (PP) en is zoals aangegeven perfect recyclebaar. De code zorgt dat zij tijdens het proces van afvalverwerking op de juiste manier gesorteerd en hergebruikt worden. Wij willen zeker aan onze klanten meegeven dat onze producten perfect recycleerbaar zijn.
 [Lees meer hierover](https://denieuweblauwezak.be)
 
-Daarnaast krijgt elke moederrol folie een **unieke productcode** zodat de oorsprong van het product steeds bekend is. Voor ons papier werken wij samen met producenten die **FCS-gecertificeerd** zijn.
+Daarnaast krijgt elke moederrol folie een **unieke productcode** zodat de oorsprong van het product steeds bekend is. Voor ons papier werken wij samen met producenten die **FSC-gecertificeerd** zijn.
 
 Wij **sorteren** heel strikt ons papier- en plastic afval. Wij **persen** intern ons plastic en vervoeren dat naar een gespecialiseerde firma. Ter plaatse verwerken ze het **afval tot korrels** en die worden gebruikt in de verwerking tot harde plastic voor bijvoorbeeld tuinmeubelen, bloempottenâ€¦
 

@@ -1,6 +1,6 @@
 const rouverpaTheme = {
   colors: {
-    white98: "#FAF7F7",
+    white98: "#fbf9f9",
     white96: "#F5F2F3",
     white94: "#F0EEEE",
     accentp2: "#FF243A",

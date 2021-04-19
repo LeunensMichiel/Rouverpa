@@ -1,9 +1,9 @@
 import React from "react"
-import { graphql } from "gatsby"
+import Layout from "../components/layout"
+import SEO from "../components/seo/seo"
 import { useTranslation } from "gatsby-plugin-react-i18next"
 import styled from "@emotion/styled"
-import SEO from "../components/seo/seo"
-import Layout from "../components/layout"
+import { graphql } from "gatsby"
 
 const Article = styled.article`
   margin-top: 100px;
@@ -55,9 +55,14 @@ const Article = styled.article`
   }
 `
 
-const EnvironmentPage = ({ data }) => {
+const Blog = ({ data, pageContext }) => {
   const { t, i18n } = useTranslation()
-  const { html } = data.md.edges[0].node
+  const {
+    html,
+    id,
+    fields: { slug },
+    frontmatter: { lang, seoDescription, seoTitle },
+  } = data.md
   return (
     <Layout>
       <SEO
@@ -69,20 +74,21 @@ const EnvironmentPage = ({ data }) => {
     </Layout>
   )
 }
-export default EnvironmentPage
+
+export default Blog
 
 export const query = graphql`
-  query($language: String!) {
-    md: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/pages/environment/" } }
-    ) {
-      edges {
-        node {
-          html
-          frontmatter {
-            lang
-          }
-        }
+  query($post: String!, $language: String!) {
+    md: markdownRemark(id: { eq: $post }) {
+      html
+      id
+      fields {
+        slug
+      }
+      frontmatter {
+        lang
+        seoDescription
+        seoTitle
       }
     }
     locales: allLocale(filter: { language: { eq: $language } }) {

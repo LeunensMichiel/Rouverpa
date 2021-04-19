@@ -97,9 +97,7 @@ const Product = ({ data }) => {
         <div>
           {data.product.frontmatter.image.map(img => (
             <Img
-              key={
-                data.product.frontmatter[`title${i18n.language.toUpperCase()}`]
-              }
+              key={img.childImageSharp.id}
               fluid={img.childImageSharp.fluid}
               alt={
                 data.product.frontmatter[`title${i18n.language.toUpperCase()}`]
@@ -183,6 +181,7 @@ export const singleProduct = graphql`
         titleEN
         image {
           childImageSharp {
+            id
             fluid(maxWidth: 250, quality: 76) {
               ...GatsbyImageSharpFluid_withWebp_noBase64
             }

@@ -9,5 +9,5 @@ category: "etiketten & drukwerk"
 detailsNL: ["Te verkrijgen vanaf 1000 stuks"]
 detailsFR: ["Disponible depuis 1000 pcs"]
 detailsEN: ["Available from 1000 pcs"]
-image: ["Kaasvlaggen.png"]
+image: ["kaasvlaggen.png"]
 ---

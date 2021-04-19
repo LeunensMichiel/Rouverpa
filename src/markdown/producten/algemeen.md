@@ -26,8 +26,8 @@ detailsEN:
   ]
 image:
   [
-    "Algemeen drukwerk (papierbanden).png",
-    "Algemeen drukwerk (Prijskaarten).png",
-    "Algemeen drukwerk (firmakaartjes).png",
+    "algemeen_drukwerk_papierbanden.png",
+    "algemeen_drukwerk_prijskaarten.png",
+    "algemeen_drukwerk_firmakaartjes.png",
   ]
 ---

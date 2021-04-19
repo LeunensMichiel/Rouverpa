@@ -189,6 +189,7 @@ export const CategoryWrapper = styled.section`
   grid-column: 5 / span 9;
   display: flex;
   flex-flow: row wrap;
+  min-height: 20rem;
   margin-bottom: ${p => p.theme.space[8]};
 
   .category__card {

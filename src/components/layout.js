@@ -20,7 +20,7 @@ const mainCss = css`
     );
   align-items: start;
   flex: 0 1;
-  padding-top: 136px;
+  padding-top: 150px;
 
   @media (max-width: 767px) {
     padding-top: 72px;
