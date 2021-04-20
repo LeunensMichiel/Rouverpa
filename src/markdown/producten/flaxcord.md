@@ -21,6 +21,6 @@ detailsEN:
     "Color: choice of various colors (see colorpanel)",
     "Ribbon thickness: 4 mm (in stock)",
   ]
-image: ["Flaxcord.png"]
+image: ["flaxcord.png"]
 extra: kleurenkaart_flaxcord.png
 ---

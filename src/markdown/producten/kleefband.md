@@ -24,5 +24,5 @@ detailsEN:
     "Format: 12 mm x 66 m (Tesa) and 48 mm x 66 m (Vibac)",
     "Matching roll dispenser available separately.",
   ]
-image: ["Kleefband.png"]
+image: ["kleefband.png"]
 ---

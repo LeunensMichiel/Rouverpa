@@ -21,5 +21,5 @@ detailsEN:
     "Color: green, red, fuchsia, pink, blue, silver, gold en violet",
     "Sales unit: 100 pieces per box",
   ]
-image: ["Kleefstrik.png"]
+image: ["kleefstrik.png"]
 ---

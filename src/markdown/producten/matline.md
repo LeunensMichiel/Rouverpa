@@ -24,6 +24,6 @@ detailsEN:
     "Roll width: 10 mm (length: 250 m) and 19 mm (length: 100 m)",
     "Sales unit: per 3 rolls",
   ]
-image: ["Matline.png"]
+image: ["matline.png"]
 extra: kleurkaart_matline.png
 ---

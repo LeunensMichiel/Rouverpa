@@ -12,6 +12,5 @@ detailsNL: ["Type: alle types Vario- en Legro snijders"]
 detailsFR: ["Modèle: tous les types Vario- and Legro systèmes."]
 detailsEN: ["Model: all types Vario- and Legro systems"]
 # Niet aanpassen! Enkel veldjes met NL/FR/EN
-image:
-  ["Afrolapparaat - legro snijder.png", "Afrolapparaat - Vario snijder.png"]
+image: ["afrolapparaat_legro.png", "afrolapparaat_vario.png"]
 ---

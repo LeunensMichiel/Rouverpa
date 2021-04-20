@@ -9,5 +9,5 @@ category: verpakkingspapier
 detailsNL: ["Geschenkpapier te verkrijgen op rol, op vel of gepersonaliseerd."]
 detailsFR: ["Papier cadeau disponible en rouleau, en feuille ou personnalisé."]
 detailsEN: ["Gift paper available on roll, sheet or personalized."]
-image: ["Geschenkpapier.png"]
+image: ["geschenkpapier.png"]
 ---

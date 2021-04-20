@@ -24,5 +24,5 @@ detailsEN:
     "Format: 15x15x15 cm (dark brown, 100 pcs) 18x18x18 cm (dark gris, 120 pcs)",
     "These bags are delivered with a matching bucket (little flowerpot)",
   ]
-image: ["Snijbloemtas.png"]
+image: ["snijbloemtas.png"]
 ---

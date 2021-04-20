@@ -21,5 +21,5 @@ detailsEN:
     "Color: lime, fuchsia, white, orange, lilac, red, silver, black and yellow",
     "Format (diameter): 6, 10, 12, 13, 14, 15 and 20 cm",
   ]
-image: ["Bloempotten.png"]
+image: ["bloempotten.png"]
 ---

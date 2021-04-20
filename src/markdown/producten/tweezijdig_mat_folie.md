@@ -24,5 +24,5 @@ detailsEN:
     "Format: everything tailor-made",
     "Sales unit: both on roll and sheet",
   ]
-image: ["Tweezijdig mat folie.png"]
+image: ["tweezijdig_mat_folie.png"]
 ---

@@ -24,5 +24,5 @@ detailsFR:
     "Format: toutes les tailles standard en stock",
     "Unité de vente: 1000 pieces par boîtes",
   ]
-image: ["Kruis- en blokbodem.png"]
+image: ["kruis_blokbodem.png"]
 ---

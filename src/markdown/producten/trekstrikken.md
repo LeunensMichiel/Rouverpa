@@ -21,5 +21,5 @@ detailsEN:
     "Color: black, white, bordeaux, red, vanilla, silver, light green, dark green, beige en light blue",
     "Sales unit: 25 or 50 pieces per bag",
   ]
-image: ["Trekstrik.png"]
+image: ["trekstrik.png"]
 ---

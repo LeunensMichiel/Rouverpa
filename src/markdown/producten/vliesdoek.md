@@ -27,5 +27,5 @@ detailsEN:
     "Roll length: 50 m",
     "Sales unit: on roll",
   ]
-image: ["Vliesdoek- en non woven.png"]
+image: ["vliesdoek.png"]
 ---

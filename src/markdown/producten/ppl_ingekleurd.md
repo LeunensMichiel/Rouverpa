@@ -27,5 +27,5 @@ detailsEN:
     "Roll legnth: 300 m",
     "Sales unit: both on roll and sheet",
   ]
-image: ["Volvlak ingekleurd PPL.png"]
+image: ["volvlak_ingekleurd_ppl.png"]
 ---

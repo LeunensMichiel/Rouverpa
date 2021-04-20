@@ -4,5 +4,5 @@ key: accessoires
 nameNL: accessoires
 nameFR: accessories
 nameEN: accessories
-image: ["Accessoires.png"]
+image: ["accessoires.png"]
 ---

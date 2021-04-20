@@ -24,6 +24,6 @@ detailsEN:
     "ribbon width: 10 mm, 15 mm, 25 mm and 40 mm",
     "Length: 100 m",
   ]
-image: ["Bel Satin.png"]
+image: ["bel_satin.png"]
 extra: kleurkaart_satin.png
 ---

@@ -21,5 +21,5 @@ detailsEN:
     "Model: stapler P3B and B8HDP Bostitch",
     "Matching stapler available separately.",
   ]
-image: ["Nietjesmachine.png"]
+image: ["nietjesmachine.png"]
 ---

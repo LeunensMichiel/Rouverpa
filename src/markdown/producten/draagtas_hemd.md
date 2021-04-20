@@ -21,5 +21,5 @@ detailsEN:
     "Color: white HDPE and transparent LDPE",
     "Format: 25x12x45 cm (2000 pcs), 27x14x48 cm (2000 pcs), 30x20x60 cm (2000 pcs) and 40x20x30 cm (500 pcs)",
   ]
-image: ["Hemddraagtassen.png"]
+image: ["hemddraagtassen.png"]
 ---

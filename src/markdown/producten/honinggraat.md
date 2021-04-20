@@ -27,5 +27,5 @@ detailsEN:
     "Roll length: 300m",
     "Sales unit: both on roll and sheet",
   ]
-image: ["Honingraat.png"]
+image: ["honingraat.png"]
 ---

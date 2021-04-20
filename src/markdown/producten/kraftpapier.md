@@ -27,5 +27,5 @@ detailsEN:
     "Roll length: 350 m",
     "Sales unit: both on roll and sheet",
   ]
-image: ["Kraftpapier.png"]
+image: ["kraftpapier.png"]
 ---

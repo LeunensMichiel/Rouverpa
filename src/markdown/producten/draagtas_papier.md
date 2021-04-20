@@ -21,5 +21,5 @@ detailsEN:
     "Color: kraft naturel",
     "Formaat: 22x11x28 cm (250 pcs), 32x12x42 cm (250 pcs), 32x22x27 cm (250 pcs) and 45x17x47 cm (150 pcs)",
   ]
-image: ["Papieren draagtassen.png"]
+image: ["papieren_draagtassen.png"]
 ---

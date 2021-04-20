@@ -24,6 +24,6 @@ detailsEN:
     "Ribbon thickness: 5 mm (length: 500 m), 10 mm (length: 250 m) and 19 mm (length: 100 m)",
     "Sales unit: per 4 rolls",
   ]
-image: ["Krullint.png"]
+image: ["krullint.png"]
 extra: kleurenkaart_lint.png
 ---

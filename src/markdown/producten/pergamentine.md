@@ -27,5 +27,5 @@ detailsEN:
     "Weight: 6kg per roll",
     "Sales unit: both on roll and sheet",
   ]
-image: ["Pergamentine.png"]
+image: ["pergamentine.png"]
 ---

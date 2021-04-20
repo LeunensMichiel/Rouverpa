@@ -16,5 +16,5 @@ detailsFR: [
   ]
 detailsEN:
   ["The Present labels are delivered standard on 30x30mm (500 pcs/box)."]
-image: ["Naametiketten.png"]
+image: ["naametiketten.png"]
 ---

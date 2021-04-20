@@ -18,5 +18,5 @@ detailsEN:
     "Model: hand label machine Blitz",
     "Labels and ink roller available separately.",
   ]
-image: ["Prijzentangen.png"]
+image: ["prijzentangen.png"]
 ---

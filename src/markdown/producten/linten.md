@@ -24,6 +24,6 @@ detailsEN:
     "Ribbon width: 10 mm, 15 mm, 25 mm and 40 mm",
     "Length: 100m",
   ]
-image: ["Bedrukte linten.png"]
+image: ["bedrukte_linten.png"]
 extra: kleurkaart_satin.png
 ---

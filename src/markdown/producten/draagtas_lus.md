@@ -24,5 +24,5 @@ detailsEN:
     "Format: 20x12x26 cm, 26x10x35 cm and 32,5x10x35 cm",
     "Sales unit: 500 pcs",
   ]
-image: ["Lus draagtassen.png"]
+image: ["lus draagtassen.png"]
 ---

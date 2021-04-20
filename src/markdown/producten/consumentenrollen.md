@@ -27,5 +27,5 @@ detailsEN:
     "Roll length: 5m, 10m, 20m and 50m",
     "Sales unit: on roll, packed in a dispaly",
   ]
-image: ["Consumentenrollen.png"]
+image: ["consumentenrollen.png"]
 ---

@@ -24,5 +24,5 @@ detailsEN:
     "Format: all widths – everything tailored-made",
     "Sales unit: both on roll and sheet",
   ]
-image: ["PPL.png"]
+image: ["ppl.png"]
 ---

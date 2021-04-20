@@ -21,5 +21,5 @@ detailsEN:
     "Color: bordeaux kraft en transparent",
     "Format: 9x8x37 cm (transparent, 1000 pcs) - 10x9x35 cm (loop handle, 25 pcs) - 10x8x41 cm (block bottom kraft, 250 pcs)",
   ]
-image: ["Draagtassen voor flessen.png"]
+image: ["draagtassen_flessen.png"]
 ---

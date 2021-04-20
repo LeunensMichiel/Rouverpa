@@ -24,6 +24,6 @@ detailsEN:
     "Length: 200 m",
     "Sales unit: on roll",
   ]
-image: ["Dekoraphia.png"]
+image: ["dekoraphia.png"]
 extra: kleurenkaart_dekoraphia.png
 ---
