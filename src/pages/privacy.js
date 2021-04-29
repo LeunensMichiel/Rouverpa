@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import styled from "@emotion/styled"
+import { graphql } from "gatsby"
 
 const Article = styled.article`
   grid-column: 4 / span 8;
