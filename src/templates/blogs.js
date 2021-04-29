@@ -16,6 +16,10 @@ const BlogsContainer = styled.section`
 
   a {
     margin-bottom: ${p => p.theme.space[6]};
+    &:hover,
+    &:focus {
+      color: inherit;
+    }
   }
 
   h1 {

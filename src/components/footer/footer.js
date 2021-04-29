@@ -50,7 +50,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="copyright">
-          © {new Date().getFullYear()} <span>{t("footer.rouverpa")}</span>
+          © {new Date().getFullYear()} <span>{t("footer.rouverpa")}</span> |{" "}
+          <Link to="/privacy/">{t("navigation.privacy")}</Link>
         </div>
       </LeftFooter>
       <RightFooter>

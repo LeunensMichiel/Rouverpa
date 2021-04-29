@@ -11,7 +11,7 @@ const Article = styled.article`
 
   h1,
   h2 {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   h2 {
@@ -55,6 +55,10 @@ const Article = styled.article`
 
   @media ${p => p.theme.mq.mobileM} {
     grid-column: 2 / span 12;
+
+    ul {
+      list-style-position: inside;
+    }
 
     h1 {
       font-size: ${p => p.theme.fontSizes[3]};
