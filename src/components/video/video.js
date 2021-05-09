@@ -4,7 +4,6 @@ import { VideoWrapper } from "./videoStyles"
 import MP4 from "../../assets/heroVid.mp4"
 import Poster from "../../assets/poster.jpg"
 import { useTranslation, Link } from "gatsby-plugin-react-i18next"
-import Button from "../button/button"
 
 export const Video = () => {
   const { t } = useTranslation()
