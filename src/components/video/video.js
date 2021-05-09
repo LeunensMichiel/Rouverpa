@@ -15,12 +15,13 @@ export const Video = () => {
           <h2>{t("home.video.subTitle")}</h2>
         </div>
         <h1>{t("home.video.title")}</h1>
-        <Button
-          text={t("home.video.virtual")}
-          accent
-          external
+        <a
           href="https://virtualtour.rouverpa.be"
-        />
+          target="_blank"
+          rel="noreferrer"
+        >
+          {t("home.video.virtual")}
+        </a>
       </div>
       <video playsInline autoPlay muted poster={Poster} loop id="bgvid">
         <source src={MP4} type="video/mp4" />

@@ -5,6 +5,7 @@ import { GammaIndexWrapper } from "./gammaStyles"
 import cover1 from "../../assets/backgrounds/cover1.png"
 import cover2 from "../../assets/backgrounds/cover2.png"
 import cover3 from "../../assets/backgrounds/cover3.png"
+import Brochure from "../../assets/icons/brochure.svg"
 import Button from "../button/button"
 
 const GammaIndex = () => {
@@ -32,8 +33,18 @@ const GammaIndex = () => {
           <img alt="Foto van geschenkverpakkingen" src={cover3} />
         </Link>
       </div>
-      <div className="buttonWrapper">
-        <Button text={t("home.gamma.goToShop")} href="/gamma/" />
+      <div className="brochureWrapper">
+        <Brochure />
+        <div className="buttonWrapper">
+          <h3>{t("home.gamma.moreInfo")}</h3>
+          <Button
+            text={t("home.gamma.goToBrochure")}
+            external
+            accent
+            href="https://online.anyflip.com/miwjt/odot/mobile/index.html?fbclid=IwAR2XGXYkpXftGB3JUmJTR6FdWhtSv10ryOhkq0-57qzmVihHBVMRSzoXGYo"
+          />
+          <Button text={t("home.gamma.goToShop")} href="/gamma/" />
+        </div>
       </div>
       <Link to="/#overons" className="scroll-downs">
         <div className="mouse">

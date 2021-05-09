@@ -108,10 +108,29 @@ export const GammaIndexWrapper = styled.section`
     }
   }
 
-  .buttonWrapper {
-    margin-top: ${p => p.theme.space[8]};
+  .brochureWrapper {
+    margin-top: ${p => p.theme.space[9]};
     margin-bottom: ${p => p.theme.space[8]};
-    align-self: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 5rem;
+
+    svg {
+      width: 100%;
+      max-width: 30rem;
+      height: auto;
+      margin: 0 auto;
+      padding-right: 1.5rem;
+    }
+  }
+
+  .buttonWrapper {
+    display: grid;
+    grid-gap: 1rem;
+    flex-shrink: 0;
   }
 
   .scroll-downs {
@@ -163,7 +182,7 @@ export const GammaIndexWrapper = styled.section`
       }
     }
 
-    .buttonWrapper {
+    .brochureWrapper {
       margin-top: ${p => p.theme.space[4]};
       margin-bottom: ${p => p.theme.space[9]};
       align-self: center;
@@ -180,6 +199,15 @@ export const GammaIndexWrapper = styled.section`
 
       h3 {
         font-size: ${p => p.theme.fontSizes[3]};
+      }
+    }
+    .brochureWrapper {
+      text-align: center;
+      flex-direction: column;
+      padding: 0 1.5rem;
+      svg {
+        padding-right: 1.5rem;
+        padding-bottom: 1.5rem;
       }
     }
   }

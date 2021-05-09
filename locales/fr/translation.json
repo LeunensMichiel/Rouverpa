@@ -45,8 +45,10 @@
       "1": "Étiquettes et imprimés",
       "2": "Film de polypropylène",
       "3": "Emballages cadeaux",
-      "goToShop": "Voir notre gamme complète",
-      "cta": "À propos de nous"
+      "moreInfo": "Vous voulez en savoir plus ?",
+      "goToBrochure": "Télécharger la brochure",
+      "goToShop": "Bekijk ons assortiment",
+      "cta": "Voir notre gamme de produits"
     },
     "about": {
       "title": "Plus sur nous,",

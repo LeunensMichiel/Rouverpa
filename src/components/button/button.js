@@ -4,7 +4,7 @@ import { Link } from "gatsby-plugin-react-i18next"
 
 const StyledButton = styled(Link)`
   display: block;
-  color: ${p => (p.accent ? p.theme.colors.white94 : p.theme.colors.black34)};
+  color: ${p => (p.accent ? p.theme.colors.white98 : p.theme.colors.black34)};
   padding: ${p => p.theme.space[4]} ${p => p.theme.space[3]};
   background-color: ${p =>
     p.accent ? p.theme.colors.accentp2 : p.theme.colors.white94};
@@ -15,6 +15,7 @@ const StyledButton = styled(Link)`
     color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
   cursor: pointer;
   font-weight: 700;
+  text-align: center;
 
   &:hover {
     color: ${p => (p.accent ? p.theme.colors.white98 : p.theme.colors.gray)};
@@ -23,12 +24,20 @@ const StyledButton = styled(Link)`
   }
 `
 
+const StyledLink = StyledButton.withComponent("a")
+
 const Button = ({ text, external = false, accent = false, href }) => {
   if (external) {
     return (
-      <a href={href} target="_blank" rel="noreferrer">
+      <StyledLink
+        as="a"
+        href={href}
+        accent={accent ? "true" : undefined}
+        target="_blank"
+        rel="noreferrer"
+      >
         {text}
-      </a>
+      </StyledLink>
     )
   } else {
     return (
