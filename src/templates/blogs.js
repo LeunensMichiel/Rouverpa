@@ -74,6 +74,7 @@ export const query = graphql`
         fileAbsolutePath: { regex: "/markdown/blog/" }
         frontmatter: { lang: { eq: $language } }
       }
+      sort: { fields: frontmatter___date, order: DESC }
     ) {
       edges {
         node {

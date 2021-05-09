@@ -9,23 +9,16 @@ const Article = styled.article`
   grid-column: 4 / span 8;
   padding: ${p => p.theme.space[8]} 0;
 
-  h1,
-  h2 {
-    margin-bottom: 1rem;
+  & > * {
+    margin-bottom: 2rem;
   }
 
   h2 {
-    margin-top: 3rem;
-  }
-
-  p,
-  span {
-    margin-bottom: 1.5rem;
+    margin-top: 4rem;
   }
 
   em {
     display: block;
-    margin-bottom: 1.5rem;
   }
 
   strong {
@@ -38,19 +31,47 @@ const Article = styled.article`
 
     ul {
       padding-left: 1.5rem;
-      list-style: none;
+      list-style: decimal;
     }
   }
 
   blockquote {
     font-weight: 700;
     border-left: 4px solid ${({ theme }) => theme.colors.accentp2};
+    color: ${({ theme }) => theme.colors.black34};
     padding-left: 12px;
   }
 
   a {
     font-weight: 700;
     text-decoration: underline;
+    color: ${({ theme }) => theme.colors.black34};
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  }
+
+  .gatsby-resp-image-wrapper {
+    max-width: unset !important;
+    max-height: 50vh;
+    display: flex !important;
+    justify-content: center;
+    img {
+      left: unset !important;
+      width: auto !important;
+    }
   }
 
   @media ${p => p.theme.mq.mobileM} {
