@@ -20,7 +20,7 @@ Elle ouvre ses portes chaque jour avec beaucoup de passion et de fierté. Elle t
 
 Un client à l'honneur à **Rouverpa verpakkingen**!
 
-<img align="left" src="rosegarden2.jpg">
+![left](rosegarden2.jpg)
 
 Isabel Dobbels est mariée à Kurt Van Walleghem. Le magasin a été fondée **il y a 53 ans** par ses beaux-parents dans un ancien manoir de Pittem. L'affaire a été systématiquement élargie. Depuis 1998, l'entreprise a été reprise par Isabel et son mari.Isabel est en charge du **commerce des fleurs** et son mari continue ce que son père a toujours fait, **cultiver les fleurs coupées**. En attendant, le fils **Matice** aide également à la pépinière.
 
@@ -37,11 +37,11 @@ et décoratif.
 De plus, ils cultivent également **30 types de tulipes différents**. La culture des tulipes a lieu de janvier à avril.
 Ils coupent leurs tulipes fraîches tous les jours. Les tulipes sont toutes deux vendues dans la boutique, mais également livrées aux enchères en Bruxelles. Kurt se rend toujours à Bruxelles avant l'aube pour livrer les fleurs.
 
-<img align="left" src="rosegarden6.jpg">
+![left](rosegarden6.jpg)
 
 L'expérience dans leur magasin physique est la plus importante pour eux. Il est agréable pour les clients de sentir l'odeur des fleurs fraîches. Mais en plus de leur **magasin physique** , ils ont également un **site Web avec une boutique en ligne**. Cela devient de plus en plus un média important dans le secteur des fleurs. Les gens aiment regarder à l'avance l'assortiment de fleurs.
 
-<img align="right" src="rosegarden8.jpg">
+![right](rosegarden8.jpg)
 
 Une partie très importante du bouquet est à la fois de faire le bouquet avec une belle
 fleurs, ainsi que **l'emballage** autour du bouquet. Quand les gens demandent à Isabel de faire un bouquet ou un arrangement floral bien sûr, elle le fait avec beaucoup de soin. Elle aime faire son travail pour bien envelopper la fleur pour
