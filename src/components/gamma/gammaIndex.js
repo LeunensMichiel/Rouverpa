@@ -41,7 +41,7 @@ const GammaIndex = () => {
             text={t("home.gamma.goToBrochure")}
             external
             accent
-            href="https://online.anyflip.com/miwjt/odot/mobile/index.html?fbclid=IwAR2XGXYkpXftGB3JUmJTR6FdWhtSv10ryOhkq0-57qzmVihHBVMRSzoXGYo"
+            href="https://online.anyflip.com/miwjt/oaxu/mobile/index.html"
           />
           <Button text={t("home.gamma.goToShop")} href="/gamma/" />
         </div>

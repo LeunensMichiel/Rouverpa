@@ -5,10 +5,11 @@ import RouverpaLogo from "../../assets/icons/rouverpa.svg"
 const LogoContainer = styled.div`
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   height: 100%;
   width: 100%;
   svg {
-    height: 100%;
+    height: 80%;
     width: auto;
   }
 
